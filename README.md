@@ -24,6 +24,8 @@ some from google fonts
 
 If you want a good website to search for scores, we highly reccomend [International Music Score Library Project- IMSLP](http://imslp.org/)
 
+You can also [support them](https://imslp.org/wiki/IMSLP:Subscriptions) for their very good service. 
+
 ## More about Us
 
 We are making a laboratory webblog, https://iacchus.github.io
