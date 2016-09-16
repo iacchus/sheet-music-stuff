@@ -1,4 +1,8 @@
 ---
+papersize: letter
 documentclass: book
-title: The abc music standard 2.1 (Dec 2011)
-:---
+fontsize: 10pt
+geometry: margin=0.25in
+title: The abc music standXDard 2.1 (Dec 2011)
+author: Santa Claus
+---
