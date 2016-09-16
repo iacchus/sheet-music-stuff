@@ -20,7 +20,7 @@ some from google fonts
 
 `PURCELL, Henry` - [Let Us Wander](https://github.com/iacchus/sheet-music-stuff/tree/master/PURCELL%2C%20Henry/let_us_wander) *(two voices, for complete sheetmusic see the [original source](https://github.com/iacchus/sheet-music-stuff/blob/master/PURCELL%2C%20Henry/let_us_wander/originalsource_henry_purcell_6_vocal_duets.pdf))*
 
-## Sheet Music around the Web
+## Sheet Music around the Web (IMSLP)
 
 If you want a good website to search for scores, we highly recommend [International Music Score Library Project- IMSLP](http://imslp.org/).
 
@@ -28,7 +28,7 @@ You can also [support them](https://imslp.org/wiki/IMSLP:Subscriptions) for thei
 
 ## More about Us
 
-We are making a laboratory webblog, https://iacchus.github.io
+We are making a laboratory *weblog*, you can check it at https://iacchus.github.io
 
 ## License
 
