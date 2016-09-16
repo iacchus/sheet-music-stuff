@@ -20,6 +20,10 @@ some from google fonts
 
 `PURCELL, Henry` - [Let Us Wander](https://github.com/iacchus/sheet-music-stuff/tree/master/PURCELL%2C%20Henry/let_us_wander) *(two voices, for complete sheetmusic see the [original source](https://github.com/iacchus/sheet-music-stuff/blob/master/PURCELL%2C%20Henry/let_us_wander/originalsource_henry_purcell_6_vocal_duets.pdf))*
 
+## More about
+
+We are making a laboratory webblog, https://iacchus.github.io
+
 ## License
 
 ```
