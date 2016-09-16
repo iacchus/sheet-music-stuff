@@ -1,8 +1,22 @@
-# sheet-music-stuff
-Repository for stuff related to sheet music, musescore editions etc
+# Sheetmusic Stuff
+
+Repository for stuff related to sheet music, musescore editions etc.
+
+## Software Used
+
+We are using open source software; some recomendations are
+
+* [Musescore](https://musescore.org) (open source sheet music editor)
+
+
+## Other notes
+
+The text font I am currently using is 'Nimbus Roman L9', maybe I should choose
+some from google fonts
 
 ## License
 
+```
 MIT License
 
 Copyright (c) 2016 Iacchus Mercurius
@@ -24,3 +38,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
