@@ -22,7 +22,7 @@ some from google fonts
 
 ## Sheet Music around the Web
 
-If you want a good website to search for scores, we highly reccomend [International Music Score Library Project- IMSLP](http://imslp.org/)
+If you want a good website to search for scores, we highly recommend [International Music Score Library Project- IMSLP](http://imslp.org/)
 
 You can also [support them](https://imslp.org/wiki/IMSLP:Subscriptions) for their very good service. 
 
