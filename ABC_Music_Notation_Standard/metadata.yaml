@@ -1,7 +1,9 @@
 ---
-papersize: article
+fontsize: 11pt
 documentclass: book
-fontsize: 10pt
-geometry: margin=.25in
-title: The abc music standard 2.1 (Dec 2011)
+title: The ABC Music Notation Standard 2.1 (December, 2.011)
+author: Own Author's
+rights:  Creative Commons Non-Commercial Share Alike 3.0
+language: en-US
+classoption: oneside
 ---
