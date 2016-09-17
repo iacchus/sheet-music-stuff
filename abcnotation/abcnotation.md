@@ -1,2318 +1,532 @@
-<div id="dw__toc">
-
-### **<span>−</span>**Table of Contents {#table-of-contents .toggle .open style="cursor: pointer;"}
-
-<div aria-expanded="true">
-
--   <div class="li">
-
-    [The abc music standard 2.1
-    (Dec 2011)](#the_abc_music_standard_21_dec_2011)
-
-    </div>
-
-    -   <div class="li">
-
-        [Contents](#contents)
-
-        </div>
-
-    -   <div class="li">
-
-        [1. Introduction](#introduction)
-
-        </div>
-
-        -   <div class="li">
-
-            [1.1 How to read this document](#how_to_read_this_document)
-
-            </div>
-
-        -   <div class="li">
-
-            [1.2 How to avoid reading this
-            document](#how_to_avoid_reading_this_document)
-
-            </div>
-
-        -   <div class="li">
-
-            [1.3 Abc tutorials](#abc_tutorials)
-
-            </div>
-
-        -   <div class="li">
-
-            [1.4 Abc extensions](#abc_extensions)
-
-            </div>
-
-        -   <div class="li">
-
-            [1.5 Further information and
-            changes](#further_information_and_changes)
-
-            </div>
-
-        -   <div class="li">
-
-            [1.6 Document locations](#document_locations)
-
-            </div>
-
-    -   <div class="li">
-
-        [2. Abc files, tunes and
-        fragments](#abc_files_tunes_and_fragments)
-
-        </div>
-
-        -   <div class="li">
-
-            [2.1 Abc file identification](#abc_file_identification)
-
-            </div>
-
-        -   <div class="li">
-
-            [2.2 Abc file structure](#abc_file_structure)
-
-            </div>
-
-        -   <div class="li">
-
-            [2.3 Embedded abc and abc
-            fragments](#embedded_abc_and_abc_fragments)
-
-            </div>
-
-    -   <div class="li">
-
-        [3. Information fields](#information_fields)
-
-        </div>
-
-        -   <div class="li">
-
-            [3.1 Description of information
-            fields](#description_of_information_fields)
-
-            </div>
-
-        -   <div class="li">
-
-            [3.2 Use of fields within the tune
-            body](#use_of_fields_within_the_tune_body)
-
-            </div>
-
-        -   <div class="li">
-
-            [3.3 Field continuation](#field_continuation)
-
-            </div>
-
-    -   <div class="li">
-
-        [4. The tune body](#the_tune_body)
-
-        </div>
-
-        -   <div class="li">
-
-            [4.1 Pitch](#pitch)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.2 Accidentals](#accidentals)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.3 Note lengths](#note_lengths)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.4 Broken rhythm](#broken_rhythm)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.5 Rests](#rests)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.6 Clefs and transposition](#clefs_and_transposition)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.7 Beams](#beams)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.8 Repeat/bar symbols](#repeat_bar_symbols)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.9 First and second repeats](#first_and_second_repeats)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.10 Variant endings](#variant_endings)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.11 Ties and slurs](#ties_and_slurs)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.12 Grace notes](#grace_notes)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.13 Duplets, triplets,
-            quadruplets, etc.](#duplets_triplets_quadruplets_etc)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.14 Decorations](#decorations)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.15 Symbol lines](#symbol_lines)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.16 Redefinable symbols](#redefinable_symbols)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.17 Chords and unisons](#chords_and_unisons)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.18 Chord symbols](#chord_symbols)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.19 Annotations](#annotations)
-
-            </div>
-
-        -   <div class="li">
-
-            [4.20 Order of abc constructs](#order_of_abc_constructs)
-
-            </div>
-
-    -   <div class="li">
-
-        [5. Lyrics](#lyrics)
-
-        </div>
-
-        -   <div class="li">
-
-            [5.1 Alignment](#alignment)
-
-            </div>
-
-        -   <div class="li">
-
-            [5.2 Verses](#verses)
-
-            </div>
-
-        -   <div class="li">
-
-            [5.3 Numbering](#numbering)
-
-            </div>
-
-    -   <div class="li">
-
-        [6. Typesetting and playback](#typesetting_and_playback)
-
-        </div>
-
-        -   <div class="li">
-
-            [6.1 Typesetting](#typesetting)
-
-            </div>
-
-        -   <div class="li">
-
-            [6.2 Playback](#playback)
-
-            </div>
-
-    -   <div class="li">
-
-        [7. Multiple voices](#multiple_voices)
-
-        </div>
-
-        -   <div class="li">
-
-            [7.1 Voice properties](#voice_properties)
-
-            </div>
-
-        -   <div class="li">
-
-            [7.2 Breaking lines](#breaking_lines)
-
-            </div>
-
-        -   <div class="li">
-
-            [7.3 Inline fields](#inline_fields)
-
-            </div>
-
-        -   <div class="li">
-
-            [7.4 Voice overlay](#voice_overlay)
-
-            </div>
-
-    -   <div class="li">
-
-        [8. Abc data format](#abc_data_format)
-
-        </div>
-
-        -   <div class="li">
-
-            [8.1 Tune body](#tune_body)
-
-            </div>
-
-        -   <div class="li">
-
-            [8.2 Text strings](#text_strings)
-
-            </div>
-
-    -   <div class="li">
-
-        [9. Macros](#macros)
-
-        </div>
-
-        -   <div class="li">
-
-            [9.1 Static macros](#static_macros)
-
-            </div>
-
-        -   <div class="li">
-
-            [9.2 Transposing macros](#transposing_macros)
-
-            </div>
-
-    -   <div class="li">
-
-        [10. Outdated syntax](#outdated_syntax)
-
-        </div>
-
-        -   <div class="li">
-
-            [10.1 Outdated information field
-            syntax](#outdated_information_field_syntax)
-
-            </div>
-
-        -   <div class="li">
-
-            [10.2 Outdated dialects](#outdated_dialects)
-
-            </div>
-
-        -   <div class="li">
-
-            [10.3 Outdated continuations](#outdated_continuations)
-
-            </div>
-
-        -   <div class="li">
-
-            [10.4 Outdated directives](#outdated_directives)
-
-            </div>
-
-        -   <div class="li">
-
-            [10.5 Outdated file structure](#outdated_file_structure)
-
-            </div>
-
-        -   <div class="li">
-
-            [10.6 Outdated lyrics alignment](#outdated_lyrics_alignment)
-
-            </div>
-
-        -   <div class="li">
-
-            [10.7 Other outdated syntax](#other_outdated_syntax)
-
-            </div>
-
-    -   <div class="li">
-
-        [11. Stylesheet directives and
-        pseudo-comments](#stylesheet_directives_and_pseudo-comments)
-
-        </div>
-
-        -   <div class="li">
-
-            [11.0 Introduction to
-            directives](#introduction_to_directives)
-
-            </div>
-
-        -   <div class="li">
-
-            [11.1 Voice grouping](#voice_grouping)
-
-            </div>
-
-        -   <div class="li">
-
-            [11.2 Instrumentation
-            directives](#instrumentation_directives)
-
-            </div>
-
-        -   <div class="li">
-
-            [11.3 Accidental directives](#accidental_directives)
-
-            </div>
-
-        -   <div class="li">
-
-            [11.4 Formatting directives](#formatting_directives)
-
-            </div>
-
-        -   <div class="li">
-
-            [11.5 Application specific
-            directives](#application_specific_directives)
-
-            </div>
-
-        -   <div class="li">
-
-            [11.6 Further information about
-            directives](#further_information_about_directives)
-
-            </div>
-
-    -   <div class="li">
-
-        [12. Dialects, strict / loose interpretation and backwards
-        compatibility](#dialects_strict_loose_interpretation_and_backwards_compatibility)
-
-        </div>
-
-        -   <div class="li">
-
-            [12.1 Dialect differences](#dialect_differences)
-
-            </div>
-
-        -   <div class="li">
-
-            [12.2 Loose interpretation](#loose_interpretation)
-
-            </div>
-
-        -   <div class="li">
-
-            [12.3 Strict interpretation](#strict_interpretation)
-
-            </div>
-
-    -   <div class="li">
-
-        [13. Sample abc tunes](#sample_abc_tunes)
-
-        </div>
-
-        -   <div class="li">
-
-            [13.1 English.abc](#englishabc)
-
-            </div>
-
-        -   <div class="li">
-
-            [13.2 Strspys.abc](#strspysabc)
-
-            </div>
-
-        -   <div class="li">
-
-            [13.3 Reels.abc](#reelsabc)
-
-            </div>
-
-        -   <div class="li">
-
-            [13.4 Canzonetta.abc](#canzonettaabc)
-
-            </div>
-
-    -   <div class="li">
-
-        [14. Appendix](#appendix)
-
-        </div>
-
-        -   <div class="li">
-
-            [14.1 Supported accents &
-            ligatures](#supported_accents_ligatures)
-
-            </div>
-
-        -   <div class="li">
-
-            [14.2 Errata](#errata)
-
-            </div>
-
-</div>
-
-</div>
-
-\
-
-The abc music standard 2.1 (Dec 2011) {#the_abc_music_standard_21_dec_2011 .sectionedit1}
+The abc music standard 2.1 (Dec 2011)
 =====================================
 
-<div class="level1">
-
-\
-
-</div>
-
-Contents {#contents .sectionedit2}
+Contents
 --------
 
-<div class="level2">
+-   <a href="#introduction" class="wikilink1" title="abc:standard:v2.1 ↵">1. Introduction</a>
 
--   <div class="li">
+    -   <a href="#how_to_read_this_document" class="wikilink1" title="abc:standard:v2.1 ↵">1.1 How to read this document</a>
 
-    [1. Introduction](#introduction "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#terminology_definitions" class="wikilink1" title="abc:standard:v2.1 ↵">1.1.1 Terminology / definitions</a>
 
-    </div>
+    -   <a href="#how_to_avoid_reading_this_document" class="wikilink1" title="abc:standard:v2.1 ↵">1.2 How to avoid reading this document</a>
 
-    -   <div class="li">
+    -   <a href="#abc_tutorials" class="wikilink1" title="abc:standard:v2.1 ↵">1.3 Abc tutorials</a>
 
-        [1.1 How to read this
-        document](#how_to_read_this_document "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#abc_extensions" class="wikilink1" title="abc:standard:v2.1 ↵">1.4 Abc extensions</a>
 
-        </div>
+    -   <a href="#further_information_and_changes" class="wikilink1" title="abc:standard:v2.1 ↵">1.5 Further information and changes</a>
 
-        -   <div class="li">
+    -   <a href="#document_locations" class="wikilink1" title="abc:standard:v2.1 ↵">1.6 Document locations</a>
 
-            [1.1.1 Terminology /
-            definitions](#terminology_definitions "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="#abc_files_tunes_and_fragments" class="wikilink1" title="abc:standard:v2.1 ↵">2. Abc files, tunes and fragments</a>
 
-            </div>
+    -   <a href="#abc_file_identification" class="wikilink1" title="abc:standard:v2.1 ↵">2.1 Abc file identification</a>
 
-    -   <div class="li">
+    -   <a href="#abc_file_structure" class="wikilink1" title="abc:standard:v2.1 ↵">2.2 Abc file structure</a>
 
-        [1.2 How to avoid reading this
-        document](#how_to_avoid_reading_this_document "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#abc_tune" class="wikilink1" title="abc:standard:v2.1 ↵">2.2.1 Abc tune</a>
 
-        </div>
+        -   <a href="#file_header" class="wikilink1" title="abc:standard:v2.1 ↵">2.2.2 File header</a>
 
-    -   <div class="li">
+        -   <a href="#free_text_and_typeset_text" class="wikilink1" title="abc:standard:v2.1 ↵">2.2.3 Free text and typeset text</a>
 
-        [1.3 Abc
-        tutorials](#abc_tutorials "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#empty_lines_and_line-breaking" class="wikilink1" title="abc:standard:v2.1 ↵">2.2.4 Empty lines and line-breaking</a>
 
-        </div>
+        -   <a href="#comments_and_remarks" class="wikilink1" title="abc:standard:v2.1 ↵">2.2.5 Comments and remarks</a>
 
-    -   <div class="li">
+        -   <a href="#continuation_of_input_lines" class="wikilink1" title="abc:standard:v2.1 ↵">2.2.6 Continuation of input lines</a>
 
-        [1.4 Abc
-        extensions](#abc_extensions "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#embedded_abc_and_abc_fragments" class="wikilink1" title="abc:standard:v2.1 ↵">2.3 Embedded abc and abc fragments</a>
 
-        </div>
+        -   <a href="#embedded_abc_fragment" class="wikilink1" title="abc:standard:v2.1 ↵">2.3.1 Embedded abc fragment</a>
 
-    -   <div class="li">
+        -   <a href="#embedded_abc_tune" class="wikilink1" title="abc:standard:v2.1 ↵">2.3.2 Embedded abc tune</a>
 
-        [1.5 Further information and
-        changes](#further_information_and_changes "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#embedded_file_header" class="wikilink1" title="abc:standard:v2.1 ↵">2.3.3 Embedded file header</a>
 
-        </div>
+        -   <a href="#embedded_abc_file" class="wikilink1" title="abc:standard:v2.1 ↵">2.3.4 Embedded abc file</a>
 
-    -   <div class="li">
+-   <a href="#information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">3. Information fields</a>
 
-        [1.6 Document
-        locations](#document_locations "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#description_of_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">3.1 Description of information fields</a>
 
-        </div>
+        -   <a href="#xreference_number" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.1 X: - reference number</a>
 
--   <div class="li">
+        -   <a href="#ttune_title" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.2 T: - tune title</a>
 
-    [2. Abc files, tunes and
-    fragments](#abc_files_tunes_and_fragments "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#ccomposer" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.3 C: - composer</a>
 
-    </div>
+        -   <a href="#oorigin" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.4 O: - origin</a>
 
-    -   <div class="li">
+        -   <a href="#aarea" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.5 A: - area</a>
 
-        [2.1 Abc file
-        identification](#abc_file_identification "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#mmeter" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.6 M: - meter</a>
 
-        </div>
+        -   <a href="#lunit_note_length" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.7 L: - unit note length</a>
 
-    -   <div class="li">
+        -   <a href="#qtempo" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.8 Q: - tempo</a>
 
-        [2.2 Abc file
-        structure](#abc_file_structure "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#pparts" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.9 P: - parts</a>
 
-        </div>
+        -   <a href="#ztranscription" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.10 Z: - transcription</a>
 
-        -   <div class="li">
+        -   <a href="#nnotes" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.11 N: - notes</a>
 
-            [2.2.1 Abc
-            tune](#abc_tune "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#ggroup" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.12 G: - group</a>
 
-            </div>
+        -   <a href="#hhistory" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.13 H: - history</a>
 
-        -   <div class="li">
+        -   <a href="#kkey" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.14 K: - key</a>
 
-            [2.2.2 File
-            header](#file_header "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#rrhythm" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.15 R: - rhythm</a>
 
-            </div>
+        -   <a href="#bdfsbackground_information" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.16 B:, D:, F:, S: - background information</a>
 
-        -   <div class="li">
+        -   <a href="#iinstruction" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.17 I: - instruction</a>
 
-            [2.2.3 Free text and typeset
-            text](#free_text_and_typeset_text "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#other_fields" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.18 Other fields</a>
 
-            </div>
+    -   <a href="#use_of_fields_within_the_tune_body" class="wikilink1" title="abc:standard:v2.1 ↵">3.2 Use of fields within the tune body</a>
 
-        -   <div class="li">
+    -   <a href="#field_continuation" class="wikilink1" title="abc:standard:v2.1 ↵">3.3 Field continuation</a>
 
-            [2.2.4 Empty lines and
-            line-breaking](#empty_lines_and_line-breaking "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="#the_tune_body" class="wikilink1" title="abc:standard:v2.1 ↵">4. The tune body</a>
 
-            </div>
+    -   <a href="#pitch" class="wikilink1" title="abc:standard:v2.1 ↵">4.1 Pitch</a>
 
-        -   <div class="li">
+    -   <a href="#accidentals" class="wikilink1" title="abc:standard:v2.1 ↵">4.2 Accidentals</a>
 
-            [2.2.5 Comments and
-            remarks](#comments_and_remarks "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#note_lengths" class="wikilink1" title="abc:standard:v2.1 ↵">4.3 Note lengths</a>
 
-            </div>
+    -   <a href="#broken_rhythm" class="wikilink1" title="abc:standard:v2.1 ↵">4.4 Broken rhythm</a>
 
-        -   <div class="li">
+    -   <a href="#rests" class="wikilink1" title="abc:standard:v2.1 ↵">4.5 Rests</a>
 
-            [2.2.6 Continuation of input
-            lines](#continuation_of_input_lines "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#clefs_and_transposition" class="wikilink1" title="abc:standard:v2.1 ↵">4.6 Clefs and transposition</a>
 
-            </div>
+    -   <a href="#beams" class="wikilink1" title="abc:standard:v2.1 ↵">4.7 Beams</a>
 
-    -   <div class="li">
+    -   <a href="#repeat_bar_symbols" class="wikilink1" title="abc:standard:v2.1 ↵">4.8 Repeat/bar symbols</a>
 
-        [2.3 Embedded abc and abc
-        fragments](#embedded_abc_and_abc_fragments "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#first_and_second_repeats" class="wikilink1" title="abc:standard:v2.1 ↵">4.9 First and second repeats</a>
 
-        </div>
+    -   <a href="#variant_endings" class="wikilink1" title="abc:standard:v2.1 ↵">4.10 Variant endings</a>
 
-        -   <div class="li">
+    -   <a href="#ties_and_slurs" class="wikilink1" title="abc:standard:v2.1 ↵">4.11 Ties and slurs</a>
 
-            [2.3.1 Embedded abc
-            fragment](#embedded_abc_fragment "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#grace_notes" class="wikilink1" title="abc:standard:v2.1 ↵">4.12 Grace notes</a>
 
-            </div>
+    -   <a href="#duplets_triplets_quadruplets_etc" class="wikilink1" title="abc:standard:v2.1 ↵">4.13 Duplets, triplets, quadruplets, etc.</a>
 
-        -   <div class="li">
+    -   <a href="#decorations" class="wikilink1" title="abc:standard:v2.1 ↵">4.14 Decorations</a>
 
-            [2.3.2 Embedded abc
-            tune](#embedded_abc_tune "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#symbol_lines" class="wikilink1" title="abc:standard:v2.1 ↵">4.15 Symbol lines</a>
 
-            </div>
+    -   <a href="#redefinable_symbols" class="wikilink1" title="abc:standard:v2.1 ↵">4.16 Redefinable symbols</a>
 
-        -   <div class="li">
+    -   <a href="#chords_and_unisons" class="wikilink1" title="abc:standard:v2.1 ↵">4.17 Chords and unisons</a>
 
-            [2.3.3 Embedded file
-            header](#embedded_file_header "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#chord_symbols" class="wikilink1" title="abc:standard:v2.1 ↵">4.18 Chord symbols</a>
 
-            </div>
+    -   <a href="#annotations" class="wikilink1" title="abc:standard:v2.1 ↵">4.19 Annotations</a>
 
-        -   <div class="li">
+    -   <a href="#order_of_abc_constructs" class="wikilink1" title="abc:standard:v2.1 ↵">4.20 Order of abc constructs</a>
 
-            [2.3.4 Embedded abc
-            file](#embedded_abc_file "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="#lyrics" class="wikilink1" title="abc:standard:v2.1 ↵">5. Lyrics</a>
 
-            </div>
+    -   <a href="#alignment" class="wikilink1" title="abc:standard:v2.1 ↵">5.1 Alignment</a>
 
--   <div class="li">
+    -   <a href="#verses" class="wikilink1" title="abc:standard:v2.1 ↵">5.2 Verses</a>
 
-    [3. Information
-    fields](#information_fields "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#numbering" class="wikilink1" title="abc:standard:v2.1 ↵">5.3 Numbering</a>
 
-    </div>
+-   <a href="#typesetting_and_playback" class="wikilink1" title="abc:standard:v2.1 ↵">6. Typesetting and playback</a>
 
-    -   <div class="li">
+    -   <a href="#typesetting" class="wikilink1" title="abc:standard:v2.1 ↵">6.1 Typesetting</a>
 
-        [3.1 Description of information
-        fields](#description_of_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#typesetting_line-breaks" class="wikilink1" title="abc:standard:v2.1 ↵">6.1.1 Typesetting line-breaks</a>
 
-        </div>
+        -   <a href="#typesetting_extra_space" class="wikilink1" title="abc:standard:v2.1 ↵">6.1.2 Typesetting extra space</a>
 
-        -   <div class="li">
+        -   <a href="#typesetting_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">6.1.3 Typesetting information fields</a>
 
-            [3.1.1 X: - reference
-            number](#xreference_number "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#playback" class="wikilink1" title="abc:standard:v2.1 ↵">6.2 Playback</a>
 
-            </div>
+-   <a href="#multiple_voices" class="wikilink1" title="abc:standard:v2.1 ↵">7. Multiple voices</a>
 
-        -   <div class="li">
+    -   <a href="#voice_properties" class="wikilink1" title="abc:standard:v2.1 ↵">7.1 Voice properties</a>
 
-            [3.1.2 T: - tune
-            title](#ttune_title "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#breaking_lines" class="wikilink1" title="abc:standard:v2.1 ↵">7.2 Breaking lines</a>
 
-            </div>
+    -   <a href="#inline_fields" class="wikilink1" title="abc:standard:v2.1 ↵">7.3 Inline fields</a>
 
-        -   <div class="li">
+    -   <a href="#voice_overlay" class="wikilink1" title="abc:standard:v2.1 ↵">7.4 Voice overlay</a>
 
-            [3.1.3 C: -
-            composer](#ccomposer "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="#abc_data_format" class="wikilink1" title="abc:standard:v2.1 ↵">8. abc data format</a>
 
-            </div>
+    -   <a href="#tune_body" class="wikilink1" title="abc:standard:v2.1 ↵">8.1 Tune body</a>
 
-        -   <div class="li">
+    -   <a href="#text_strings" class="wikilink1" title="abc:standard:v2.1 ↵">8.2 Text strings</a>
 
-            [3.1.4 O: -
-            origin](#oorigin "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="#macros" class="wikilink1" title="abc:standard:v2.1 ↵">9. Macros</a>
 
-            </div>
+    -   <a href="#static_macros" class="wikilink1" title="abc:standard:v2.1 ↵">9.1 Static macros</a>
 
-        -   <div class="li">
+    -   <a href="#transposing_macros" class="wikilink1" title="abc:standard:v2.1 ↵">9.2 Transposing macros</a>
 
-            [3.1.5 A: - area](#aarea "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">10. Outdated syntax</a>
 
-            </div>
+    -   <a href="#outdated_information_field_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">10.1 Outdated information field syntax</a>
 
-        -   <div class="li">
+    -   <a href="#outdated_dialects" class="wikilink1" title="abc:standard:v2.1 ↵">10.2 Outdated dialects</a>
 
-            [3.1.6 M: -
-            meter](#mmeter "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#outdated_line-breaking" class="wikilink1" title="abc:standard:v2.1 ↵">10.2.1 Outdated line-breaking</a>
 
-            </div>
+        -   <a href="#outdated_decorations" class="wikilink1" title="abc:standard:v2.1 ↵">10.2.2 Outdated decorations</a>
 
-        -   <div class="li">
+        -   <a href="#outdated_chords" class="wikilink1" title="abc:standard:v2.1 ↵">10.2.3 Outdated chords</a>
 
-            [3.1.7 L: - unit note
-            length](#lunit_note_length "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#outdated_continuations" class="wikilink1" title="abc:standard:v2.1 ↵">10.3 Outdated continuations</a>
 
-            </div>
+    -   <a href="#outdated_directives" class="wikilink1" title="abc:standard:v2.1 ↵">10.4 Outdated directives</a>
 
-        -   <div class="li">
+    -   <a href="#outdated_file_structure" class="wikilink1" title="abc:standard:v2.1 ↵">10.5 Outdated file structure</a>
 
-            [3.1.8 Q: -
-            tempo](#qtempo "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#outdated_tune_header_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">10.5.1 Outdated tune header syntax</a>
 
-            </div>
+        -   <a href="#outdated_defaults" class="wikilink1" title="abc:standard:v2.1 ↵">10.5.1 Outdated defaults</a>
 
-        -   <div class="li">
+    -   <a href="#outdated_lyrics_alignment" class="wikilink1" title="abc:standard:v2.1 ↵">10.6 Outdated lyrics alignment</a>
 
-            [3.1.9 P: -
-            parts](#pparts "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#other_outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">10.7 Other outdated syntax</a>
 
-            </div>
+        -   <a href="#disallowed_voice_overlay" class="wikilink1" title="abc:standard:v2.1 ↵">10.7.1 Disallowed voice overlay</a>
 
-        -   <div class="li">
+-   <a href="#stylesheet_directives_and_pseudo-comments" class="wikilink1" title="abc:standard:v2.1 ↵">11. Stylesheet directives and pseudo-comments</a>
 
-            [3.1.10 Z: -
-            transcription](#ztranscription "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#introduction_to_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.0 Introduction to directives</a>
 
-            </div>
+        -   <a href="#disclaimer" class="wikilink1" title="abc:standard:v2.1 ↵">11.0.1 Disclaimer</a>
 
-        -   <div class="li">
+        -   <a href="#stylesheet_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.0.2 Stylesheet directives</a>
 
-            [3.1.11 N: -
-            notes](#nnotes "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#voice_grouping" class="wikilink1" title="abc:standard:v2.1 ↵">11.1 Voice grouping</a>
 
-            </div>
+    -   <a href="#instrumentation_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.2 Instrumentation directives</a>
 
-        -   <div class="li">
+    -   <a href="#accidental_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.3 Accidental directives</a>
 
-            [3.1.12 G: -
-            group](#ggroup "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#formatting_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.4 Formatting directives</a>
 
-            </div>
+        -   <a href="#page_format_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.4.1 Page format directives</a>
 
-        -   <div class="li">
+        -   <a href="#font_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.4.2 Font directives</a>
 
-            [3.1.13 H: -
-            history](#hhistory "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#space_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.4.3 Space directives</a>
 
-            </div>
+        -   <a href="#measure_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.4.4 Measure directives</a>
 
-        -   <div class="li">
+        -   <a href="#text_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.4.5 Text directives</a>
 
-            [3.1.14 K: - key](#kkey "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#information_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.4.6 Information directives</a>
 
-            </div>
+        -   <a href="#separation_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.4.7 Separation directives</a>
 
-        -   <div class="li">
+        -   <a href="#miscellaneous_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.4.8 Miscellaneous directives</a>
 
-            [3.1.15 R: -
-            rhythm](#rrhythm "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#application_specific_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.5 Application specific directives</a>
 
-            </div>
+    -   <a href="#further_information_about_directives" class="wikilink1" title="abc:standard:v2.1 ↵">11.6 Further information about directives</a>
 
-        -   <div class="li">
+-   <a href="#dialects_strict_loose_interpretation_and_backwards_compatibility" class="wikilink1" title="abc:standard:v2.1 ↵">12. Dialects, strict / loose interpretation and backwards compatibility</a>
 
-            [3.1.16 B:, D:, F:, S: - background
-            information](#bdfsbackground_information "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#dialect_differences" class="wikilink1" title="abc:standard:v2.1 ↵">12.1 Dialect differences</a>
 
-            </div>
+        -   <a href="#line-breaking_dialects" class="wikilink1" title="abc:standard:v2.1 ↵">12.1.1 Line-breaking dialects</a>
 
-        -   <div class="li">
+        -   <a href="#decoration_dialects" class="wikilink1" title="abc:standard:v2.1 ↵">12.1.2 Decoration dialects</a>
 
-            [3.1.17 I: -
-            instruction](#iinstruction "abc:standard:v2.1 ↵"){.wikilink1}
+        -   <a href="#chord_dialects" class="wikilink1" title="abc:standard:v2.1 ↵">12.1.3 Chord dialects</a>
 
-            </div>
+    -   <a href="#loose_interpretation" class="wikilink1" title="abc:standard:v2.1 ↵">12.2 Loose interpretation</a>
 
-        -   <div class="li">
+    -   <a href="#strict_interpretation" class="wikilink1" title="abc:standard:v2.1 ↵">12.3 Strict interpretation</a>
 
-            [3.1.18 Other
-            fields](#other_fields "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="#sample_abc_tunes" class="wikilink1" title="abc:standard:v2.1 ↵">13. Sample abc tunes</a>
 
-            </div>
+    -   <a href="#englishabc" class="wikilink1" title="abc:standard:v2.1 ↵">13.1 English.abc</a>
 
-    -   <div class="li">
+    -   <a href="#strspysabc" class="wikilink1" title="abc:standard:v2.1 ↵">13.2 Strspys.abc</a>
 
-        [3.2 Use of fields within the tune
-        body](#use_of_fields_within_the_tune_body "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#reelsabc" class="wikilink1" title="abc:standard:v2.1 ↵">13.3 Reels.abc</a>
 
-        </div>
+    -   <a href="#canzonettaabc" class="wikilink1" title="abc:standard:v2.1 ↵">13.4 Canzonetta.abc</a>
 
-    -   <div class="li">
+-   <a href="#appendix" class="wikilink1" title="abc:standard:v2.1 ↵">14. Appendix</a>
 
-        [3.3 Field
-        continuation](#field_continuation "abc:standard:v2.1 ↵"){.wikilink1}
+    -   <a href="#supported_accents_ligatures" class="wikilink1" title="abc:standard:v2.1 ↵">14.1 Supported accents &amp; ligatures</a>
 
-        </div>
-
--   <div class="li">
-
-    [4. The tune body](#the_tune_body "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-    -   <div class="li">
-
-        [4.1 Pitch](#pitch "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.2
-        Accidentals](#accidentals "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.3 Note
-        lengths](#note_lengths "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.4 Broken
-        rhythm](#broken_rhythm "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.5 Rests](#rests "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.6 Clefs and
-        transposition](#clefs_and_transposition "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.7 Beams](#beams "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.8 Repeat/bar
-        symbols](#repeat_bar_symbols "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.9 First and second
-        repeats](#first_and_second_repeats "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.10 Variant
-        endings](#variant_endings "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.11 Ties and
-        slurs](#ties_and_slurs "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.12 Grace
-        notes](#grace_notes "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.13 Duplets, triplets,
-        quadruplets, etc.](#duplets_triplets_quadruplets_etc "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.14
-        Decorations](#decorations "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.15 Symbol
-        lines](#symbol_lines "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.16 Redefinable
-        symbols](#redefinable_symbols "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.17 Chords and
-        unisons](#chords_and_unisons "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.18 Chord
-        symbols](#chord_symbols "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.19
-        Annotations](#annotations "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [4.20 Order of abc
-        constructs](#order_of_abc_constructs "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
--   <div class="li">
-
-    [5. Lyrics](#lyrics "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-    -   <div class="li">
-
-        [5.1 Alignment](#alignment "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [5.2 Verses](#verses "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [5.3 Numbering](#numbering "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
--   <div class="li">
-
-    [6. Typesetting and
-    playback](#typesetting_and_playback "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-    -   <div class="li">
-
-        [6.1
-        Typesetting](#typesetting "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-        -   <div class="li">
-
-            [6.1.1 Typesetting
-            line-breaks](#typesetting_line-breaks "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [6.1.2 Typesetting extra
-            space](#typesetting_extra_space "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [6.1.3 Typesetting information
-            fields](#typesetting_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-    -   <div class="li">
-
-        [6.2 Playback](#playback "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
--   <div class="li">
-
-    [7. Multiple
-    voices](#multiple_voices "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-    -   <div class="li">
-
-        [7.1 Voice
-        properties](#voice_properties "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [7.2 Breaking
-        lines](#breaking_lines "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [7.3 Inline
-        fields](#inline_fields "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [7.4 Voice
-        overlay](#voice_overlay "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
--   <div class="li">
-
-    [8. abc data
-    format](#abc_data_format "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-    -   <div class="li">
-
-        [8.1 Tune body](#tune_body "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [8.2 Text
-        strings](#text_strings "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
--   <div class="li">
-
-    [9. Macros](#macros "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-    -   <div class="li">
-
-        [9.1 Static
-        macros](#static_macros "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [9.2 Transposing
-        macros](#transposing_macros "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
--   <div class="li">
-
-    [10. Outdated
-    syntax](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-    -   <div class="li">
-
-        [10.1 Outdated information field
-        syntax](#outdated_information_field_syntax "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [10.2 Outdated
-        dialects](#outdated_dialects "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-        -   <div class="li">
-
-            [10.2.1 Outdated
-            line-breaking](#outdated_line-breaking "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [10.2.2 Outdated
-            decorations](#outdated_decorations "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [10.2.3 Outdated
-            chords](#outdated_chords "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-    -   <div class="li">
-
-        [10.3 Outdated
-        continuations](#outdated_continuations "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [10.4 Outdated
-        directives](#outdated_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [10.5 Outdated file
-        structure](#outdated_file_structure "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-        -   <div class="li">
-
-            [10.5.1 Outdated tune header
-            syntax](#outdated_tune_header_syntax "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [10.5.1 Outdated
-            defaults](#outdated_defaults "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-    -   <div class="li">
-
-        [10.6 Outdated lyrics
-        alignment](#outdated_lyrics_alignment "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [10.7 Other outdated
-        syntax](#other_outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-        -   <div class="li">
-
-            [10.7.1 Disallowed voice
-            overlay](#disallowed_voice_overlay "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
--   <div class="li">
-
-    [11. Stylesheet directives and
-    pseudo-comments](#stylesheet_directives_and_pseudo-comments "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-    -   <div class="li">
-
-        [11.0 Introduction to
-        directives](#introduction_to_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-        -   <div class="li">
-
-            [11.0.1
-            Disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [11.0.2 Stylesheet
-            directives](#stylesheet_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-    -   <div class="li">
-
-        [11.1 Voice
-        grouping](#voice_grouping "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [11.2 Instrumentation
-        directives](#instrumentation_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [11.3 Accidental
-        directives](#accidental_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [11.4 Formatting
-        directives](#formatting_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-        -   <div class="li">
-
-            [11.4.1 Page format
-            directives](#page_format_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [11.4.2 Font
-            directives](#font_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [11.4.3 Space
-            directives](#space_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [11.4.4 Measure
-            directives](#measure_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [11.4.5 Text
-            directives](#text_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [11.4.6 Information
-            directives](#information_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [11.4.7 Separation
-            directives](#separation_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [11.4.8 Miscellaneous
-            directives](#miscellaneous_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-    -   <div class="li">
-
-        [11.5 Application specific
-        directives](#application_specific_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [11.6 Further information about
-        directives](#further_information_about_directives "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
--   <div class="li">
-
-    [12. Dialects, strict / loose interpretation and backwards
-    compatibility](#dialects_strict_loose_interpretation_and_backwards_compatibility "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-    -   <div class="li">
-
-        [12.1 Dialect
-        differences](#dialect_differences "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-        -   <div class="li">
-
-            [12.1.1 Line-breaking
-            dialects](#line-breaking_dialects "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [12.1.2 Decoration
-            dialects](#decoration_dialects "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-        -   <div class="li">
-
-            [12.1.3 Chord
-            dialects](#chord_dialects "abc:standard:v2.1 ↵"){.wikilink1}
-
-            </div>
-
-    -   <div class="li">
-
-        [12.2 Loose
-        interpretation](#loose_interpretation "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [12.3 Strict
-        interpretation](#strict_interpretation "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
--   <div class="li">
-
-    [13. Sample abc
-    tunes](#sample_abc_tunes "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-    -   <div class="li">
-
-        [13.1
-        English.abc](#englishabc "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [13.2
-        Strspys.abc](#strspysabc "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [13.3 Reels.abc](#reelsabc "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [13.4
-        Canzonetta.abc](#canzonettaabc "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
--   <div class="li">
-
-    [14. Appendix](#appendix "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-    -   <div class="li">
-
-        [14.1 Supported accents &
-        ligatures](#supported_accents_ligatures "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
-
-    -   <div class="li">
-
-        [14.2 Errata](#errata "abc:standard:v2.1 ↵"){.wikilink1}
-
-        </div>
+    -   <a href="#errata" class="wikilink1" title="abc:standard:v2.1 ↵">14.2 Errata</a>
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-1. Introduction {#introduction .sectionedit3}
+1. Introduction
 ---------------
 
-<div class="level2">
+Abc is a text-based music notation system designed to be comprehensible by both people and computers. Music notated in abc is written using characters - letter, digits and punctuation marks - on paper or in computer files.
 
-Abc is a text-based music notation system designed to be comprehensible
-by both people and computers. Music notated in abc is written using
-characters - letter, digits and punctuation marks - on paper or in
-computer files.
+This description of abc has been created for those who wish to understand the notation, and for implementers of abc software applications. Some example tunes are included in <a href="#sample_abc_tunes" class="wikilink1" title="abc:standard:v2.1 ↵">sample abc tunes</a>.
 
-This description of abc has been created for those who wish to
-understand the notation, and for implementers of abc software
-applications. Some example tunes are included in [sample abc
-tunes](#sample_abc_tunes "abc:standard:v2.1 ↵"){.wikilink1}.
+### 1.1 How to read this document
 
-</div>
+Start at the beginning and work through to the end. Alternatively, for selected highlights, take a look at <a href="#how_to_avoid_reading_this_document" class="wikilink1" title="abc:standard:v2.1 ↵">how to avoid reading this document</a>.
 
-### 1.1 How to read this document {#how_to_read_this_document .sectionedit4}
+#### 1.1.1 Terminology / definitions
 
-<div class="level3">
+Note that the following terms have specific meanings in the context of the abc standard. For convenience, each time one of these terms is used in the standard it is linked to the section in which it is defined:
 
-Start at the beginning and work through to the end. Alternatively, for
-selected highlights, take a look at [how to avoid reading this
-document](#how_to_avoid_reading_this_document "abc:standard:v2.1 ↵"){.wikilink1}.
+-   <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a>
 
-</div>
+-   <a href="#abc_fragment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc fragment</a>
 
-#### 1.1.1 Terminology / definitions {#terminology_definitions}
+-   <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a>
 
-<div class="level4">
+-   <a href="#abc_tunebook_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunebook</a>
 
-Note that the following terms have specific meanings in the context of
-the abc standard. For convenience, each time one of these terms is used
-in the standard it is linked to the section in which it is defined:
+-   <a href="#code_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">code line-break</a>
 
--   <div class="li">
+-   <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comment</a>
 
-    [abc file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a>
 
-    </div>
+-   <a href="#empty_line_definition" class="wikilink1" title="abc:standard:v2.1 ↵">empty line</a>
 
--   <div class="li">
+-   <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>
 
-    [abc
-    fragment](#abc_fragment_definition "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="#free_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">free text</a>
 
-    </div>
+-   <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information field</a>
 
--   <div class="li">
+-   <a href="#inline_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">inline field</a>
 
-    [abc tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>
 
-    </div>
+-   <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-break</a>
 
--   <div class="li">
+-   <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directive</a>
 
-    [abc
-    tunebook](#abc_tunebook_definition "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text string</a>
 
-    </div>
+-   <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>
 
--   <div class="li">
+-   <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a>
 
-    [code
-    line-break](#code_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="#typeset_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">typeset text</a>
 
-    </div>
+Please see also <a href="http://www.ietf.org/rfc/rfc2119.txt" class="uri" class="urlextern" title="http://www.ietf.org/rfc/rfc2119.txt">http://www.ietf.org/rfc/rfc2119.txt</a> for formal definitions of the key words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, and OPTIONAL.
 
--   <div class="li">
+Finally, the word *VOLATILE* is used to indicate sections which are under active discussion and/or likely to change in some future version of the standard.
 
-    [comment](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1}
+### 1.2 How to avoid reading this document
 
-    </div>
+The abc standard contains a lot of information, much of which will not be immediately useful to the beginner. Apart from reading this section, <a href="#introduction" class="wikilink1" title="abc:standard:v2.1 ↵">1. Introduction</a>, newcomers are recommended to familiarise themselves with all of <a href="#abc_file_structure" class="wikilink1" title="abc:standard:v2.1 ↵">2.2 Abc file structure</a>, <a href="#information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">3.0 Information fields</a>, a few subsections in <a href="#description_of_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">3.1 Description of information fields</a> (in particular <a href="#xreference_number" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.1</a>, <a href="#ttune_title" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.2</a>, <a href="#mmeter" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.6</a>, <a href="#lunit_note_length" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.7</a> and <a href="#kkey" class="wikilink1" title="abc:standard:v2.1 ↵">3.1.14</a>), <a href="#use_of_fields_within_the_tune_body" class="wikilink1" title="abc:standard:v2.1 ↵">3.2 Use of fields within the tune body</a>, and as much of section <a href="#the_tune_body" class="wikilink1" title="abc:standard:v2.1 ↵">4. The tune body</a> as is desired (but in particular <a href="#pitch" class="wikilink1" title="abc:standard:v2.1 ↵">4.1</a>, <a href="#note_lengths" class="wikilink1" title="abc:standard:v2.1 ↵">4.3</a>, <a href="#beams" class="wikilink1" title="abc:standard:v2.1 ↵">4.7</a>, <a href="#repeat_bar_symbols" class="wikilink1" title="abc:standard:v2.1 ↵">4.8</a>).
 
--   <div class="li">
+Newcomers are also advised to take a look at section <a href="#sample_abc_tunes" class="wikilink1" title="abc:standard:v2.1 ↵">13. Sample abc tunes</a> and one of the <a href="#abc_tutorials" class="wikilink1" title="abc:standard:v2.1 ↵">abc tutorials</a> that is available.
 
-    [embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1}
+After that, it may depend on what you want to use abc for, but further reading suggestions would be:
 
-    </div>
+-   <a href="#lyrics" class="wikilink1" title="abc:standard:v2.1 ↵">5. Lyrics</a> for transcribing songs
 
--   <div class="li">
+-   <a href="#typesetting" class="wikilink1" title="abc:standard:v2.1 ↵">6.1 Typesetting</a> for printing abc transcriptions in staff notation
 
-    [empty
-    line](#empty_line_definition "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="#multiple_voices" class="wikilink1" title="abc:standard:v2.1 ↵">7. Multiple voices</a> for working with multi-voice music
 
-    </div>
+### 1.3 Abc tutorials
 
--   <div class="li">
+This document is also best read in conjunction with an introduction to abc notation. Several are available - see, for example:
 
-    [file
-    header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="http://abcnotation.com/learn" class="uri" class="urlextern" title="http://abcnotation.com/learn">http://abcnotation.com/learn</a> - a number of tutorials are linked from here
 
-    </div>
+-   <a href="http://abcplus.sourceforge.net/#ABCGuide" class="uri" class="urlextern" title="http://abcplus.sourceforge.net/#ABCGuide">http://abcplus.sourceforge.net/#ABCGuide</a>
 
--   <div class="li">
+-   <a href="http://www.lesession.co.uk/abc/abc_notation.htm" class="uri" class="urlextern" title="http://www.lesession.co.uk/abc/abc_notation.htm">http://www.lesession.co.uk/abc/abc_notation.htm</a>
 
-    [free text](#free_text_definition "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="http://trillian.mit.edu/~jc/music/abc/doc/ABCtutorial.html" class="uri" class="urlextern" title="http://trillian.mit.edu/~jc/music/abc/doc/ABCtutorial.html">http://trillian.mit.edu/~jc/music/abc/doc/ABCtutorial.html</a>
 
-    </div>
+### 1.4 Abc extensions
 
--   <div class="li">
+Since the abc notation system was originally written, a large number of abc software packages (programs which: produce printed sheet music; play or create audio files, usually MIDI; search or organise tune databases; or that analyse or manipulate tunes in some way) have been developed. However, not all of them follow this standard absolutely. This document aims at solving, or at least reducing, the problem of incompatibility between applications.
 
-    [information
-    field](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
+Nevertheless, when using abc it is good to be aware of the existence of such extensions. Extensions implemented by some major abc packages are described at the following links:
 
-    </div>
+-   <a href="http://moinejf.free.fr/abcm2ps-features.txt" class="uri" class="urlextern" title="http://moinejf.free.fr/abcm2ps-features.txt">http://moinejf.free.fr/abcm2ps-features.txt</a> - extensions implemented by <a href="http://abcnotation.com/software#abcm2ps" class="urlextern" title="http://abcnotation.com/software#abcm2ps">abcm2ps</a>
 
--   <div class="li">
+-   <a href="http://abc.sourceforge.net/standard/abc2midi.txt" class="uri" class="urlextern" title="http://abc.sourceforge.net/standard/abc2midi.txt">http://abc.sourceforge.net/standard/abc2midi.txt</a> - extensions implemented by <a href="http://abcnotation.com/software#abcMIDI" class="urlextern" title="http://abcnotation.com/software#abcMIDI">abc2midi</a>
 
-    [inline
-    field](#inline_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
+-   <a href="http://www.barfly.dial.pipex.com/bfextensions.html" class="uri" class="urlextern" title="http://www.barfly.dial.pipex.com/bfextensions.html">http://www.barfly.dial.pipex.com/bfextensions.html</a> - extensions implemented by <a href="http://abcnotation.com/software#BarFly" class="urlextern" title="http://abcnotation.com/software#BarFly">BarFly</a>
 
-    </div>
+-   <a href="http://www.lautengesellschaft.de/cdmm/userguide/userguide.html" class="uri" class="urlextern" title="http://www.lautengesellschaft.de/cdmm/userguide/userguide.html">http://www.lautengesellschaft.de/cdmm/userguide/userguide.html</a> - extensions implemented by <a href="http://abcnotation.com/software#abctab2ps" class="urlextern" title="http://abcnotation.com/software#abctab2ps">abctab2ps</a>
 
--   <div class="li">
+### 1.5 Further information and changes
 
-    [music
-    code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}
+Questions about this standard, or abc in general, can be addressed to the abcusers e-mail list, or the abcnotation forums:
 
-    </div>
+-   <a href="http://groups.yahoo.com/group/abcusers/" class="uri" class="urlextern" title="http://groups.yahoo.com/group/abcusers/">http://groups.yahoo.com/group/abcusers/</a> (abcusers - subscriptions and archive of posts)
 
--   <div class="li">
+-   <a href="http://www.mail-archive.com/abcusers@argyll.wisemagic.com/" class="uri" class="urlextern" title="http://www.mail-archive.com/abcusers@argyll.wisemagic.com/">http://www.mail-archive.com/abcusers@argyll.wisemagic.com/</a> (abcusers - archive of old posts)
 
-    [score
-    line-break](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
--   <div class="li">
-
-    [stylesheet
-    directive](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
--   <div class="li">
-
-    [text
-    string](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
--   <div class="li">
-
-    [tune body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
--   <div class="li">
-
-    [tune
-    header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
--   <div class="li">
-
-    [typeset
-    text](#typeset_text_definition "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-Please see also <http://www.ietf.org/rfc/rfc2119.txt> for formal
-definitions of the key words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT,
-SHOULD, SHOULD NOT, RECOMMENDED, MAY, and OPTIONAL.
-
-Finally, the word *VOLATILE* is used to indicate sections which are
-under active discussion and/or likely to change in some future version
-of the standard.
-
-</div>
-
-### 1.2 How to avoid reading this document {#how_to_avoid_reading_this_document .sectionedit5}
-
-<div class="level3">
-
-The abc standard contains a lot of information, much of which will not
-be immediately useful to the beginner. Apart from reading this section,
-[1. Introduction](#introduction "abc:standard:v2.1 ↵"){.wikilink1},
-newcomers are recommended to familiarise themselves with all of [2.2 Abc
-file structure](#abc_file_structure "abc:standard:v2.1 ↵"){.wikilink1},
-[3.0 Information
-fields](#information_fields "abc:standard:v2.1 ↵"){.wikilink1}, a few
-subsections in [3.1 Description of information
-fields](#description_of_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
-(in particular
-[3.1.1](#xreference_number "abc:standard:v2.1 ↵"){.wikilink1},
-[3.1.2](#ttune_title "abc:standard:v2.1 ↵"){.wikilink1},
-[3.1.6](#mmeter "abc:standard:v2.1 ↵"){.wikilink1},
-[3.1.7](#lunit_note_length "abc:standard:v2.1 ↵"){.wikilink1} and
-[3.1.14](#kkey "abc:standard:v2.1 ↵"){.wikilink1}), [3.2 Use of fields
-within the tune
-body](#use_of_fields_within_the_tune_body "abc:standard:v2.1 ↵"){.wikilink1},
-and as much of section [4. The tune
-body](#the_tune_body "abc:standard:v2.1 ↵"){.wikilink1} as is desired
-(but in particular [4.1](#pitch "abc:standard:v2.1 ↵"){.wikilink1},
-[4.3](#note_lengths "abc:standard:v2.1 ↵"){.wikilink1},
-[4.7](#beams "abc:standard:v2.1 ↵"){.wikilink1},
-[4.8](#repeat_bar_symbols "abc:standard:v2.1 ↵"){.wikilink1}).
-
-Newcomers are also advised to take a look at section [13. Sample abc
-tunes](#sample_abc_tunes "abc:standard:v2.1 ↵"){.wikilink1} and one of
-the [abc tutorials](#abc_tutorials "abc:standard:v2.1 ↵"){.wikilink1}
-that is available.
-
-After that, it may depend on what you want to use abc for, but further
-reading suggestions would be:
-
--   <div class="li">
-
-    [5. Lyrics](#lyrics "abc:standard:v2.1 ↵"){.wikilink1} for
-    transcribing songs
-
-    </div>
-
--   <div class="li">
-
-    [6.1 Typesetting](#typesetting "abc:standard:v2.1 ↵"){.wikilink1}
-    for printing abc transcriptions in staff notation
-
-    </div>
-
--   <div class="li">
-
-    [7. Multiple
-    voices](#multiple_voices "abc:standard:v2.1 ↵"){.wikilink1} for
-    working with multi-voice music
-
-    </div>
-
-</div>
-
-### 1.3 Abc tutorials {#abc_tutorials .sectionedit6}
-
-<div class="level3">
-
-This document is also best read in conjunction with an introduction to
-abc notation. Several are available - see, for example:
-
--   <div class="li">
-
-    <http://abcnotation.com/learn> - a number of tutorials are linked
-    from here
-
-    </div>
-
--   <div class="li">
-
-    <http://abcplus.sourceforge.net/#ABCGuide>
-
-    </div>
-
--   <div class="li">
-
-    <http://www.lesession.co.uk/abc/abc_notation.htm>
-
-    </div>
-
--   <div class="li">
-
-    <http://trillian.mit.edu/~jc/music/abc/doc/ABCtutorial.html>
-
-    </div>
-
-</div>
-
-### 1.4 Abc extensions {#abc_extensions .sectionedit7}
-
-<div class="level3">
-
-Since the abc notation system was originally written, a large number of
-abc software packages (programs which: produce printed sheet music; play
-or create audio files, usually MIDI; search or organise tune databases;
-or that analyse or manipulate tunes in some way) have been developed.
-However, not all of them follow this standard absolutely. This document
-aims at solving, or at least reducing, the problem of incompatibility
-between applications.
-
-Nevertheless, when using abc it is good to be aware of the existence of
-such extensions. Extensions implemented by some major abc packages are
-described at the following links:
-
--   <div class="li">
-
-    <http://moinejf.free.fr/abcm2ps-features.txt> - extensions
-    implemented by
-    [abcm2ps](http://abcnotation.com/software#abcm2ps "http://abcnotation.com/software#abcm2ps"){.urlextern}
-
-    </div>
-
--   <div class="li">
-
-    <http://abc.sourceforge.net/standard/abc2midi.txt> - extensions
-    implemented by
-    [abc2midi](http://abcnotation.com/software#abcMIDI "http://abcnotation.com/software#abcMIDI"){.urlextern}
-
-    </div>
-
--   <div class="li">
-
-    <http://www.barfly.dial.pipex.com/bfextensions.html> - extensions
-    implemented by
-    [BarFly](http://abcnotation.com/software#BarFly "http://abcnotation.com/software#BarFly"){.urlextern}
-
-    </div>
-
--   <div class="li">
-
-    <http://www.lautengesellschaft.de/cdmm/userguide/userguide.html> -
-    extensions implemented by
-    [abctab2ps](http://abcnotation.com/software#abctab2ps "http://abcnotation.com/software#abctab2ps"){.urlextern}
-
-    </div>
-
-</div>
-
-### 1.5 Further information and changes {#further_information_and_changes .sectionedit8}
-
-<div class="level3">
-
-Questions about this standard, or abc in general, can be addressed to
-the abcusers e-mail list, or the abcnotation forums:
-
--   <div class="li">
-
-    <http://groups.yahoo.com/group/abcusers/> (abcusers - subscriptions
-    and archive of posts)
-
-    </div>
-
--   <div class="li">
-
-    <http://www.mail-archive.com/abcusers@argyll.wisemagic.com/>
-    (abcusers - archive of old posts)
-
-    </div>
-
--   <div class="li">
-
-    <http://abcnotation.com/forums/>
-
-    </div>
+-   <a href="http://abcnotation.com/forums/" class="uri" class="urlextern" title="http://abcnotation.com/forums/">http://abcnotation.com/forums/</a>
 
 To propose changes to the standard, please read
 
--   <div class="li">
+-   <a href="http://abcnotation.com/wiki/abc:standard:route-map" class="uri" class="urlextern" title="http://abcnotation.com/wiki/abc:standard:route-map">http://abcnotation.com/wiki/abc:standard:route-map</a> - a route map of proposed changes to the standard plus instructions for proposing changes
 
-    <http://abcnotation.com/wiki/abc:standard:route-map> - a route map
-    of proposed changes to the standard plus instructions for proposing
-    changes
-
-    </div>
-
-</div>
-
-### 1.6 Document locations {#document_locations .sectionedit9}
-
-<div class="level3">
+### 1.6 Document locations
 
 This document can be found at:
 
--   <div class="li">
+-   <a href="http://abcnotation.com/wiki/abc:standard:v2.1" class="uri" class="urlextern" title="http://abcnotation.com/wiki/abc:standard:v2.1">http://abcnotation.com/wiki/abc:standard:v2.1</a>
 
-    <http://abcnotation.com/wiki/abc:standard:v2.1>
+The latest version of the standard, plus links to older versions and other developmental work, can always be found via:
 
-    </div>
-
-The latest version of the standard, plus links to older versions and
-other developmental work, can always be found via:
-
--   <div class="li">
-
-    <http://abcnotation.com/wiki/abc:standard>
-
-    </div>
+-   <a href="http://abcnotation.com/wiki/abc:standard" class="uri" class="urlextern" title="http://abcnotation.com/wiki/abc:standard">http://abcnotation.com/wiki/abc:standard</a>
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-2. Abc files, tunes and fragments {#abc_files_tunes_and_fragments .sectionedit10}
+2. Abc files, tunes and fragments
 ---------------------------------
 
-<div class="level2">
+Tunes written in abc are normally stored in <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a>, either on a computer's hard-drive or linked from a web-page. However, an increasing number are found on web-pages or in databases.
 
-Tunes written in abc are normally stored in [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}, either
-on a computer's hard-drive or linked from a web-page. However, an
-increasing number are found on web-pages or in databases.
+This section describes the basic structure of <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a> and <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunes</a>, as well as a definition for including fragments of abc tunes elsewhere (e.g. web-pages).
 
-This section describes the basic structure of [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} and [abc
-tunes](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}, as well
-as a definition for including fragments of abc tunes elsewhere (e.g.
-web-pages).
+### 2.1 Abc file identification
 
-</div>
+All <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a> should have the extension ".abc" (all lower-case) on all platforms.
 
-### 2.1 Abc file identification {#abc_file_identification .sectionedit11}
+*Comment:* Some web-servers only allow a limited selection of file types; in this case a ".txt" extension is the best alternative.
 
-<div class="level3">
+Every <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> should begin with the string `%abc`. An optional version number may follow on the same line, e.g.
 
-All [abc files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}
-should have the extension ".abc" (all lower-case) on all platforms.
-
-*Comment:* Some web-servers only allow a limited selection of file
-types; in this case a ".txt" extension is the best alternative.
-
-Every [abc file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}
-should begin with the string `%abc`. An optional version number may
-follow on the same line, e.g.
-
-``` {.code}
+``` code
 %abc-2.1
 ```
 
-Version numbers of 2.1 or higher indicate that the [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} is to be
-[interpreted
-strictly](#strict_interpretation "abc:standard:v2.1 ↵"){.wikilink1}
-according to the corresponding abc standard; if the version number is
-missing, the file will be treated under [loose
-interpretation](#loose_interpretation "abc:standard:v2.1 ↵"){.wikilink1}.
-The [version field](#version_field "abc:standard:v2.1 ↵"){.wikilink1}
-may also be used to indicate abc versions for individual tunes.
+Version numbers of 2.1 or higher indicate that the <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> is to be <a href="#strict_interpretation" class="wikilink1" title="abc:standard:v2.1 ↵">interpreted strictly</a> according to the corresponding abc standard; if the version number is missing, the file will be treated under <a href="#loose_interpretation" class="wikilink1" title="abc:standard:v2.1 ↵">loose interpretation</a>. The <a href="#version_field" class="wikilink1" title="abc:standard:v2.1 ↵">version field</a> may also be used to indicate abc versions for individual tunes.
 
-*Note for developers:* Software should ignore the [byte order
-mark](http://en.wikipedia.org/wiki/Byte_order_mark "http://en.wikipedia.org/wiki/Byte_order_mark"){.urlextern}
-(BOM) if encountered as the first character of the file.
+*Note for developers:* Software should ignore the <a href="http://en.wikipedia.org/wiki/Byte_order_mark" class="urlextern" title="http://en.wikipedia.org/wiki/Byte_order_mark">byte order mark</a> (BOM) if encountered as the first character of the file.
 
-When an [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} is
-included in a multi-part e-mail, its MIME type must be "text/vnd.abc"
-(see [IANA
-text/vnd.abc](http://www.iana.org/assignments/media-types/text/vnd.abc "http://www.iana.org/assignments/media-types/text/vnd.abc"){.urlextern}).
+When an <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> is included in a multi-part e-mail, its MIME type must be "text/vnd.abc" (see <a href="http://www.iana.org/assignments/media-types/text/vnd.abc" class="urlextern" title="http://www.iana.org/assignments/media-types/text/vnd.abc">IANA text/vnd.abc</a>).
 
-</div>
+### 2.2 Abc file structure
 
-### 2.2 Abc file structure {#abc_file_structure .sectionedit12}
+[]()An **abc file** consists of one or more <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a> transcriptions, optionally interspersed with <a href="#free_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">free text</a> and <a href="#typeset_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">typeset text</a> annotations. It may optionally start with a <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> to set up default values for processing the file.
 
-<div class="level3">
+The <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>, <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunes</a> and <a href="#free_text_and_typeset_text" class="wikilink1" title="abc:standard:v2.1 ↵">text annotations</a> are separated from each other by <a href="#empty_line_definition" class="wikilink1" title="abc:standard:v2.1 ↵">empty lines</a> (also known as blank lines).
 
-[]()An **abc file** consists of one or more [abc
-tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}
-transcriptions, optionally interspersed with [free
-text](#free_text_definition "abc:standard:v2.1 ↵"){.wikilink1} and
-[typeset
-text](#typeset_text_definition "abc:standard:v2.1 ↵"){.wikilink1}
-annotations. It may optionally start with a [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} to
-set up default values for processing the file.
+[]()An <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> with more than one tune in it is called an **abc tunebook**.
 
-The [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}, [abc
-tunes](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1} and [text
-annotations](#free_text_and_typeset_text "abc:standard:v2.1 ↵"){.wikilink1}
-are separated from each other by [empty
-lines](#empty_line_definition "abc:standard:v2.1 ↵"){.wikilink1} (also
-known as blank lines).
+#### 2.2.1 Abc tune
 
-[]()An [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} with more
-than one tune in it is called an **abc tunebook**.
+[]()An **abc tune** itself consists of a <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> and a <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>, terminated by an <a href="#empty_line_definition" class="wikilink1" title="abc:standard:v2.1 ↵">empty line</a> or the end of the <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file</a>. It may also contain <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comment lines</a> or <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a>.
 
-</div>
+[]()The **tune header** is composed of several <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information field</a> lines, which are further discussed in <a href="#information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>. The <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> should start with an `X:`(reference number) field followed by a `T:`(title) field and finish with a `K:`(key) field.
 
-#### 2.2.1 Abc tune {#abc_tune}
+[]()The **tune body**, which contains the <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>, follows immediately after. Certain fields may also be used inside the tune body - see <a href="#use_of_fields_within_the_tune_body" class="wikilink1" title="abc:standard:v2.1 ↵">use of fields within the tune body</a>.
 
-<div class="level4">
+It is legal to write an <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a> without a <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>. This feature can be used to document tunes without transcribing them.
 
-[]()An **abc tune** itself consists of a [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} and a
-[tune body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1},
-terminated by an [empty
-line](#empty_line_definition "abc:standard:v2.1 ↵"){.wikilink1} or the
-end of the
-[file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}. It may
-also contain [comment
-lines](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1} or
-[stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+[]()Abc **music code** lines are those lines in the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> which give notes, bar lines and other musical symbols - see <a href="#the_tune_body" class="wikilink1" title="abc:standard:v2.1 ↵">the tune body</a> for details. In effect, music code is the contents of any line which is not an <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information field</a>, <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directive</a> or <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comment line</a>.
 
-[]()The **tune header** is composed of several [information
-field](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-lines, which are further discussed in [information
-fields](#information_fields "abc:standard:v2.1 ↵"){.wikilink1}. The
-[tune header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}
-should start with an `X:`(reference number) field followed by a
-`T:`(title) field and finish with a `K:`(key) field.
+#### 2.2.2 File header
 
-[]()The **tune body**, which contains the [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}, follows
-immediately after. Certain fields may also be used inside the tune body
-- see [use of fields within the tune
-body](#use_of_fields_within_the_tune_body "abc:standard:v2.1 ↵"){.wikilink1}.
+[]()The file may optionally start with a **file header** (immediately after the version field), consisting of a block of consecutive <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>, <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a>, or both, terminated with an <a href="#empty_line_definition" class="wikilink1" title="abc:standard:v2.1 ↵">empty line</a>. The <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> is used to set default values for the tunes in the file.
 
-It is legal to write an [abc
-tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1} without a
-[tune body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-This feature can be used to document tunes without transcribing them.
+The <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> may only appear at the beginning of a file, not between tunes.
 
-[]()Abc **music code** lines are those lines in the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} which
-give notes, bar lines and other musical symbols - see [the tune
-body](#the_tune_body "abc:standard:v2.1 ↵"){.wikilink1} for details. In
-effect, music code is the contents of any line which is not an
-[information
-field](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1},
-[stylesheet
-directive](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-or [comment
-line](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+Settings in a tune may override the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> settings, but when the end of a tune is reached the defaults set by the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> are reinstated.
 
-</div>
+Applications which extract separate tunes from a file must insert the fields of the original <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> into the header of the extracted tune. However, since users may manually extract tunes without regard to the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>, it is not recommended to use a <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> in an <a href="#abc_tunebook_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunebook</a> that is to be distributed.
 
-#### 2.2.2 File header {#file_header}
+#### 2.2.3 Free text and typeset text
 
-<div class="level4">
+The terms <a href="#free_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">free text</a> and <a href="#typeset_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">typeset text</a> refer to any text not directly included within the <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> in a <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a>. Typically such text is used for annotating <a href="#abc_tunebook_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunebooks</a>; <a href="#free_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">free text</a> is for annotating the <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> but is not included in the typeset score, whereas <a href="#typeset_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">typeset text</a> is intended for printing out.
 
-[]()The file may optionally start with a **file header** (immediately
-after the version field), consisting of a block of consecutive
-[information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1},
-[stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1},
-or both, terminated with an [empty
-line](#empty_line_definition "abc:standard:v2.1 ↵"){.wikilink1}. The
-[file header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}
-is used to set default values for the tunes in the file.
+[]()**Free text** is just that. It can be included anywhere in an <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a>, after the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>, but must be separated from <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunes</a>, <a href="#typeset_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">typeset text</a> and the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> by <a href="#empty_line_definition" class="wikilink1" title="abc:standard:v2.1 ↵">empty lines</a>. Typically it is used for annotating the <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> but in principle can be any text not containing <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>.
 
-The [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} may
-only appear at the beginning of a file, not between tunes.
+*Comment:* Since raw html markup and email headers are treated as <a href="#free_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">free text</a> (provided they don't inadvertently contain <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>) this means that abc software can process a wide variety of text-based input files just by ignoring non-abc code.
 
-Settings in a tune may override the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}
-settings, but when the end of a tune is reached the defaults set by the
-[file header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}
-are reinstated.
+By default <a href="#free_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">free text</a> is not included in the printed score, although typesetting software may offer the option to print it out (e.g. via a command line switch or GUI checkbox). In this case, the software should treat the <a href="#free_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">free text</a> as a <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text string</a>, but may format it in any way it chooses.
 
-Applications which extract separate tunes from a file must insert the
-fields of the original [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} into
-the header of the extracted tune. However, since users may manually
-extract tunes without regard to the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}, it
-is not recommended to use a [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} in an
-[abc
-tunebook](#abc_tunebook_definition "abc:standard:v2.1 ↵"){.wikilink1}
-that is to be distributed.
+[]()**Typeset text** is any text specified using <a href="#text_directives" class="wikilink1" title="abc:standard:v2.1 ↵">text directives</a>. It may be inserted anywhere in an <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> after the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>, either separated from tunes by <a href="#empty_line_definition" class="wikilink1" title="abc:standard:v2.1 ↵">empty lines</a>, or included in the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> or <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>.
 
-</div>
+<a href="#typeset_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">Typeset text</a> should be printed by typesetting programs although its exact position in the printed score is program-dependent.
 
-#### 2.2.3 Free text and typeset text {#free_text_and_typeset_text}
+<a href="#typeset_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">Typeset text</a> that is included in an <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a> (i.e. within the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> or <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>), must be retained by any programs, such as databasing software, that splits an <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> into separate <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunes</a>.
 
-<div class="level4">
+#### 2.2.4 Empty lines and line-breaking
 
-The terms [free
-text](#free_text_definition "abc:standard:v2.1 ↵"){.wikilink1} and
-[typeset
-text](#typeset_text_definition "abc:standard:v2.1 ↵"){.wikilink1} refer
-to any text not directly included within the [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-in a [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-Typically such text is used for annotating [abc
-tunebooks](#abc_tunebook_definition "abc:standard:v2.1 ↵"){.wikilink1};
-[free text](#free_text_definition "abc:standard:v2.1 ↵"){.wikilink1} is
-for annotating the [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} but is not
-included in the typeset score, whereas [typeset
-text](#typeset_text_definition "abc:standard:v2.1 ↵"){.wikilink1} is
-intended for printing out.
+[]()**Empty lines** (also known as blank lines) are used to separate <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunes</a>, <a href="#free_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">free text</a> and the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>. They also aid the readability of <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a>.
 
-[]()**Free text** is just that. It can be included anywhere in an [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}, after the
-[file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}, but
-must be separated from [abc
-tunes](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}, [typeset
-text](#typeset_text_definition "abc:standard:v2.1 ↵"){.wikilink1} and
-the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} by
-[empty lines](#empty_line_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-Typically it is used for annotating the [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} but in
-principle can be any text not containing [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+Lines that consist entirely of white-space (space and tab characters) are also regarded as <a href="#empty_line_definition" class="wikilink1" title="abc:standard:v2.1 ↵">empty lines</a>.
 
-*Comment:* Since raw html markup and email headers are treated as [free
-text](#free_text_definition "abc:standard:v2.1 ↵"){.wikilink1} (provided
-they don't inadvertently contain [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1})
-this means that abc software can process a wide variety of text-based
-input files just by ignoring non-abc code.
+Line-breaks (also known as new lines, line feeds, carriage returns, end-of-lines, etc.) can be used within an <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> to aid readability and, if required, break up long input lines - see <a href="#continuation_of_input_lines" class="wikilink1" title="abc:standard:v2.1 ↵">continuation of input lines</a>.
 
-By default [free
-text](#free_text_definition "abc:standard:v2.1 ↵"){.wikilink1} is not
-included in the printed score, although typesetting software may offer
-the option to print it out (e.g. via a command line switch or GUI
-checkbox). In this case, the software should treat the [free
-text](#free_text_definition "abc:standard:v2.1 ↵"){.wikilink1} as a
-[text
-string](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1}, but
-may format it in any way it chooses.
+More specifically, line-breaks in the <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> can be used to structure the abc transcription and, by default, generate line-breaks in the printed music. For more details see <a href="#typesetting_line-breaks" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting line-breaks</a>.
 
-[]()**Typeset text** is any text specified using [text
-directives](#text_directives "abc:standard:v2.1 ↵"){.wikilink1}. It may
-be inserted anywhere in an [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} after the
-[file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1},
-either separated from tunes by [empty
-lines](#empty_line_definition "abc:standard:v2.1 ↵"){.wikilink1}, or
-included in the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} or
-[tune body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+#### 2.2.5 Comments and remarks
 
-[Typeset
-text](#typeset_text_definition "abc:standard:v2.1 ↵"){.wikilink1} should
-be printed by typesetting programs although its exact position in the
-printed score is program-dependent.
+[]()A percent symbol (`%`) will cause the remainder of any input line to be ignored. It can be used to add a **comment** to the end of an abc line or as a **comment line** in its own right. (To get a percent symbol, type `\%` - see <a href="#text_strings" class="wikilink1" title="abc:standard:v2.1 ↵">text strings</a>.)
 
-[Typeset
-text](#typeset_text_definition "abc:standard:v2.1 ↵"){.wikilink1} that
-is included in an [abc
-tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1} (i.e.
-within the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} or
-[tune body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}),
-must be retained by any programs, such as databasing software, that
-splits an [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} into
-separate [abc
-tunes](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-</div>
-
-#### 2.2.4 Empty lines and line-breaking {#empty_lines_and_line-breaking}
-
-<div class="level4">
-
-[]()**Empty lines** (also known as blank lines) are used to separate
-[abc tunes](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1},
-[free text](#free_text_definition "abc:standard:v2.1 ↵"){.wikilink1} and
-the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}. They
-also aid the readability of [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-Lines that consist entirely of white-space (space and tab characters)
-are also regarded as [empty
-lines](#empty_line_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-Line-breaks (also known as new lines, line feeds, carriage returns,
-end-of-lines, etc.) can be used within an [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} to aid
-readability and, if required, break up long input lines - see
-[continuation of input
-lines](#continuation_of_input_lines "abc:standard:v2.1 ↵"){.wikilink1}.
-
-More specifically, line-breaks in the [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1} can be
-used to structure the abc transcription and, by default, generate
-line-breaks in the printed music. For more details see [typesetting
-line-breaks](#typesetting_line-breaks "abc:standard:v2.1 ↵"){.wikilink1}.
-
-</div>
-
-#### 2.2.5 Comments and remarks {#comments_and_remarks}
-
-<div class="level4">
-
-[]()A percent symbol (`%`) will cause the remainder of any input line to
-be ignored. It can be used to add a **comment** to the end of an abc
-line or as a **comment line** in its own right. (To get a percent
-symbol, type `\%` - see [text
-strings](#text_strings "abc:standard:v2.1 ↵"){.wikilink1}.)
-
-[]()Alternatively, you can use the syntax `[r:remark]` to write a
-**remark** in the middle of a line of music.
+[]()Alternatively, you can use the syntax `[r:remark]` to write a **remark** in the middle of a line of music.
 
 *Example:*
 
-``` {.code}
+``` code
 |:DEF FED| % this is an end of line comment
 % this is a comment line
 DEF [r:and this is a remark] FED:|
 ```
 
-Abc code which contains
-[comments](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1} and
-remarks should be processed in exactly the same way as it would be if
-all the
-[comments](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1} and
-[remarks](#remark_definition "abc:standard:v2.1 ↵"){.wikilink1} were
-removed (although, if the code is preprocessed, and
-[comments](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1} are
-actually removed, the [stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-should be left in place).
+Abc code which contains <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comments</a> and remarks should be processed in exactly the same way as it would be if all the <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comments</a> and <a href="#remark_definition" class="wikilink1" title="abc:standard:v2.1 ↵">remarks</a> were removed (although, if the code is preprocessed, and <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comments</a> are actually removed, the <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a> should be left in place).
 
-Important clarification: lines which just contain a
-[comment](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1} are
-processed as if the entire line were removed, even if the
-[comment](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1} is
-preceded by white-space (i.e. the `%` symbol is the not first
-character). In other words, removing the
-[comment](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1}
-effectively removes the entire line and so no [empty
-line](#empty_line_definition "abc:standard:v2.1 ↵"){.wikilink1} is
-introduced.
+Important clarification: lines which just contain a <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comment</a> are processed as if the entire line were removed, even if the <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comment</a> is preceded by white-space (i.e. the `%` symbol is the not first character). In other words, removing the <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comment</a> effectively removes the entire line and so no <a href="#empty_line_definition" class="wikilink1" title="abc:standard:v2.1 ↵">empty line</a> is introduced.
 
-</div>
+#### 2.2.6 Continuation of input lines
 
-#### 2.2.6 Continuation of input lines {#continuation_of_input_lines}
+It is sometimes necessary to tell abc software that an input line is continued on the next physical line(s) in the <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a>, so that the two (or more) lines are treated as one. In abc 2.0 there was a universal continuation character (see <a href="#outdated_continuations" class="wikilink1" title="abc:standard:v2.1 ↵">outdated continuations</a>) for this purpose, but it was decided that this was both unnecessary and confusing.
 
-<div class="level4">
+In abc 2.1, there are ways of continuing each of the 4 different input line types: <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>, <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>, <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comments</a> and <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a>.
 
-It is sometimes necessary to tell abc software that an input line is
-continued on the next physical line(s) in the [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}, so that
-the two (or more) lines are treated as one. In abc 2.0 there was a
-universal continuation character (see [outdated
-continuations](#outdated_continuations "abc:standard:v2.1 ↵"){.wikilink1})
-for this purpose, but it was decided that this was both unnecessary and
-confusing.
+In abc <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>, by default, line-breaks in the code generate line-breaks in the typeset score and these can be suppressed by using a backslash (or by telling abc typesetting software to ignore line-breaks using `I:linebreak $` or `I:linebreak <none>`) - see <a href="#typesetting_line-breaks" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting line-breaks</a> for full details.
 
-In abc 2.1, there are ways of continuing each of the 4 different input
-line types: [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1},
-[information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1},
-[comments](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1} and
-[stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-In abc [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}, by
-default, line-breaks in the code generate line-breaks in the typeset
-score and these can be suppressed by using a backslash (or by telling
-abc typesetting software to ignore line-breaks using `I:linebreak $` or
-`I:linebreak <none>`) - see [typesetting
-line-breaks](#typesetting_line-breaks "abc:standard:v2.1 ↵"){.wikilink1}
-for full details.
-
-*Comment for programmers:* The backslash effectively acts as a
-continuation character for [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1} lines,
-although, for those used to encountering it in other computer language
-contexts, its use is very abc-specific. In particular it can continue
-[music code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}
-lines through [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1},
-[comments](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1} and
-[stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+*Comment for programmers:* The backslash effectively acts as a continuation character for <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> lines, although, for those used to encountering it in other computer language contexts, its use is very abc-specific. In particular it can continue <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> lines through <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>, <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comments</a> and <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a>.
 
 The 3 other input line types can be continued as follows:
 
--   <div class="li">
+-   <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> can be continued using `+:` at the start of the following line - see <a href="#field_continuation" class="wikilink1" title="abc:standard:v2.1 ↵">field continuation</a>;
 
-    [information
-    fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    can be continued using `+:` at the start of the following line - see
-    [field
-    continuation](#field_continuation "abc:standard:v2.1 ↵"){.wikilink1};
+-   <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comments</a> can easily be continued by adding a `%` symbol at the start of the following line - since they are ignored by abc software it doesn't matter how many lines they are split into;
 
-    </div>
+-   most <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a> are too short to require a continuation syntax, but if one is required then use the `I:<directive>` form (see `I:instruction`), in place of `%%<directive>` and continue the line as a field - see <a href="#field_continuation" class="wikilink1" title="abc:standard:v2.1 ↵">field continuation</a>.
 
--   <div class="li">
+*Comment for developers:* Unlike other languages, and because of the way in which both <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> and <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> can be continued through <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comments</a>, <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a> and (in the case of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>) <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>, it is generally not possible to parse <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a> by pre-processing continuations into single lines.
 
-    [comments](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    can easily be continued by adding a `%` symbol at the start of the
-    following line - since they are ignored by abc software it doesn't
-    matter how many lines they are split into;
+Note that, with the exception of abc <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>, continuations are unlikely to be needed often. Indeed in most cases it should be possible, although not necessarily desirable, to write very long input lines, since most abc editing software will display them as wrapped within the text editor window.
 
-    </div>
+*Recommendation:* Despite there being no limit on line length in <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a>, it is recommended that users avoid writing abc code with very long lines. In particular, judiciously applied line-breaks can aid the (human) readability of abc code. More importantly, users who send <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunes</a> with long lines should be aware that email software sometimes introduces additional line-breaks into lines with more than 72 characters and these may even cause errors when the resulting tune is processed.
 
--   <div class="li">
+### 2.3 Embedded abc and abc fragments
 
-    most [stylesheet
-    directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    are too short to require a continuation syntax, but if one is
-    required then use the `I:<directive>` form (see `I:instruction`), in
-    place of `%%<directive>` and continue the line as a field - see
-    [field
-    continuation](#field_continuation "abc:standard:v2.1 ↵"){.wikilink1}.
+[]()Traditionally abc has been used in dedicated <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a>. More recently, however, the possibility has arisen to include <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunes</a>, and even fragments, within other document types. An abc element included within another document type is referred to as **embedded** in that document.
 
-    </div>
-
-*Comment for developers:* Unlike other languages, and because of the way
-in which both [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-and [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1} can be
-continued through
-[comments](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1},
-[stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-and (in the case of [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1})
-[information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1},
-it is generally not possible to parse [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} by
-pre-processing continuations into single lines.
-
-Note that, with the exception of abc [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1},
-continuations are unlikely to be needed often. Indeed in most cases it
-should be possible, although not necessarily desirable, to write very
-long input lines, since most abc editing software will display them as
-wrapped within the text editor window.
-
-*Recommendation:* Despite there being no limit on line length in [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}, it is
-recommended that users avoid writing abc code with very long lines. In
-particular, judiciously applied line-breaks can aid the (human)
-readability of abc code. More importantly, users who send [abc
-tunes](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1} with long
-lines should be aware that email software sometimes introduces
-additional line-breaks into lines with more than 72 characters and these
-may even cause errors when the resulting tune is processed.
-
-</div>
-
-### 2.3 Embedded abc and abc fragments {#embedded_abc_and_abc_fragments .sectionedit13}
-
-<div class="level3">
-
-[]()Traditionally abc has been used in dedicated [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}. More
-recently, however, the possibility has arisen to include [abc
-tunes](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}, and even
-fragments, within other document types. An abc element included within
-another document type is referred to as **embedded** in that document.
-
-Often, although not always, some form of markup is used to indicate
-where the
-[embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1} abc
-code starts and finishes.
+Often, although not always, some form of markup is used to indicate where the <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> abc code starts and finishes.
 
 *Example:* Within an html document a tune could be included as follows:
 
-``` {.code}
+``` code
 <pre class="abc-tune">
 X:1
 T:Title
@@ -2321,82 +535,37 @@ DEF FED:|
 </pre>
 ```
 
-*Important note:* The abc standard makes no stipulation about *how* the
-abc code is included in the document. For example, in html it could be
-via a `<pre>`, `<div>`, `<object>`, `<script>` or some other tag.
+*Important note:* The abc standard makes no stipulation about *how* the abc code is included in the document. For example, in html it could be via a `<pre>`, `<div>`, `<object>`, `<script>` or some other tag.
 
-[Embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1} abc
-elements can be one of four types:
+<a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">Embedded</a> abc elements can be one of four types:
 
--   <div class="li">
+-   an <a href="#abc_fragment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc fragment</a>
 
-    an [abc
-    fragment](#abc_fragment_definition "abc:standard:v2.1 ↵"){.wikilink1}
+-   an <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a>
 
-    </div>
+-   a <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>
 
--   <div class="li">
+-   an entire <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a>
 
-    an [abc
-    tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}
+In all cases, the type must be indicated to the abc parsing code which is going to process it (for example, via a `class` parameter). An exception is the <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a> where the parser may instead use the `X:` field to identify it.
 
-    </div>
+The following rules are applied to <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> elements:
 
--   <div class="li">
+#### 2.3.1 Embedded abc fragment
 
-    a [file
-    header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}
+An []()**abc fragment** is a partial <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a>. It may contain a partial <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> with no body or a <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> with optional <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>.
 
-    </div>
+*Example 1:* A fragment with no <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a>:
 
--   <div class="li">
-
-    an entire [abc
-    file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-In all cases, the type must be indicated to the abc parsing code which
-is going to process it (for example, via a `class` parameter). An
-exception is the
-[embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1} [abc
-tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1} where the
-parser may instead use the `X:` field to identify it.
-
-The following rules are applied to
-[embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1}
-elements:
-
-</div>
-
-#### 2.3.1 Embedded abc fragment {#embedded_abc_fragment}
-
-<div class="level4">
-
-An []()**abc fragment** is a partial [abc
-tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}. It may
-contain a partial [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} with
-no body or a [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} with
-optional [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}
-[information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-*Example 1:* A fragment with no [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}:
-
-``` {.code}
+``` code
 <div class="abc-fragment">
 CDEF GABc|
 </div>
 ```
 
-*Example 2:* A fragment with a partial [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}:
+*Example 2:* A fragment with a partial <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a>:
 
-``` {.code}
+``` code
 <div class="abc-fragment">
 T:Major scale in D
 K:D
@@ -2404,698 +573,298 @@ DEFG ABcd|
 </div>
 ```
 
-Unless `T:`, `M:` and `K:` fields are present, a fragment is assumed to
-describe a stave in the treble clef with no title, no meter indication
-and no key signature, respectively.
+Unless `T:`, `M:` and `K:` fields are present, a fragment is assumed to describe a stave in the treble clef with no title, no meter indication and no key signature, respectively.
 
-An [abc
-fragment](#abc_fragment_definition "abc:standard:v2.1 ↵"){.wikilink1}
-does not require an [empty
-line](#empty_line_definition "abc:standard:v2.1 ↵"){.wikilink1} to mark
-the end of the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} if it is
-terminated by the document markup.
+An <a href="#abc_fragment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc fragment</a> does not require an <a href="#empty_line_definition" class="wikilink1" title="abc:standard:v2.1 ↵">empty line</a> to mark the end of the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> if it is terminated by the document markup.
 
-*Note for developers:* For processing as an [abc
-tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}, the
-parsing code is notionally assumed to add empty `X:`, `T:` and `K:`
-fields, if these are missing. However, since the processing generally
-takes place internally within a software package, these need not be
-added in actuality.
+*Note for developers:* For processing as an <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a>, the parsing code is notionally assumed to add empty `X:`, `T:` and `K:` fields, if these are missing. However, since the processing generally takes place internally within a software package, these need not be added in actuality.
 
-</div>
+#### 2.3.2 Embedded abc tune
 
-#### 2.3.2 Embedded abc tune {#embedded_abc_tune}
+An <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a> has the same structure as an ordinary <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a> except that it does not require an <a href="#empty_line_definition" class="wikilink1" title="abc:standard:v2.1 ↵">empty line</a> to mark the end of the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>.
 
-<div class="level4">
+An <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a> could also be identified as an <a href="#abc_fragment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc fragment</a> (albeit complete), if preferred.
 
-An [embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1}
-[abc tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1} has
-the same structure as an ordinary [abc
-tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1} except
-that it does not require an [empty
-line](#empty_line_definition "abc:standard:v2.1 ↵"){.wikilink1} to mark
-the end of the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+#### 2.3.3 Embedded file header
 
-An [embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1}
-[abc tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1} could
-also be identified as an [abc
-fragment](#abc_fragment_definition "abc:standard:v2.1 ↵"){.wikilink1}
-(albeit complete), if preferred.
+As with the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>, an <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> can be used to set default values for all <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> abc tunes and <a href="#abc_fragment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc fragments</a> within the document.
 
-</div>
+*Example:* For setting the title font in every <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a> in the document:
 
-#### 2.3.3 Embedded file header {#embedded_file_header}
-
-<div class="level4">
-
-As with the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}, an
-[embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1} [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} can
-be used to set default values for all
-[embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1} abc
-tunes and [abc
-fragments](#abc_fragment_definition "abc:standard:v2.1 ↵"){.wikilink1}
-within the document.
-
-*Example:* For setting the title font in every [abc
-tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1} in the
-document:
-
-``` {.code}
+``` code
 <div class="abc-file-header">
 %%titlefont Arial 10
 </div>
 ```
 
-Like its counterpart, there must only be one
-[embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1} [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} per
-document and it should precede all other
-[embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1} abc
-tunes and [abc
-fragments](#abc_fragment_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+Like its counterpart, there must only be one <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> per document and it should precede all other <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> abc tunes and <a href="#abc_fragment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc fragments</a>.
 
-</div>
+#### 2.3.4 Embedded abc file
 
-#### 2.3.4 Embedded abc file {#embedded_abc_file}
+A document may include an entire <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> with the usual structure - see <a href="#abc_file_structure" class="wikilink1" title="abc:standard:v2.1 ↵">abc file structure</a>.
 
-<div class="level4">
+An <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> should be treated independently from other <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> elements so that settings in one <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> do not affect other <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> elements.
 
-A document may include an entire
-[embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1} [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} with the
-usual structure - see [abc file
-structure](#abc_file_structure "abc:standard:v2.1 ↵"){.wikilink1}.
-
-An [embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1}
-[abc file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}
-should be treated independently from other
-[embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1}
-elements so that settings in one
-[embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1} [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} do not
-affect other
-[embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1}
-elements.
-
-*Recommendation:* As a consequence, using other
-[embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1}
-elements in a document that contains an
-[embedded](#embedded_definition "abc:standard:v2.1 ↵"){.wikilink1} [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} is not
-recommended.
+*Recommendation:* As a consequence, using other <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> elements in a document that contains an <a href="#embedded_definition" class="wikilink1" title="abc:standard:v2.1 ↵">embedded</a> <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> is not recommended.
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-3. Information fields {#information_fields .sectionedit14}
+3. Information fields
 ---------------------
 
-<div class="level2">
+[]()Any line beginning with a letter in the range `A-Z` or `a-z` and immediately followed by a colon (`:`) is an **information field**. Information fields are used to notate things such as composer, meter, etc. In fact anything that isn't music.
 
-[]()Any line beginning with a letter in the range `A-Z` or `a-z` and
-immediately followed by a colon (`:`) is an **information field**.
-Information fields are used to notate things such as composer, meter,
-etc. In fact anything that isn't music.
+An <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information field</a> may also be inlined in a <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> when enclosed by `[` and `]` - see <a href="#use_of_fields_within_the_tune_body" class="wikilink1" title="abc:standard:v2.1 ↵">use of fields within the tune body</a>.
 
-An [information
-field](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-may also be inlined in a [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} when
-enclosed by `[` and `]` - see [use of fields within the tune
-body](#use_of_fields_within_the_tune_body "abc:standard:v2.1 ↵"){.wikilink1}.
+Many of these <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information field</a> identifiers are currently unused so, in order to extend the number of <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> in the future, programs that comply with this standard must ignore the occurrence of <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> not defined here (although they should give a non-fatal error message to warn the user, in case the field identifier is an error or is unsupported).
 
-Many of these [information
-field](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-identifiers are currently unused so, in order to extend the number of
-[information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-in the future, programs that comply with this standard must ignore the
-occurrence of [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-not defined here (although they should give a non-fatal error message to
-warn the user, in case the field identifier is an error or is
-unsupported).
+Some <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> are permitted only in the file or <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> and some only in the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>, while others are allowed in both locations. <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information field</a> identifiers `A-G`, `X-Z` and `a-g`, `x-z` are not permitted in the body to avoid confusion with <a href="#pitch" class="wikilink1" title="abc:standard:v2.1 ↵">note symbols</a>, <a href="#rests" class="wikilink1" title="abc:standard:v2.1 ↵">rests</a> and <a href="#typesetting_extra_space" class="wikilink1" title="abc:standard:v2.1 ↵">spacers</a>.
 
-Some [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-are permitted only in the file or [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} and
-some only in the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}, while
-others are allowed in both locations. [information
-field](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-identifiers `A-G`, `X-Z` and `a-g`, `x-z` are not permitted in the body
-to avoid confusion with [note
-symbols](#pitch "abc:standard:v2.1 ↵"){.wikilink1},
-[rests](#rests "abc:standard:v2.1 ↵"){.wikilink1} and
-[spacers](#typesetting_extra_space "abc:standard:v2.1 ↵"){.wikilink1}.
+Users who wish to use abc notation solely for transcribing (rather than documenting) tunes can ignore most of the <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>. For this purpose all that is really needed are the `X:`(reference number), `T:`(title), `M:`(meter), `L:`(unit note length) and `K:`(key) <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>, plus if applicable `C:`(composer) and `w:` or `W:` (words/lyrics, respectively within or after the tune).
 
-Users who wish to use abc notation solely for transcribing (rather than
-documenting) tunes can ignore most of the [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-For this purpose all that is really needed are the `X:`(reference
-number), `T:`(title), `M:`(meter), `L:`(unit note length) and `K:`(key)
-[information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1},
-plus if applicable `C:`(composer) and `w:` or `W:` (words/lyrics,
-respectively within or after the tune).
+*Recommendation for newcomers:* A good way to find out how to use the fields is to look at the example files, <a href="#sample_abc_tunes" class="wikilink1" title="abc:standard:v2.1 ↵">sample abc tunes</a> (in particular <a href="#englishabc" class="wikilink1" title="abc:standard:v2.1 ↵">English.abc</a>), and try out some examples.
 
-*Recommendation for newcomers:* A good way to find out how to use the
-fields is to look at the example files, [sample abc
-tunes](#sample_abc_tunes "abc:standard:v2.1 ↵"){.wikilink1} (in
-particular
-[English.abc](#englishabc "abc:standard:v2.1 ↵"){.wikilink1}), and try
-out some examples.
+The <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> are summarised in the following table and discussed in <a href="#description_of_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">description of information fields</a> and elsewhere.
 
-The [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-are summarised in the following table and discussed in [description of
-information
-fields](#description_of_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
-and elsewhere.
-
-The table illustrates how the [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-may be used in the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} and
-whether they may also be used in the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} (see [use
-of fields within the tune
-body](#use_of_fields_within_the_tune_body "abc:standard:v2.1 ↵"){.wikilink1}
-for details) or in the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} (see
-[abc file
-structure](#abc_file_structure "abc:standard:v2.1 ↵"){.wikilink1}).
+The table illustrates how the <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> may be used in the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> and whether they may also be used in the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> (see <a href="#use_of_fields_within_the_tune_body" class="wikilink1" title="abc:standard:v2.1 ↵">use of fields within the tune body</a> for details) or in the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> (see <a href="#abc_file_structure" class="wikilink1" title="abc:standard:v2.1 ↵">abc file structure</a>).
 
 Abc Fields and their usage:
 
-<div class="table sectionedit15">
+| Field name                                                                                            | <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> | <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> | <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> | <a href="#inline_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">inline</a> | type        | Examples and notes                                                                                                               |
+|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|-------------|----------------------------------------------------------------------------------------------------------------------------------|
+| <a href="#aarea" class="wikilink1" title="abc:standard:v2.1 ↵">A:area</a>                             | yes                                                                                             | yes                                                                                             |                                                                                             |                                                                                             | string      | A:Donegal, A:Bampton (<a href="#outdated_information_field_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a>) |
+| <a href="#bdfsbackground_information" class="wikilink1" title="abc:standard:v2.1 ↵">B:book</a>        | yes                                                                                             | yes                                                                                             |                                                                                             |                                                                                             | string      | B:O'Neills                                                                                                                       |
+| <a href="#ccomposer" class="wikilink1" title="abc:standard:v2.1 ↵">C:composer</a>                     | yes                                                                                             | yes                                                                                             |                                                                                             |                                                                                             | string      | C:Robert Jones, C:Trad.                                                                                                          |
+| <a href="#bdfsbackground_information" class="wikilink1" title="abc:standard:v2.1 ↵">D:discography</a> | yes                                                                                             | yes                                                                                             |                                                                                             |                                                                                             | string      | D:Chieftains IV                                                                                                                  |
+| <a href="#bdfsbackground_information" class="wikilink1" title="abc:standard:v2.1 ↵">F:file url</a>    | yes                                                                                             | yes                                                                                             |                                                                                             |                                                                                             | string      | F:http://a.b.c/file.abc                                                                                                          |
+| <a href="#ggroup" class="wikilink1" title="abc:standard:v2.1 ↵">G:group</a>                           | yes                                                                                             | yes                                                                                             |                                                                                             |                                                                                             | string      | G:flute                                                                                                                          |
+| <a href="#hhistory" class="wikilink1" title="abc:standard:v2.1 ↵">H:history</a>                       | yes                                                                                             | yes                                                                                             |                                                                                             |                                                                                             | string      | H:The story behind this tune …                                                                                                   |
+| <a href="#iinstruction" class="wikilink1" title="abc:standard:v2.1 ↵">I:instruction</a>               | yes                                                                                             | yes                                                                                             | yes                                                                                         | yes                                                                                         | instruction | I:papersize A4, I:newpage                                                                                                        |
+| <a href="#kkey" class="wikilink1" title="abc:standard:v2.1 ↵">K:key</a>                               |                                                                                                 | last                                                                                            | yes                                                                                         | yes                                                                                         | instruction | K:G, K:Dm, K:AMix                                                                                                                |
+| <a href="#lunit_note_length" class="wikilink1" title="abc:standard:v2.1 ↵">L:unit note length</a>     | yes                                                                                             | yes                                                                                             | yes                                                                                         | yes                                                                                         | instruction | L:1/4, L:1/8                                                                                                                     |
+| <a href="#mmeter" class="wikilink1" title="abc:standard:v2.1 ↵">M:meter</a>                           | yes                                                                                             | yes                                                                                             | yes                                                                                         | yes                                                                                         | instruction | M:3/4, M:4/4                                                                                                                     |
+| <a href="#macros" class="wikilink1" title="abc:standard:v2.1 ↵">m:macro</a>                           | yes                                                                                             | yes                                                                                             | yes                                                                                         | yes                                                                                         | instruction | m: ~G2 = {A}G{F}G                                                                                                                |
+| <a href="#nnotes" class="wikilink1" title="abc:standard:v2.1 ↵">N:notes</a>                           | yes                                                                                             | yes                                                                                             | yes                                                                                         | yes                                                                                         | string      | N:see also O'Neills - 234                                                                                                        |
+| <a href="#oorigin" class="wikilink1" title="abc:standard:v2.1 ↵">O:origin</a>                         | yes                                                                                             | yes                                                                                             |                                                                                             |                                                                                             | string      | O:UK; Yorkshire; Bradford                                                                                                        |
+| <a href="#pparts" class="wikilink1" title="abc:standard:v2.1 ↵">P:parts</a>                           |                                                                                                 | yes                                                                                             | yes                                                                                         | yes                                                                                         | instruction | P:A, P:ABAC, P:(A2B)3                                                                                                            |
+| <a href="#qtempo" class="wikilink1" title="abc:standard:v2.1 ↵">Q:tempo</a>                           |                                                                                                 | yes                                                                                             | yes                                                                                         | yes                                                                                         | instruction | Q:"allegro" 1/4=120                                                                                                              |
+| <a href="#rrhythm" class="wikilink1" title="abc:standard:v2.1 ↵">R:rhythm</a>                         | yes                                                                                             | yes                                                                                             | yes                                                                                         | yes                                                                                         | string      | R:R, R:reel                                                                                                                      |
+| <a href="#comments_and_remarks" class="wikilink1" title="abc:standard:v2.1 ↵">r:remark</a>            | yes                                                                                             | yes                                                                                             | yes                                                                                         | yes                                                                                         | -           | r:I love abc                                                                                                                     |
+| <a href="#bdfsbackground_information" class="wikilink1" title="abc:standard:v2.1 ↵">S:source</a>      | yes                                                                                             | yes                                                                                             |                                                                                             |                                                                                             | string      | S:collected in Brittany                                                                                                          |
+| <a href="#symbol_lines" class="wikilink1" title="abc:standard:v2.1 ↵">s:symbol line</a>               |                                                                                                 |                                                                                                 | yes                                                                                         |                                                                                             | instruction | s: !pp! \*\* !f!                                                                                                                 |
+| <a href="#ttune_title" class="wikilink1" title="abc:standard:v2.1 ↵">T:tune title</a>                 |                                                                                                 | second                                                                                          | yes                                                                                         |                                                                                             | string      | T:Paddy O'Rafferty                                                                                                               |
+| <a href="#redefinable_symbols" class="wikilink1" title="abc:standard:v2.1 ↵">U:user defined</a>       | yes                                                                                             | yes                                                                                             | yes                                                                                         | yes                                                                                         | instruction | U: T = !trill!                                                                                                                   |
+| <a href="#multiple_voices" class="wikilink1" title="abc:standard:v2.1 ↵">V:voice</a>                  |                                                                                                 | yes                                                                                             | yes                                                                                         | yes                                                                                         | instruction | V:4 clef=bass                                                                                                                    |
+| <a href="#lyrics" class="wikilink1" title="abc:standard:v2.1 ↵">W:words</a>                           |                                                                                                 | yes                                                                                             | yes                                                                                         |                                                                                             | string      | W:lyrics printed after the end of the tune                                                                                       |
+| <a href="#lyrics" class="wikilink1" title="abc:standard:v2.1 ↵">w:words</a>                           |                                                                                                 |                                                                                                 | yes                                                                                         |                                                                                             | string      | w:lyrics printed aligned with the notes of a tune                                                                                |
+| <a href="#xreference_number" class="wikilink1" title="abc:standard:v2.1 ↵">X:reference number</a>     |                                                                                                 | first                                                                                           |                                                                                             |                                                                                             | instruction | X:1, X:2                                                                                                                         |
+| <a href="#ztranscription" class="wikilink1" title="abc:standard:v2.1 ↵">Z:transcription</a>           | yes                                                                                             | yes                                                                                             |                                                                                             |                                                                                             | string      | Z:John Smith, &lt;j.s@mail.com&gt;                                                                                               |
 
-  Field name                                                                       [file header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}   [tune header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}   [tune body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}   [inline](#inline_field_definition "abc:standard:v2.1 ↵"){.wikilink1}   type          Examples and notes
-  -------------------------------------------------------------------------------- -------------------------------------------------------------------------- -------------------------------------------------------------------------- ---------------------------------------------------------------------- ---------------------------------------------------------------------- ------------- -----------------------------------------------------------------------------------------------------------
-  [A:area](#aarea "abc:standard:v2.1 ↵"){.wikilink1}                               yes                                                                        yes                                                                                                                                                                                                                      string        A:Donegal, A:Bampton ([deprecated](#outdated_information_field_syntax "abc:standard:v2.1 ↵"){.wikilink1})
-  [B:book](#bdfsbackground_information "abc:standard:v2.1 ↵"){.wikilink1}          yes                                                                        yes                                                                                                                                                                                                                      string        B:O'Neills
-  [C:composer](#ccomposer "abc:standard:v2.1 ↵"){.wikilink1}                       yes                                                                        yes                                                                                                                                                                                                                      string        C:Robert Jones, C:Trad.
-  [D:discography](#bdfsbackground_information "abc:standard:v2.1 ↵"){.wikilink1}   yes                                                                        yes                                                                                                                                                                                                                      string        D:Chieftains IV
-  [F:file url](#bdfsbackground_information "abc:standard:v2.1 ↵"){.wikilink1}      yes                                                                        yes                                                                                                                                                                                                                      string        F:http://a.b.c/file.abc
-  [G:group](#ggroup "abc:standard:v2.1 ↵"){.wikilink1}                             yes                                                                        yes                                                                                                                                                                                                                      string        G:flute
-  [H:history](#hhistory "abc:standard:v2.1 ↵"){.wikilink1}                         yes                                                                        yes                                                                                                                                                                                                                      string        H:The story behind this tune …
-  [I:instruction](#iinstruction "abc:standard:v2.1 ↵"){.wikilink1}                 yes                                                                        yes                                                                        yes                                                                    yes                                                                    instruction   I:papersize A4, I:newpage
-  [K:key](#kkey "abc:standard:v2.1 ↵"){.wikilink1}                                                                                                            last                                                                       yes                                                                    yes                                                                    instruction   K:G, K:Dm, K:AMix
-  [L:unit note length](#lunit_note_length "abc:standard:v2.1 ↵"){.wikilink1}       yes                                                                        yes                                                                        yes                                                                    yes                                                                    instruction   L:1/4, L:1/8
-  [M:meter](#mmeter "abc:standard:v2.1 ↵"){.wikilink1}                             yes                                                                        yes                                                                        yes                                                                    yes                                                                    instruction   M:3/4, M:4/4
-  [m:macro](#macros "abc:standard:v2.1 ↵"){.wikilink1}                             yes                                                                        yes                                                                        yes                                                                    yes                                                                    instruction   m: \~G2 = {A}G{F}G
-  [N:notes](#nnotes "abc:standard:v2.1 ↵"){.wikilink1}                             yes                                                                        yes                                                                        yes                                                                    yes                                                                    string        N:see also O'Neills - 234
-  [O:origin](#oorigin "abc:standard:v2.1 ↵"){.wikilink1}                           yes                                                                        yes                                                                                                                                                                                                                      string        O:UK; Yorkshire; Bradford
-  [P:parts](#pparts "abc:standard:v2.1 ↵"){.wikilink1}                                                                                                        yes                                                                        yes                                                                    yes                                                                    instruction   P:A, P:ABAC, P:(A2B)3
-  [Q:tempo](#qtempo "abc:standard:v2.1 ↵"){.wikilink1}                                                                                                        yes                                                                        yes                                                                    yes                                                                    instruction   Q:"allegro" 1/4=120
-  [R:rhythm](#rrhythm "abc:standard:v2.1 ↵"){.wikilink1}                           yes                                                                        yes                                                                        yes                                                                    yes                                                                    string        R:R, R:reel
-  [r:remark](#comments_and_remarks "abc:standard:v2.1 ↵"){.wikilink1}              yes                                                                        yes                                                                        yes                                                                    yes                                                                    -             r:I love abc
-  [S:source](#bdfsbackground_information "abc:standard:v2.1 ↵"){.wikilink1}        yes                                                                        yes                                                                                                                                                                                                                      string        S:collected in Brittany
-  [s:symbol line](#symbol_lines "abc:standard:v2.1 ↵"){.wikilink1}                                                                                                                                                                       yes                                                                                                                                           instruction   s: !pp! \*\* !f!
-  [T:tune title](#ttune_title "abc:standard:v2.1 ↵"){.wikilink1}                                                                                              second                                                                     yes                                                                                                                                           string        T:Paddy O'Rafferty
-  [U:user defined](#redefinable_symbols "abc:standard:v2.1 ↵"){.wikilink1}         yes                                                                        yes                                                                        yes                                                                    yes                                                                    instruction   U: T = !trill!
-  [V:voice](#multiple_voices "abc:standard:v2.1 ↵"){.wikilink1}                                                                                               yes                                                                        yes                                                                    yes                                                                    instruction   V:4 clef=bass
-  [W:words](#lyrics "abc:standard:v2.1 ↵"){.wikilink1}                                                                                                        yes                                                                        yes                                                                                                                                           string        W:lyrics printed after the end of the tune
-  [w:words](#lyrics "abc:standard:v2.1 ↵"){.wikilink1}                                                                                                                                                                                   yes                                                                                                                                           string        w:lyrics printed aligned with the notes of a tune
-  [X:reference number](#xreference_number "abc:standard:v2.1 ↵"){.wikilink1}                                                                                  first                                                                                                                                                                                                                    instruction   X:1, X:2
-  [Z:transcription](#ztranscription "abc:standard:v2.1 ↵"){.wikilink1}             yes                                                                        yes                                                                                                                                                                                                                      string        Z:John Smith, &lt;j.s@mail.com&gt;
+Fields of type 'string' accept <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text strings</a> as argument. Fields of type 'instruction' expect a special instruction syntax which will be detailed below. The contents of the remark field will be totally ignored.
 
-</div>
+##### Repeated information fields
 
-Fields of type 'string' accept [text
-strings](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1} as
-argument. Fields of type 'instruction' expect a special instruction
-syntax which will be detailed below. The contents of the remark field
-will be totally ignored.
+All <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>, with the exception of `X:`, may appear more than once in an <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a>.
 
-</div>
+In the case of all string-type <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>, repeated use in the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> can be regarded as additional information - for example, a tune may be known by many titles and an <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a> transcription may appear at more than one URL (using the `F:` field). Typesetting software which prints this information out may concatenate all string-type <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> of the same kind, separated by semi-colons (`;`), although the initial `T:`(title) field should be treated differently, as should `W:`(words) fields - see <a href="#typesetting_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting information fields</a>.
 
-##### Repeated information fields {#repeated_information_fields}
-
-<div class="level5">
-
-All [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1},
-with the exception of `X:`, may appear more than once in an [abc
-tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-In the case of all string-type [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1},
-repeated use in the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} can
-be regarded as additional information - for example, a tune may be known
-by many titles and an [abc
-tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}
-transcription may appear at more than one URL (using the `F:` field).
-Typesetting software which prints this information out may concatenate
-all string-type [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-of the same kind, separated by semi-colons (`;`), although the initial
-`T:`(title) field should be treated differently, as should `W:`(words)
-fields - see [typesetting information
-fields](#typesetting_information_fields "abc:standard:v2.1 ↵"){.wikilink1}.
-
-Certain instruction-type [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1},
-in particular `I:`, `m:`, `U:` and `V:`, may also be used multiple times
-in the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} to
-set up different instructions, macros, user definitions and voices.
-However, if two such fields set up the same value, then the second
-overrides the first.
+Certain instruction-type <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>, in particular `I:`, `m:`, `U:` and `V:`, may also be used multiple times in the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> to set up different instructions, macros, user definitions and voices. However, if two such fields set up the same value, then the second overrides the first.
 
 *Example:* The second `I:linebreak` instruction overrides the first.
 
-``` {.code}
+``` code
 I:linebreak <EOL>
 I:linebreak <none>
 ```
 
-*Comment:* The above example should not generate an error message. The
-user may legitimately wish to test the effect of two such instructions;
-having them both makes switching from one to another easy just by
-changing their order.
+*Comment:* The above example should not generate an error message. The user may legitimately wish to test the effect of two such instructions; having them both makes switching from one to another easy just by changing their order.
 
-Other instruction-type [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-in the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} also
-override the previous occurrence of that field.
+Other instruction-type <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> in the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> also override the previous occurrence of that field.
 
-Within the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} each line
-of code is processed in sequence. Therefore, with the exception of
-`s:`(symbol line), `w:`(words) and `W:`(words) which have their own
-syntax, the same [information
-field](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-may occur a number of times, for example to change key, meter, tempo or
-voice, and each occurrence has the effect of overriding the previous
-one, either for the remainder of the tune, or until the next occurrence.
-See [use of fields within the tune
-body](#use_of_fields_within_the_tune_body "abc:standard:v2.1 ↵"){.wikilink1}
-for more details.
+Within the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> each line of code is processed in sequence. Therefore, with the exception of `s:`(symbol line), `w:`(words) and `W:`(words) which have their own syntax, the same <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information field</a> may occur a number of times, for example to change key, meter, tempo or voice, and each occurrence has the effect of overriding the previous one, either for the remainder of the tune, or until the next occurrence. See <a href="#use_of_fields_within_the_tune_body" class="wikilink1" title="abc:standard:v2.1 ↵">use of fields within the tune body</a> for more details.
 
-</div>
+##### Order of information fields
 
-##### Order of information fields {#order_of_information_fields}
+*Recommendation for users:* Although <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> in the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> may be written in any order (subject to `X:`, `T:` and `K:` coming first, second and last, respectively), it does make sense for users to stick to a common ordering, if for no other reason than it makes public domain abc code more readable. Typical ordering of the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> puts fundamental tune identification details first (X, T, C, O, R), with <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> relating to how the tune is played last (P, V, M, L, Q, K). Background information (B, D, F, G, H, N, S, Z) and information on how the abc code should be interpreted (I, m, U) then tends to appear in the middle of the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a>. Words (W) may be included in the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> but are usually placed at the end of the <a href="#tune_body" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>.
 
-<div class="level5">
+### 3.1 Description of information fields
 
-*Recommendation for users:* Although [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-in the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} may
-be written in any order (subject to `X:`, `T:` and `K:` coming first,
-second and last, respectively), it does make sense for users to stick to
-a common ordering, if for no other reason than it makes public domain
-abc code more readable. Typical ordering of the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} puts
-fundamental tune identification details first (X, T, C, O, R), with
-[information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-relating to how the tune is played last (P, V, M, L, Q, K). Background
-information (B, D, F, G, H, N, S, Z) and information on how the abc code
-should be interpreted (I, m, U) then tends to appear in the middle of
-the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-Words (W) may be included in the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} but
-are usually placed at the end of the [tune
-body](#tune_body "abc:standard:v2.1 ↵"){.wikilink1}.
+#### 3.1.1 X: - reference number
 
-</div>
+The `X:` (reference number) field is used to assign to each tune within a tunebook a unique reference number (a positive integer), for example: `X:23`.
 
-### 3.1 Description of information fields {#description_of_information_fields .sectionedit16}
-
-<div class="level3">
-
-</div>
-
-#### 3.1.1 X: - reference number {#xreference_number}
-
-<div class="level4">
-
-The `X:` (reference number) field is used to assign to each tune within
-a tunebook a unique reference number (a positive integer), for example:
-`X:23`.
-
-The `X:` field is also used to indicate the start of the tune (and hence
-the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}), so
-all tunes must start with an `X:` field and only one `X:` field is
-allowed per tune.
+The `X:` field is also used to indicate the start of the tune (and hence the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a>), so all tunes must start with an `X:` field and only one `X:` field is allowed per tune.
 
 The `X:` field may be empty, although this is not recommended.
 
-*Recommendation for developers:* Software which writes [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} is
-recommended to offer users the possibility to manage `X:` field
-numbering automatically. GUI applications may even hide the `X:` field
-from users although they should always allow the user access to the raw
-[abc file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+*Recommendation for developers:* Software which writes <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a> is recommended to offer users the possibility to manage `X:` field numbering automatically. GUI applications may even hide the `X:` field from users although they should always allow the user access to the raw <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a>.
 
-</div>
+#### 3.1.2 T: - tune title
 
-#### 3.1.2 T: - tune title {#ttune_title}
+A `T:` (title) field must follow immediately after the `X:` field; it is the human identifier for the tune (although it may be empty).
 
-<div class="level4">
+Some tunes have more than one title and so this field can be used more than once per tune to indicate alternative titles.
 
-A `T:` (title) field must follow immediately after the `X:` field; it is
-the human identifier for the tune (although it may be empty).
+The `T:` field can also be used within a tune to name parts of a tune - in this case it should come before any key or meter changes.
 
-Some tunes have more than one title and so this field can be used more
-than once per tune to indicate alternative titles.
+See <a href="#typesetting_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting information fields</a> for details of how the title and alternatives are included in the printed score.
 
-The `T:` field can also be used within a tune to name parts of a tune -
-in this case it should come before any key or meter changes.
-
-See [typesetting information
-fields](#typesetting_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
-for details of how the title and alternatives are included in the
-printed score.
-
-</div>
-
-#### 3.1.3 C: - composer {#ccomposer}
-
-<div class="level4">
+#### 3.1.3 C: - composer
 
 The `C:` field is used to indicate the composer(s).
 
-See [typesetting information
-fields](#typesetting_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
-for details of how the composer is included in the printed score.
+See <a href="#typesetting_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting information fields</a> for details of how the composer is included in the printed score.
 
-</div>
-
-#### 3.1.4 O: - origin {#oorigin}
-
-<div class="level4">
+#### 3.1.4 O: - origin
 
 The `O:` field indicates the geographical origin(s) of a tune.
 
 If possible, enter the data in a hierarchical way, like:
 
-``` {.code}
+``` code
 O:Canada; Nova Scotia; Halifax.
 O:England; Yorkshire; Bradford and Bingley.
 ```
 
-*Recommendation:* It is recommended to always use a "`;`" (semi-colon)
-as the separator, so that software may parse the field. However, abc 2.0
-recommended the use of a comma, so legacy files may not be parse-able
-under abc 2.1.
+*Recommendation:* It is recommended to always use a "`;`" (semi-colon) as the separator, so that software may parse the field. However, abc 2.0 recommended the use of a comma, so legacy files may not be parse-able under abc 2.1.
 
-This field may be especially useful for traditional tunes with no known
-composer.
+This field may be especially useful for traditional tunes with no known composer.
 
-See [typesetting information
-fields](#typesetting_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
-for details of how the origin information is included in the printed
-score.
+See <a href="#typesetting_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting information fields</a> for details of how the origin information is included in the printed score.
 
-</div>
+#### 3.1.5 A: - area
 
-#### 3.1.5 A: - area {#aarea}
+Historically, the `A:` field has been used to contain area information (more specific details of the tune origin). However this field is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> and it is recommended that such information be included in the `O:` field.
 
-<div class="level4">
+#### 3.1.6 M: - meter
 
-Historically, the `A:` field has been used to contain area information
-(more specific details of the tune origin). However this field is now
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} and it
-is recommended that such information be included in the `O:` field.
+The `M:` field indicates the meter. Apart from standard meters, e.g. `M:6/8` or `M:4/4`, the symbols `M:C` and `M:C|` give common time (4/4) and cut time (2/2) respectively. The symbol `M:none` omits the meter entirely (free meter).
 
-</div>
-
-#### 3.1.6 M: - meter {#mmeter}
-
-<div class="level4">
-
-The `M:` field indicates the meter. Apart from standard meters, e.g.
-`M:6/8` or `M:4/4`, the symbols `M:C` and `M:C|` give common time (4/4)
-and cut time (2/2) respectively. The symbol `M:none` omits the meter
-entirely (free meter).
-
-It is also possible to specify a complex meter, e.g. `M:(2+3+2)/8`, to
-make explicit which beats should be accented. The parentheses around the
-numerator are optional.
+It is also possible to specify a complex meter, e.g. `M:(2+3+2)/8`, to make explicit which beats should be accented. The parentheses around the numerator are optional.
 
 The example given will be typeset as:
 
-``` {.code}
+``` code
 2 + 3 + 2
     8
 ```
 
-When there is no `M:` field defined, free meter is assumed (in free
-meter, bar lines can be placed anywhere you want).
+When there is no `M:` field defined, free meter is assumed (in free meter, bar lines can be placed anywhere you want).
 
-</div>
+#### 3.1.7 L: - unit note length
 
-#### 3.1.7 L: - unit note length {#lunit_note_length}
+The `L:` field specifies the unit note length - the length of a note as represented by a single letter in abc - see <a href="#note_lengths" class="wikilink1" title="abc:standard:v2.1 ↵">note lengths</a> for more details.
 
-<div class="level4">
+Commonly used values for unit note length are `L:1/4` - quarter note (crotchet), `L:1/8` - eighth note (quaver) and `L:1/16` - sixteenth note (semi-quaver). `L:1` (whole note) - or equivalently `L:1/1`, `L:1/2` (minim), `L:1/32` (demi-semi-quaver), `L:1/64`, `L:1/128`, `L:1/256` and `L:1/512` are also available, although `L:1/64` and shorter values are optional and may not be provided by all software packages.
 
-The `L:` field specifies the unit note length - the length of a note as
-represented by a single letter in abc - see [note
-lengths](#note_lengths "abc:standard:v2.1 ↵"){.wikilink1} for more
-details.
+If there is no `L:` field defined, a unit note length is set by default, based on the meter field `M:`. This default is calculated by computing the meter as a decimal: if it is less than 0.75 the default unit note length is a sixteenth note; if it is 0.75 or greater, it is an eighth note. For example, 2/4 = 0.5, so, the default unit note length is a sixteenth note, while for 4/4 = 1.0, or 6/8 = 0.75, or 3/4= 0.75, it is an eighth note. For `M:C` (4/4), `M:C|` (2/2) and `M:none` (free meter), the default unit note length is 1/8.
 
-Commonly used values for unit note length are `L:1/4` - quarter note
-(crotchet), `L:1/8` - eighth note (quaver) and `L:1/16` - sixteenth note
-(semi-quaver). `L:1` (whole note) - or equivalently `L:1/1`, `L:1/2`
-(minim), `L:1/32` (demi-semi-quaver), `L:1/64`, `L:1/128`, `L:1/256` and
-`L:1/512` are also available, although `L:1/64` and shorter values are
-optional and may not be provided by all software packages.
+A meter change within the body of the tune will not change the unit note length.
 
-If there is no `L:` field defined, a unit note length is set by default,
-based on the meter field `M:`. This default is calculated by computing
-the meter as a decimal: if it is less than 0.75 the default unit note
-length is a sixteenth note; if it is 0.75 or greater, it is an eighth
-note. For example, 2/4 = 0.5, so, the default unit note length is a
-sixteenth note, while for 4/4 = 1.0, or 6/8 = 0.75, or 3/4= 0.75, it is
-an eighth note. For `M:C` (4/4), `M:C|` (2/2) and `M:none` (free meter),
-the default unit note length is 1/8.
+#### 3.1.8 Q: - tempo
 
-A meter change within the body of the tune will not change the unit note
-length.
-
-</div>
-
-#### 3.1.8 Q: - tempo {#qtempo}
-
-<div class="level4">
-
-The `Q:` field defines the tempo in terms of a number of beats per
-minute, e.g. `Q:1/2=120` means 120 half-note beats per minute.
+The `Q:` field defines the tempo in terms of a number of beats per minute, e.g. `Q:1/2=120` means 120 half-note beats per minute.
 
 There may be up to 4 beats in the definition, e.g:
 
-``` {.code}
+``` code
 Q:1/4 3/8 1/4 3/8=40
 ```
 
-This means: play the tune as if `Q:5/4=40` was written, but print the
-tempo indication using separate notes as specified by the user.
+This means: play the tune as if `Q:5/4=40` was written, but print the tempo indication using separate notes as specified by the user.
 
-The tempo definition may be preceded or followed by an optional [text
-string](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1},
-enclosed by quotes, e.g.
+The tempo definition may be preceded or followed by an optional <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text string</a>, enclosed by quotes, e.g.
 
-``` {.code}
+``` code
 Q: "Allegro" 1/4=120
 Q: 3/8=50 "Slowly"
 ```
 
-It is OK to give a string without an explicit tempo indication, e.g.
-`Q:"Andante"`.
+It is OK to give a string without an explicit tempo indication, e.g. `Q:"Andante"`.
 
-Finally note that some previous `Q:` field syntax is now
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} (see
-[outdated information field
-syntax](#outdated_information_field_syntax "abc:standard:v2.1 ↵"){.wikilink1}).
+Finally note that some previous `Q:` field syntax is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> (see <a href="#outdated_information_field_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">outdated information field syntax</a>).
 
-</div>
+#### 3.1.9 P: - parts
 
-#### 3.1.9 P: - parts {#pparts}
+*VOLATILE:* For music with more than one voice, interaction between the `P:` and `V:` fields will be clarified when multi-voice music is addressed in abc 2.2. The use of `P:` for single voice music will be revisited at the same time.
 
-<div class="level4">
+The `P:` field can be used in the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> to state the order in which the tune parts are played, i.e. `P:ABABCDCD`, and then inside the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> to mark each part, i.e. `P:A` or `P:B`. (In this context part refers to a section of the tune, rather than a voice in multi-voice music.)
 
-*VOLATILE:* For music with more than one voice, interaction between the
-`P:` and `V:` fields will be clarified when multi-voice music is
-addressed in abc 2.2. The use of `P:` for single voice music will be
-revisited at the same time.
+Within the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a>, you can give instruction to repeat a part by following it with a number: e.g. `P:A3` is equivalent to `P:AAA`. You can make a sequence repeat by using parentheses: e.g. `P:(AB)3` is equivalent to `P:ABABAB`. Nested parentheses are permitted; dots may be placed anywhere within the header `P:` field to increase legibility: e.g. `P:((AB)3.(CD)3)2`. These dots are ignored by computer programs.
 
-The `P:` field can be used in the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} to
-state the order in which the tune parts are played, i.e. `P:ABABCDCD`,
-and then inside the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} to mark
-each part, i.e. `P:A` or `P:B`. (In this context part refers to a
-section of the tune, rather than a voice in multi-voice music.)
+See <a href="#variant_endings" class="wikilink1" title="abc:standard:v2.1 ↵">variant endings</a> and <a href="#lyrics" class="wikilink1" title="abc:standard:v2.1 ↵">lyrics</a> for possible uses of `P:` notation.
 
-Within the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}, you
-can give instruction to repeat a part by following it with a number:
-e.g. `P:A3` is equivalent to `P:AAA`. You can make a sequence repeat by
-using parentheses: e.g. `P:(AB)3` is equivalent to `P:ABABAB`. Nested
-parentheses are permitted; dots may be placed anywhere within the header
-`P:` field to increase legibility: e.g. `P:((AB)3.(CD)3)2`. These dots
-are ignored by computer programs.
+Player programs should use the `P:` field if possible to render a complete playback of the tune; typesetting programs should include the `P:` field values in the printed score.
 
-See [variant
-endings](#variant_endings "abc:standard:v2.1 ↵"){.wikilink1} and
-[lyrics](#lyrics "abc:standard:v2.1 ↵"){.wikilink1} for possible uses of
-`P:` notation.
+See <a href="#typesetting_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting information fields</a> for details of how the part information may be included in the printed score.
 
-Player programs should use the `P:` field if possible to render a
-complete playback of the tune; typesetting programs should include the
-`P:` field values in the printed score.
+#### 3.1.10 Z: - transcription
 
-See [typesetting information
-fields](#typesetting_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
-for details of how the part information may be included in the printed
-score.
-
-</div>
-
-#### 3.1.10 Z: - transcription {#ztranscription}
-
-<div class="level4">
-
-Typically the `Z:` field contains the name(s) of the person(s) who
-transcribed the tune into abc, and possibly some contact information,
-e.g. an (e-)mail address or homepage URL.
+Typically the `Z:` field contains the name(s) of the person(s) who transcribed the tune into abc, and possibly some contact information, e.g. an (e-)mail address or homepage URL.
 
 *Example:* Simple transcription notes.
 
-``` {.code}
+``` code
 Z:John Smith, <j.s@mail.com>
 ```
 
-However, it has also taken over the role of the `%%abc-copyright` and
-`%%abc-edited-by` since they have been
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} (see
-[outdated
-directives](#outdated_directives "abc:standard:v2.1 ↵"){.wikilink1}).
+However, it has also taken over the role of the `%%abc-copyright` and `%%abc-edited-by` since they have been <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> (see <a href="#outdated_directives" class="wikilink1" title="abc:standard:v2.1 ↵">outdated directives</a>).
 
 *Example:* Detailed transcription notes.
 
-``` {.code}
+``` code
 Z:abc-transcription John Smith, <j.s@mail.com>, 1st Jan 2010
 Z:abc-edited-by Fred Bloggs, <f.b@mail.com>, 31st Dec 2010
 Z:abc-copyright &copy; John Smith
 ```
 
-This new usage means that an update history can be recorded in
-collections which are collaboratively edited by a number of users.
+This new usage means that an update history can be recorded in collections which are collaboratively edited by a number of users.
 
-Note that there is no formal syntax for the contents of this field,
-although users are strongly encouraged to be consistent, but, by
-convention, `Z:abc-copyright` refers to the copyright of the abc
-transcription rather than the tune.
+Note that there is no formal syntax for the contents of this field, although users are strongly encouraged to be consistent, but, by convention, `Z:abc-copyright` refers to the copyright of the abc transcription rather than the tune.
 
-See [typesetting information
-fields](#typesetting_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
-for details of how the transcription information may be included in the
-printed score.
+See <a href="#typesetting_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting information fields</a> for details of how the transcription information may be included in the printed score.
 
-*Comment:* If required, software may even choose to interpret specific
-`Z:` strings, for example to print out the string which follows after
-`Z:abc-copyright`.
+*Comment:* If required, software may even choose to interpret specific `Z:` strings, for example to print out the string which follows after `Z:abc-copyright`.
 
-</div>
+#### 3.1.11 N: - notes
 
-#### 3.1.11 N: - notes {#nnotes}
+Contains general annotations, such as references to other tunes which are similar, details on how the original notation of the tune was converted to abc, etc.
 
-<div class="level4">
+See <a href="#typesetting_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting information fields</a> for details of how notes may be included in the printed score.
 
-Contains general annotations, such as references to other tunes which
-are similar, details on how the original notation of the tune was
-converted to abc, etc.
+#### 3.1.12 G: - group
 
-See [typesetting information
-fields](#typesetting_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
-for details of how notes may be included in the printed score.
+Database software may use this field to group together tunes (for example by instruments) for indexing purposes. It can also be used for creating medleys - however, this usage is not standardised.
 
-</div>
-
-#### 3.1.12 G: - group {#ggroup}
-
-<div class="level4">
-
-Database software may use this field to group together tunes (for
-example by instruments) for indexing purposes. It can also be used for
-creating medleys - however, this usage is not standardised.
-
-</div>
-
-#### 3.1.13 H: - history {#hhistory}
-
-<div class="level4">
+#### 3.1.13 H: - history
 
 Designed for multi-line notes, stories and anecdotes.
 
-Although the `H:` fields are typically not typeset, the correct usage
-for multi-line input is to use [field
-continuation](#field_continuation "abc:standard:v2.1 ↵"){.wikilink1}
-syntax (`+:`), rather than `H:` at the start of each subsequent line of
-a multi-line note. This allows, for example, database applications to
-distinguish between two different anecdotes.
+Although the `H:` fields are typically not typeset, the correct usage for multi-line input is to use <a href="#field_continuation" class="wikilink1" title="abc:standard:v2.1 ↵">field continuation</a> syntax (`+:`), rather than `H:` at the start of each subsequent line of a multi-line note. This allows, for example, database applications to distinguish between two different anecdotes.
 
 *Examples:*
 
-``` {.code}
+``` code
 H:this is considered
 +:as a single entry
 ```
 
-``` {.code}
+``` code
 H:this usage is considered as two entries
 H:rather than one
 ```
 
-The original usage of `H:` (where subsequent lines need no field
-indicator) is now
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} (see
-[outdated information field
-syntax](#outdated_information_field_syntax "abc:standard:v2.1 ↵"){.wikilink1}).
+The original usage of `H:` (where subsequent lines need no field indicator) is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> (see <a href="#outdated_information_field_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">outdated information field syntax</a>).
 
-See [typesetting information
-fields](#typesetting_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
-for details of how the history may be included in the printed score.
+See <a href="#typesetting_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting information fields</a> for details of how the history may be included in the printed score.
 
-</div>
+#### 3.1.14 K: - key
 
-#### 3.1.14 K: - key {#kkey}
+The key signature should be specified with a capital letter (`A-G`) which may be followed by a `#` or `b` for sharp or flat respectively. In addition the mode should be specified (when no mode is indicated, `major` is assumed).
 
-<div class="level4">
+For example, `K:C major`, `K:A minor`, `K:C ionian`, `K:A aeolian`, `K:G mixolydian`, `K:D dorian`, `K:E phrygian`, `K:F lydian` and `K:B locrian` would all produce a staff with no sharps or flats. The spaces can be left out, capitalisation is ignored for the modes and in fact only the first three letters of each mode are parsed so that, for example, `K:F# mixolydian` is the same as `K:F#Mix` or even `K:F#MIX`. As a special case, `minor` may be abbreviated to `m`.
 
-The key signature should be specified with a capital letter (`A-G`)
-which may be followed by a `#` or `b` for sharp or flat respectively. In
-addition the mode should be specified (when no mode is indicated,
-`major` is assumed).
-
-For example, `K:C major`, `K:A minor`, `K:C ionian`, `K:A aeolian`,
-`K:G mixolydian`, `K:D dorian`, `K:E phrygian`, `K:F lydian` and
-`K:B locrian` would all produce a staff with no sharps or flats. The
-spaces can be left out, capitalisation is ignored for the modes and in
-fact only the first three letters of each mode are parsed so that, for
-example, `K:F# mixolydian` is the same as `K:F#Mix` or even `K:F#MIX`.
-As a special case, `minor` may be abbreviated to `m`.
-
-This table sums up how the same key signatures can be written in
-different ways:
-
-<div class="table sectionedit17">
+This table sums up how the same key signatures can be written in different ways:
 
 Mode
 Ionian
@@ -3229,428 +998,179 @@ Minor
 `FbLyd`
 `BbLoc`
 
-</div>
+By specifying an empty `K:` field, or `K:none`, it is possible to use no key signature at all.
 
-By specifying an empty `K:` field, or `K:none`, it is possible to use no
-key signature at all.
+The key signatures may be *modified* by adding <a href="#accidentals" class="wikilink1" title="abc:standard:v2.1 ↵">accidentals</a>, according to the format `K:<tonic> <mode> <accidentals>`. For example, `K:D Phr ^f` would give a key signature with two flats and one sharp, which designates a very common mode in Klezmer (Ahavoh Rabboh) and in Arabic music (Maqam Hedjaz). Likewise, "`K:D maj =c`" or "`K:D =c`" will give a key signature with F sharp and c natural (the D mixolydian mode). Note that there can be several modifying accidentals, separated by spaces, each beginning with an accidental sign (`__`, `_`, `=`, `^` or `^^`), followed by a note letter. The case of the letter is used to determine on which line the accidental is placed.
 
-The key signatures may be *modified* by adding
-[accidentals](#accidentals "abc:standard:v2.1 ↵"){.wikilink1}, according
-to the format `K:<tonic> <mode> <accidentals>`. For example,
-`K:D Phr ^f` would give a key signature with two flats and one sharp,
-which designates a very common mode in Klezmer (Ahavoh Rabboh) and in
-Arabic music (Maqam Hedjaz). Likewise, "`K:D maj =c`" or "`K:D =c`" will
-give a key signature with F sharp and c natural (the D mixolydian mode).
-Note that there can be several modifying accidentals, separated by
-spaces, each beginning with an accidental sign (`__`, `_`, `=`, `^` or
-`^^`), followed by a note letter. The case of the letter is used to
-determine on which line the accidental is placed.
+It is possible to use the format `K:<tonic> exp <accidentals>` to explicitly define all the accidentals of a key signature. Thus `K:D Phr ^f` could also be notated as `K:D exp _b _e ^f`, where 'exp' is an abbreviation of 'explicit'. Again, the case of the letter is used to determine on which line the accidental is placed.
 
-It is possible to use the format `K:<tonic> exp <accidentals>` to
-explicitly define all the accidentals of a key signature. Thus
-`K:D Phr ^f` could also be notated as `K:D exp _b _e ^f`, where 'exp' is
-an abbreviation of 'explicit'. Again, the case of the letter is used to
-determine on which line the accidental is placed.
+Software that does not support explicit key signatures should mark the individual notes in the tune with the accidentals that apply to them.
 
-Software that does not support explicit key signatures should mark the
-individual notes in the tune with the accidentals that apply to them.
+Scottish highland pipes typically have the scale `G A B ^c d e ^f g a` and highland pipe music primarily uses the modes D major and A mixolyian (plus B minor and E dorian). Therefore there are two additional keys specifically for notating highland bagpipe tunes; `K:HP` doesn't put a key signature on the music, as is common with many tune books of this music, while `K:Hp` marks the stave with F sharp, C sharp and G natural. Both force all the beams and stems of normal notes to go downwards, and of grace notes to go upwards.
 
-Scottish highland pipes typically have the scale `G A B ^c d e ^f g a`
-and highland pipe music primarily uses the modes D major and A mixolyian
-(plus B minor and E dorian). Therefore there are two additional keys
-specifically for notating highland bagpipe tunes; `K:HP` doesn't put a
-key signature on the music, as is common with many tune books of this
-music, while `K:Hp` marks the stave with F sharp, C sharp and G natural.
-Both force all the beams and stems of normal notes to go downwards, and
-of grace notes to go upwards.
+By default, the <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a> will be typeset with a treble clef. You can add special clef specifiers to the `K:` field, with or without a key signature, to change the clef and various other staff properties, such as transposition. `K: clef=bass`, for example, would indicate the bass clef. See <a href="#clefs_and_transposition" class="wikilink1" title="abc:standard:v2.1 ↵">clefs and transposition</a> for full details.
 
-By default, the [abc
-tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1} will be
-typeset with a treble clef. You can add special clef specifiers to the
-`K:` field, with or without a key signature, to change the clef and
-various other staff properties, such as transposition. `K: clef=bass`,
-for example, would indicate the bass clef. See [clefs and
-transposition](#clefs_and_transposition "abc:standard:v2.1 ↵"){.wikilink1}
-for full details.
+Note that the first occurrence of the `K:` field, which must appear in every tune, finishes the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a>. All following lines are considered to be part of the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>.
 
-Note that the first occurrence of the `K:` field, which must appear in
-every tune, finishes the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}. All
-following lines are considered to be part of the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+#### 3.1.15 R: - rhythm
 
-</div>
+Contains an indication of the type of tune (e.g. hornpipe, double jig, single jig, 48-bar polka, etc). This gives the musician some indication of how a tune should be interpreted as well as being useful for database applications (see <a href="#bdfsbackground_information" class="wikilink1" title="abc:standard:v2.1 ↵">background information</a>). It has also been used experimentally by playback software (in particular, <a href="http://abcnotation.com/software#abcmus" class="urlextern" title="http://abcnotation.com/software#abcmus">abcmus</a>) to provide more realistic playback by altering the stress on particular notes within a bar.
 
-#### 3.1.15 R: - rhythm {#rrhythm}
+See <a href="#typesetting_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting information fields</a> for details of how the rhythm may be included in the printed score.
 
-<div class="level4">
+#### 3.1.16 B:, D:, F:, S: - background information
 
-Contains an indication of the type of tune (e.g. hornpipe, double jig,
-single jig, 48-bar polka, etc). This gives the musician some indication
-of how a tune should be interpreted as well as being useful for database
-applications (see [background
-information](#bdfsbackground_information "abc:standard:v2.1 ↵"){.wikilink1}).
-It has also been used experimentally by playback software (in
-particular,
-[abcmus](http://abcnotation.com/software#abcmus "http://abcnotation.com/software#abcmus"){.urlextern})
-to provide more realistic playback by altering the stress on particular
-notes within a bar.
+The <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> `B:book` (i.e. printed tune book), `D:discography` (i.e. a CD or LP where the tune can be heard), `F:file url` (i.e. where the either the <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a> or the <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> can be found on the web) and `S:source` (i.e. the circumstances under which a tune was collected or learned), as well as the fields `H:history`, `N:notes`, `O:origin` and `R:rhythm` mentioned above, are used for providing structured background information about a tune. These are particularly aimed at large tune collections (common in abc since its inception) and, if used in a systematic way, mean that abc database software can sort, search and filter on specific fields (for example, to sort by rhythm or filter out all the tunes on a particular CD).
 
-See [typesetting information
-fields](#typesetting_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
-for details of how the rhythm may be included in the printed score.
+The abc standard does not prescribe how these fields should be used, but it is typical to employ several fields of the same type each containing one piece of information, rather than one field containing several pieces of information (see <a href="#englishabc" class="wikilink1" title="abc:standard:v2.1 ↵">English.abc</a> for some examples).
 
-</div>
+See <a href="#typesetting_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting information fields</a> for details of how background information may be included in the printed score.
 
-#### 3.1.16 B:, D:, F:, S: - background information {#bdfsbackground_information}
+#### 3.1.17 I: - instruction
 
-<div class="level4">
+The `I:`(instruction) field is used for an extended set of instruction directives concerned with how the abc code is to be interpreted.
 
-The [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-`B:book` (i.e. printed tune book), `D:discography` (i.e. a CD or LP
-where the tune can be heard), `F:file url` (i.e. where the either the
-[abc tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1} or
-the [abc file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}
-can be found on the web) and `S:source` (i.e. the circumstances under
-which a tune was collected or learned), as well as the fields
-`H:history`, `N:notes`, `O:origin` and `R:rhythm` mentioned above, are
-used for providing structured background information about a tune. These
-are particularly aimed at large tune collections (common in abc since
-its inception) and, if used in a systematic way, mean that abc database
-software can sort, search and filter on specific fields (for example, to
-sort by rhythm or filter out all the tunes on a particular CD).
+The `I:` field can be used interchangeably with <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a> so that any `I:directive` may instead be written `%%directive`, and vice-versa. However, to use the <a href="#use_of_fields_within_the_tune_body" class="wikilink1" title="abc:standard:v2.1 ↵">inline</a> version, the `I:` version must be used.
 
-The abc standard does not prescribe how these fields should be used, but
-it is typical to employ several fields of the same type each containing
-one piece of information, rather than one field containing several
-pieces of information (see
-[English.abc](#englishabc "abc:standard:v2.1 ↵"){.wikilink1} for some
-examples).
+Despite this interchangeability, certain directives have been adopted as part of the standard (indicated by `I:` in this document) and must be implemented by software confirming to this version of the standard; conversely, the <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a> (indicated by `%%` in this document) are optional.
 
-See [typesetting information
-fields](#typesetting_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
-for details of how background information may be included in the printed
-score.
+*Comment:* Since <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a> are optional, and not necessarily portable from one program to another, this means that `I:` fields containing <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a> should be treated liberally by abc software and, in particular, that `I:` fields which are not recognised should be ignored.
 
-</div>
+The following table contains a list of the `I:` field directives adopted as part of the abc standard, with links to further information:
 
-#### 3.1.17 I: - instruction {#iinstruction}
+| directive       | section                                                                                                      |
+|-----------------|--------------------------------------------------------------------------------------------------------------|
+| `I:abc-charset` | <a href="#charset_field" class="wikilink1" title="abc:standard:v2.1 ↵">charset field</a>                     |
+| `I:abc-version` | <a href="#version_field" class="wikilink1" title="abc:standard:v2.1 ↵">version field</a>                     |
+| `I:abc-include` | <a href="#include_field" class="wikilink1" title="abc:standard:v2.1 ↵">include field</a>                     |
+| `I:abc-creator` | <a href="#creator_field" class="wikilink1" title="abc:standard:v2.1 ↵">creator field</a>                     |
+| `I:linebreak`   | <a href="#typesetting_line-breaks" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting line breaks</a> |
+| `I:decoration`  | <a href="#decoration_dialects" class="wikilink1" title="abc:standard:v2.1 ↵">decoration dialects</a>         |
 
-<div class="level4">
+Typically, instruction fields are for use in the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>, to set defaults for the file, or (in most cases) in the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a>, but not in the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>. The occurrence of an instruction field in a <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> overrides that in the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>.
 
-The `I:`(instruction) field is used for an extended set of instruction
-directives concerned with how the abc code is to be interpreted.
+*Comment:* Remember that abc software which extracts separate tunes from a file must insert the fields of the original <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> into the header of the extracted tune: this is also true for the fields defined in this section.
 
-The `I:` field can be used interchangeably with [stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-so that any `I:directive` may instead be written `%%directive`, and
-vice-versa. However, to use the
-[inline](#use_of_fields_within_the_tune_body "abc:standard:v2.1 ↵"){.wikilink1}
-version, the `I:` version must be used.
+##### Charset field
 
-Despite this interchangeability, certain directives have been adopted as
-part of the standard (indicated by `I:` in this document) and must be
-implemented by software confirming to this version of the standard;
-conversely, the [stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-(indicated by `%%` in this document) are optional.
-
-*Comment:* Since [stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-are optional, and not necessarily portable from one program to another,
-this means that `I:` fields containing [stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-should be treated liberally by abc software and, in particular, that
-`I:` fields which are not recognised should be ignored.
-
-The following table contains a list of the `I:` field directives adopted
-as part of the abc standard, with links to further information:
-
-<div class="table sectionedit18">
-
-  directive         section
-  ----------------- ---------------------------------------------------------------------------------------
-  `I:abc-charset`   [charset field](#charset_field "abc:standard:v2.1 ↵"){.wikilink1}
-  `I:abc-version`   [version field](#version_field "abc:standard:v2.1 ↵"){.wikilink1}
-  `I:abc-include`   [include field](#include_field "abc:standard:v2.1 ↵"){.wikilink1}
-  `I:abc-creator`   [creator field](#creator_field "abc:standard:v2.1 ↵"){.wikilink1}
-  `I:linebreak`     [typesetting line breaks](#typesetting_line-breaks "abc:standard:v2.1 ↵"){.wikilink1}
-  `I:decoration`    [decoration dialects](#decoration_dialects "abc:standard:v2.1 ↵"){.wikilink1}
-
-</div>
-
-Typically, instruction fields are for use in the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}, to
-set defaults for the file, or (in most cases) in the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}, but
-not in the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}. The
-occurrence of an instruction field in a [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}
-overrides that in the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-*Comment:* Remember that abc software which extracts separate tunes from
-a file must insert the fields of the original [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} into
-the header of the extracted tune: this is also true for the fields
-defined in this section.
-
-</div>
-
-##### Charset field {#charset_field}
-
-<div class="level5">
-
-The `I:abc-charset <value>` field indicates the character set in which
-[text
-strings](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1} are
-coded. Since this affects how the file is read, it should appear as
-early as possible in the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}. It
-may not be changed further on in the file.
+The `I:abc-charset <value>` field indicates the character set in which <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text strings</a> are coded. Since this affects how the file is read, it should appear as early as possible in the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>. It may not be changed further on in the file.
 
 *Example:*
 
-``` {.code}
+``` code
 I:abc-charset utf-8
 ```
 
-Legal values for the charset field are `iso-8859-1` through to
-`iso-8859-10`, `us-ascii` and `utf-8` (the default).
+Legal values for the charset field are `iso-8859-1` through to `iso-8859-10`, `us-ascii` and `utf-8` (the default).
 
-Software that exports [abc
-tunes](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}
-conforming to this standard should include a charset field if an
-encoding other than `utf-8` is used. All conforming abc software must be
-able to handle [text
-strings](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1}
-coded in `utf-8` and `us-ascii`. Support for the other charsets is
-optional.
+Software that exports <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunes</a> conforming to this standard should include a charset field if an encoding other than `utf-8` is used. All conforming abc software must be able to handle <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text strings</a> coded in `utf-8` and `us-ascii`. Support for the other charsets is optional.
 
-Extensive information about
-[UTF-8](http://en.wikipedia.org/wiki/UTF-8 "http://en.wikipedia.org/wiki/UTF-8"){.urlextern}
-and
-[ISO-8859](http://en.wikipedia.org/wiki/ISO/IEC_8859 "http://en.wikipedia.org/wiki/ISO/IEC_8859"){.urlextern}
-can be found on wikipedia.
+Extensive information about <a href="http://en.wikipedia.org/wiki/UTF-8" class="urlextern" title="http://en.wikipedia.org/wiki/UTF-8">UTF-8</a> and <a href="http://en.wikipedia.org/wiki/ISO/IEC_8859" class="urlextern" title="http://en.wikipedia.org/wiki/ISO/IEC_8859">ISO-8859</a> can be found on wikipedia.
 
-</div>
+##### Version field
 
-##### Version field {#version_field}
+Every <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> conforming to this standard should start with the line
 
-<div class="level5">
-
-Every [abc file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}
-conforming to this standard should start with the line
-
-``` {.code}
+``` code
 %abc-2.1
 ```
 
-(see [abc file
-identification](#abc_file_identification "abc:standard:v2.1 ↵"){.wikilink1}).
+(see <a href="#abc_file_identification" class="wikilink1" title="abc:standard:v2.1 ↵">abc file identification</a>).
 
-However to indicate tunes conforming to a different standard it is
-possible to use the `I:abc-version <value>` field, either in the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} (for
-individual tunes) or in the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+However to indicate tunes conforming to a different standard it is possible to use the `I:abc-version <value>` field, either in the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> (for individual tunes) or in the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>.
 
 *Example:*
 
-``` {.code}
+``` code
 I:abc-version 2.0
 ```
 
-</div>
+##### Include field
 
-##### Include field {#include_field}
-
-<div class="level5">
-
-The `I:abc-include <filename.abh>` imports the definitions found in a
-separate abc header file (.abh), and inserts them into the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} or
-[tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+The `I:abc-include <filename.abh>` imports the definitions found in a separate abc header file (.abh), and inserts them into the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> or <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a>.
 
 *Example:*
 
-``` {.code}
+``` code
 I:abc-include mydefs.abh
 ```
 
-The included file may contain [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1},
-[stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-and [comments](#comments_and_remarks "abc:standard:v2.1 ↵"){.wikilink1},
-but no other abc constructs.
+The included file may contain <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>, <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a> and <a href="#comments_and_remarks" class="wikilink1" title="abc:standard:v2.1 ↵">comments</a>, but no other abc constructs.
 
-If the header file cannot be found, the `I:abc-include` instruction
-should be ignored with a non-fatal error message.
+If the header file cannot be found, the `I:abc-include` instruction should be ignored with a non-fatal error message.
 
-*Comment:* If you use this construct and distribute your [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}, make
-sure that you distribute the .abh files with them.
+*Comment:* If you use this construct and distribute your <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a>, make sure that you distribute the .abh files with them.
 
-</div>
+##### Creator field
 
-##### Creator field {#creator_field}
-
-<div class="level5">
-
-The `I:abc-creator <value>` field contains the name and version number
-of the program that created the [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+The `I:abc-creator <value>` field contains the name and version number of the program that created the <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a>.
 
 *Example:*
 
-``` {.code}
+``` code
 I:abc-creator xml2abc-2.7
 ```
 
-Software that exports [abc
-tunes](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}
-conforming to this standard must include a creator field.
+Software that exports <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunes</a> conforming to this standard must include a creator field.
 
-</div>
+#### 3.1.18 Other fields
 
-#### 3.1.18 Other fields {#other_fields}
+-   For `m:` see <a href="#macros" class="wikilink1" title="abc:standard:v2.1 ↵">macros</a>.
 
-<div class="level4">
+-   For `r:` see <a href="#comments_and_remarks" class="wikilink1" title="abc:standard:v2.1 ↵">comments and remarks</a>.
 
--   <div class="li">
+-   For `s:` see <a href="#symbol_lines" class="wikilink1" title="abc:standard:v2.1 ↵">symbol lines</a>.
 
-    For `m:` see [macros](#macros "abc:standard:v2.1 ↵"){.wikilink1}.
+-   For `U:` see <a href="#redefinable_symbols" class="wikilink1" title="abc:standard:v2.1 ↵">redefinable symbols</a>.
 
-    </div>
+-   For `V:` see <a href="#multiple_voices" class="wikilink1" title="abc:standard:v2.1 ↵">multiple voices</a>.
 
--   <div class="li">
+-   For `W:` and `w:` see <a href="#lyrics" class="wikilink1" title="abc:standard:v2.1 ↵">lyrics</a>.
 
-    For `r:` see [comments and
-    remarks](#comments_and_remarks "abc:standard:v2.1 ↵"){.wikilink1}.
+### 3.2 Use of fields within the tune body
 
-    </div>
+[]()It is often desired to change the key (`K`), meter (`M`), or unit note length (`L`) mid-tune. These, and most other <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> which can be legally used within the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>, can be specified as an **inline field** by placing them within square brackets in a line of music
 
--   <div class="li">
+*Example:* The following two excerpts are considered equivalent - either variant is equally acceptable.
 
-    For `s:` see [symbol
-    lines](#symbol_lines "abc:standard:v2.1 ↵"){.wikilink1}.
-
-    </div>
-
--   <div class="li">
-
-    For `U:` see [redefinable
-    symbols](#redefinable_symbols "abc:standard:v2.1 ↵"){.wikilink1}.
-
-    </div>
-
--   <div class="li">
-
-    For `V:` see [multiple
-    voices](#multiple_voices "abc:standard:v2.1 ↵"){.wikilink1}.
-
-    </div>
-
--   <div class="li">
-
-    For `W:` and `w:` see
-    [lyrics](#lyrics "abc:standard:v2.1 ↵"){.wikilink1}.
-
-    </div>
-
-</div>
-
-### 3.2 Use of fields within the tune body {#use_of_fields_within_the_tune_body .sectionedit19}
-
-<div class="level3">
-
-[]()It is often desired to change the key (`K`), meter (`M`), or unit
-note length (`L`) mid-tune. These, and most other [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-which can be legally used within the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}, can be
-specified as an **inline field** by placing them within square brackets
-in a line of music
-
-*Example:* The following two excerpts are considered equivalent - either
-variant is equally acceptable.
-
-``` {.code}
+``` code
 E2E EFE|E2E EFG|[M:9/8] A2G F2E D2|]
 ```
 
-``` {.code}
+``` code
 E2E EFE|E2E EFG|\
 M:9/8
 A2G F2E D2|]
 ```
 
-The first bracket, field identifier and colon must be written without
-intervening spaces. Only one field may be placed within a pair of
-brackets; however, multiple bracketed fields may be placed next to each
-other. Where appropriate, [inline
-fields](#inline_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-(especially clef changes) can be used in the middle of a beam without
-breaking it.
+The first bracket, field identifier and colon must be written without intervening spaces. Only one field may be placed within a pair of brackets; however, multiple bracketed fields may be placed next to each other. Where appropriate, <a href="#inline_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">inline fields</a> (especially clef changes) can be used in the middle of a beam without breaking it.
 
-See [information
-fields](#information_fields "abc:standard:v2.1 ↵"){.wikilink1} for a
-table showing the fields that may appear within the body and those that
-may be used inline.
+See <a href="#information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> for a table showing the fields that may appear within the body and those that may be used inline.
 
-</div>
+### 3.3 Field continuation
 
-### 3.3 Field continuation {#field_continuation .sectionedit20}
-
-<div class="level3">
-
-A field that is too long for one line may be continued by prefixing `+:`
-at the start of the following line. For string-type [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-(see the [information
-fields](#information_fields "abc:standard:v2.1 ↵"){.wikilink1} table for
-a list of string-type fields), the continuation is considered to add a
-space between the two half lines.
+A field that is too long for one line may be continued by prefixing `+:` at the start of the following line. For string-type <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> (see the <a href="#information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> table for a list of string-type fields), the continuation is considered to add a space between the two half lines.
 
 *Example:* The following two excerpts are considered equivalent.
 
-``` {.code}
+``` code
 w:Sa-ys my au-l' wan to your aul' wan,
 +:will~ye come to the Wa-x-ies dar-gle?
 ```
 
-``` {.code}
+``` code
 w:Sa-ys my au-l' wan to your aul' wan, will~ye come to the Wa-x-ies dar-gle?
 ```
 
-*Comment:* This is most useful for continuing long `w:(aligned lyrics)`
-and `H:(history)` fields. However, it can also be useful for preventing
-automatic wrapping by email software (see [continuation of input
-lines](#continuation_of_input_lines "abc:standard:v2.1 ↵"){.wikilink1}).
+*Comment:* This is most useful for continuing long `w:(aligned lyrics)` and `H:(history)` fields. However, it can also be useful for preventing automatic wrapping by email software (see <a href="#continuation_of_input_lines" class="wikilink1" title="abc:standard:v2.1 ↵">continuation of input lines</a>).
 
-*Recommendation for GUI developers:* Sometimes users may wish to paste
-paragraphs of text into an [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1},
-particularly in the `H:(history)` field. GUI developers are recommended
-to provide tools for reformatting such paragraphs, for example by
-splitting them into several lines each prefixed by `+:`.
+*Recommendation for GUI developers:* Sometimes users may wish to paste paragraphs of text into an <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a>, particularly in the `H:(history)` field. GUI developers are recommended to provide tools for reformatting such paragraphs, for example by splitting them into several lines each prefixed by `+:`.
 
-There is no limit to the number of times a field may be continued and
-[comments](#comments_and_remarks "abc:standard:v2.1 ↵"){.wikilink1} and
-[stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-may be interspersed between the continuations.
+There is no limit to the number of times a field may be continued and <a href="#comments_and_remarks" class="wikilink1" title="abc:standard:v2.1 ↵">comments</a> and <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a> may be interspersed between the continuations.
 
-*Example:* The following is a legal continuation of the `w:` field,
-although the usage not recommended (the change of font could also be
-achieved by font specifiers - see [font
-directives](#font_directives "abc:standard:v2.1 ↵"){.wikilink1}).
+*Example:* The following is a legal continuation of the `w:` field, although the usage not recommended (the change of font could also be achieved by font specifiers - see <a href="#font_directives" class="wikilink1" title="abc:standard:v2.1 ↵">font directives</a>).
 
-``` {.code}
+``` code
 %%vocalfont Times-Roman 14
 w:nor-mal
 % legal, but not recommended
@@ -3660,610 +1180,337 @@ w:nor-mal
 +:nor-mal
 ```
 
-*Comment:* abc standard 2.3 is scheduled to address markup and will be
-seeking a more elegant way to achieve the above.
+*Comment:* abc standard 2.3 is scheduled to address markup and will be seeking a more elegant way to achieve the above.
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-4. The tune body {#the_tune_body .sectionedit21}
+4. The tune body
 ----------------
 
-<div class="level2">
-
-</div>
-
-### 4.1 Pitch {#pitch .sectionedit22}
-
-<div class="level3">
+### 4.1 Pitch
 
 The following letters are used to represent notes using the treble clef:
 
-[![](wiki/_media/abc-standard-pitches.0000.png){.media}](/wiki/_detail/abc:standard:pitches.0000.png?id=abc%3Astandard%3Av2.1 "abc:standard:pitches.0000.png"){.media}
+<a href="/wiki/_detail/abc:standard:pitches.0000.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:pitches.0000.png"><img src="wiki/_media/abc-standard-pitches.0000.png" class="media" /></a>
 
 and by extension other lower and higher notes are available.
 
-Lower octaves are reached by using commas and higher octaves are written
-using apostrophes; each extra comma/apostrophe lowers/raises the note by
-an octave.
+Lower octaves are reached by using commas and higher octaves are written using apostrophes; each extra comma/apostrophe lowers/raises the note by an octave.
 
-Programs should be able to to parse any combinations of `,` and `'`
-signs appearing after the note. For example `C,',` (C comma apostrophe
-comma) has the the same meaning as `C,` (C comma) and (uppercase) `C'`
-(C apostrophe) should have the same meaning as (lowercase) `c`.
+Programs should be able to to parse any combinations of `,` and `'` signs appearing after the note. For example `C,',` (C comma apostrophe comma) has the the same meaning as `C,` (C comma) and (uppercase) `C'` (C apostrophe) should have the same meaning as (lowercase) `c`.
 
-Alternatively, it is possible to raise or lower a section of [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1} using
-the `octave` parameter of the `K:` or `V:` fields.
+Alternatively, it is possible to raise or lower a section of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> using the `octave` parameter of the `K:` or `V:` fields.
 
-*Comment:* The English note names `C`-`B`, which are used in the abc
-system, correspond to the note names `do`-`si`, which are used in many
-other languages: `do`=`C`, `re`=`D`, `mi`=`E`, `fa`=`F`, `sol`=`G`,
-`la`=`A`, `si`=`B`.
+*Comment:* The English note names `C`-`B`, which are used in the abc system, correspond to the note names `do`-`si`, which are used in many other languages: `do`=`C`, `re`=`D`, `mi`=`E`, `fa`=`F`, `sol`=`G`, `la`=`A`, `si`=`B`.
 
-</div>
+### 4.2 Accidentals
 
-### 4.2 Accidentals {#accidentals .sectionedit23}
+The symbols `^`, `=` and `_` are used (before a note) to notate respectively a sharp, natural or flat. Double sharps and flats are available with `^^` and `__` respectively.
 
-<div class="level3">
+### 4.3 Note lengths
 
-The symbols `^`, `=` and `_` are used (before a note) to notate
-respectively a sharp, natural or flat. Double sharps and flats are
-available with `^^` and `__` respectively.
+*Throughout this document note lengths are referred as sixteenth, eighth, etc. The equivalents common in the U.K. are sixteenth note = semi-quaver, eighth = quaver, quarter = crotchet and half = minim.*
 
-</div>
+The <a href="#lunit_note_length" class="wikilink1" title="abc:standard:v2.1 ↵">unit note length</a> for the transcription is set in the `L:` field or, if the `L:` field does not exist, inferred from the `M:` field. For example, `L:1/8` sets an eighth note as the unit note length.
 
-### 4.3 Note lengths {#note_lengths .sectionedit24}
+A single letter in the range `A-G`, `a-g` then represents a note of this length. For example, if the unit note length is an eighth note, `DEF` represents 3 eighth notes.
 
-<div class="level3">
+Notes of differing lengths can be obtained by simply putting a multiplier after the letter. Thus if the unit note length is 1/16, `A` or `A1` is a sixteenth note, `A2` an eighth note, `A3` a dotted eighth note, `A4` a quarter note, `A6` a dotted quarter note, `A7` a double dotted quarter note, `A8` a half note, `A12` a dotted half note, `A14` a double dotted half note, `A15` a triple dotted half note and so on. If the unit note length is `1/8`, `A` is an eighth note, `A2` a quarter note, `A3` a dotted quarter note, `A4` a half note, and so on.
 
-*Throughout this document note lengths are referred as sixteenth,
-eighth, etc. The equivalents common in the U.K. are sixteenth note =
-semi-quaver, eighth = quaver, quarter = crotchet and half = minim.*
-
-The [unit note
-length](#lunit_note_length "abc:standard:v2.1 ↵"){.wikilink1} for the
-transcription is set in the `L:` field or, if the `L:` field does not
-exist, inferred from the `M:` field. For example, `L:1/8` sets an eighth
-note as the unit note length.
-
-A single letter in the range `A-G`, `a-g` then represents a note of this
-length. For example, if the unit note length is an eighth note, `DEF`
-represents 3 eighth notes.
-
-Notes of differing lengths can be obtained by simply putting a
-multiplier after the letter. Thus if the unit note length is 1/16, `A`
-or `A1` is a sixteenth note, `A2` an eighth note, `A3` a dotted eighth
-note, `A4` a quarter note, `A6` a dotted quarter note, `A7` a double
-dotted quarter note, `A8` a half note, `A12` a dotted half note, `A14` a
-double dotted half note, `A15` a triple dotted half note and so on. If
-the unit note length is `1/8`, `A` is an eighth note, `A2` a quarter
-note, `A3` a dotted quarter note, `A4` a half note, and so on.
-
-To get shorter notes, either divide them - e.g. if `A` is an eighth
-note, `A/2` is a sixteenth note, `A3/2` is a dotted eighth note, `A/4`
-is a thirty-second note - or change the [unit note
-length](#lunit_note_length "abc:standard:v2.1 ↵"){.wikilink1} with the
-`L:` field. Alternatively, if the music has a broken rhythm, e.g. dotted
-eighth note/sixteenth note pairs, use [broken
-rhythm](#broken_rhythm "abc:standard:v2.1 ↵"){.wikilink1} markers.
+To get shorter notes, either divide them - e.g. if `A` is an eighth note, `A/2` is a sixteenth note, `A3/2` is a dotted eighth note, `A/4` is a thirty-second note - or change the <a href="#lunit_note_length" class="wikilink1" title="abc:standard:v2.1 ↵">unit note length</a> with the `L:` field. Alternatively, if the music has a broken rhythm, e.g. dotted eighth note/sixteenth note pairs, use <a href="#broken_rhythm" class="wikilink1" title="abc:standard:v2.1 ↵">broken rhythm</a> markers.
 
 Note that `A/` is shorthand for `A/2` and similarly `A//` = `A/4`, etc.
 
-*Comment:* Note lengths that can't be translated to conventional staff
-notation are legal, but their representation by abc typesetting software
-is undefined and they should be avoided.
+*Comment:* Note lengths that can't be translated to conventional staff notation are legal, but their representation by abc typesetting software is undefined and they should be avoided.
 
-*Note for developers:* All compliant software should be able to handle
-note lengths down to a 128th note; shorter lengths are optional.
+*Note for developers:* All compliant software should be able to handle note lengths down to a 128th note; shorter lengths are optional.
 
-</div>
+### 4.4 Broken rhythm
 
-### 4.4 Broken rhythm {#broken_rhythm .sectionedit25}
+A common occurrence in traditional music is the use of a dotted or broken rhythm. For example, hornpipes, strathspeys and certain morris jigs all have dotted eighth notes followed by sixteenth notes, as well as vice-versa in the case of strathspeys. To support this, abc notation uses a `>` to mean 'the previous note is dotted, the next note halved' and `<` to mean 'the previous note is halved, the next dotted'.
 
-<div class="level3">
+*Example:* The following lines all mean the same thing (the third version is recommended):
 
-A common occurrence in traditional music is the use of a dotted or
-broken rhythm. For example, hornpipes, strathspeys and certain morris
-jigs all have dotted eighth notes followed by sixteenth notes, as well
-as vice-versa in the case of strathspeys. To support this, abc notation
-uses a `>` to mean 'the previous note is dotted, the next note halved'
-and `<` to mean 'the previous note is halved, the next dotted'.
-
-*Example:* The following lines all mean the same thing (the third
-version is recommended):
-
-``` {.code}
+``` code
 L:1/16
 a3b cd3 a2b2c2d2
 ```
 
-``` {.code}
+``` code
 L:1/8
 a3/2b/2 c/2d3/2 abcd
 ```
 
-``` {.code}
+``` code
 L:1/8
 a>b c<d abcd
 ```
 
-[![](wiki/_media/abc-standard-broken-80.png){.media}](/wiki/_detail/abc:standard:broken-80.png?id=abc%3Astandard%3Av2.1 "abc:standard:broken-80.png"){.media}
+<a href="/wiki/_detail/abc:standard:broken-80.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:broken-80.png"><img src="wiki/_media/abc-standard-broken-80.png" class="media" /></a>
 
-As a logical extension, `>>` means that the first note is double dotted
-and the second quartered and `>>>` means that the first note is triple
-dotted and the length of the second divided by eight. Similarly for `<<`
-and `<<<`.
+As a logical extension, `>>` means that the first note is double dotted and the second quartered and `>>>` means that the first note is triple dotted and the length of the second divided by eight. Similarly for `<<` and `<<<`.
 
-Note that the use of broken rhythm markers between notes of unequal
-lengths will produce undefined results, and should be avoided.
+Note that the use of broken rhythm markers between notes of unequal lengths will produce undefined results, and should be avoided.
 
-</div>
+### 4.5 Rests
 
-### 4.5 Rests {#rests .sectionedit26}
+Rests can be transcribed with a `z` or an `x` and can be modified in length in exactly the same way as normal notes. `z` rests are printed in the resulting sheet music, while `x` rests are invisible, that is, not shown in the printed music.
 
-<div class="level3">
+Multi-measure rests are notated using `Z` (upper case) followed by the number of measures.
 
-Rests can be transcribed with a `z` or an `x` and can be modified in
-length in exactly the same way as normal notes. `z` rests are printed in
-the resulting sheet music, while `x` rests are invisible, that is, not
-shown in the printed music.
+*Example:* The following excerpts, shown with the typeset results, are musically equivalent (although they are typeset differently).
 
-Multi-measure rests are notated using `Z` (upper case) followed by the
-number of measures.
-
-*Example:* The following excerpts, shown with the typeset results, are
-musically equivalent (although they are typeset differently).
-
-``` {.code}
+``` code
 Z4|CD EF|GA Bc
 ```
 
-[![](wiki/_media/abc-standard-rests1-80.png){.media}](/wiki/_detail/abc:standard:rests1-80.png?id=abc%3Astandard%3Av2.1 "abc:standard:rests1-80.png"){.media}
+<a href="/wiki/_detail/abc:standard:rests1-80.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:rests1-80.png"><img src="wiki/_media/abc-standard-rests1-80.png" class="media" /></a>
 
-``` {.code}
+``` code
 z4|z4|z4|z4|CD EF|GA Bc
 ```
 
-[![](wiki/_media/abc-standard-rests2-80.png){.media}](/wiki/_detail/abc:standard:rests2-80.png?id=abc%3Astandard%3Av2.1 "abc:standard:rests2-80.png"){.media}
+<a href="/wiki/_detail/abc:standard:rests2-80.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:rests2-80.png"><img src="wiki/_media/abc-standard-rests2-80.png" class="media" /></a>
 
-When the number of measures is not given, `Z` is equivalent to a pause
-of one measure.
+When the number of measures is not given, `Z` is equivalent to a pause of one measure.
 
-By extension multi-measure invisible rests are notated using `X` (upper
-case) followed by the number of measures and when the number of measures
-is not given, `X` is equivalent to a pause of one measure.
+By extension multi-measure invisible rests are notated using `X` (upper case) followed by the number of measures and when the number of measures is not given, `X` is equivalent to a pause of one measure.
 
-*Comment:* Although not particularly valuable, a multi-measure invisible
-rest could be useful when a voice is silent for several measures.
+*Comment:* Although not particularly valuable, a multi-measure invisible rest could be useful when a voice is silent for several measures.
 
-</div>
+### 4.6 Clefs and transposition
 
-### 4.6 Clefs and transposition {#clefs_and_transposition .sectionedit27}
+*VOLATILE:* This section is subject to some clarifications with regard to transposition, rules for the `middle` parameter and interactions between different parameters.
 
-<div class="level3">
+Clef and transposition information may be provided in the `K:` <a href="#kkey" class="wikilink1" title="abc:standard:v2.1 ↵">key</a> and `V:` <a href="#multiple_voices" class="wikilink1" title="abc:standard:v2.1 ↵">voice</a> fields. The general syntax is:
 
-*VOLATILE:* This section is subject to some clarifications with regard
-to transposition, rules for the `middle` parameter and interactions
-between different parameters.
-
-Clef and transposition information may be provided in the `K:`
-[key](#kkey "abc:standard:v2.1 ↵"){.wikilink1} and `V:`
-[voice](#multiple_voices "abc:standard:v2.1 ↵"){.wikilink1} fields. The
-general syntax is:
-
-``` {.code}
+``` code
 [clef=]<clef name>[<line number>][+8 | -8] [middle=<pitch>] [transpose=<semitones>] [octave=<number>] [stafflines=<lines>]
 ```
 
-(where `<…>` denotes a value, `[…]` denotes an optional parameter, and
-`|` separates alternative values).
+(where `<…>` denotes a value, `[…]` denotes an optional parameter, and `|` separates alternative values).
 
--   <div class="li">
+-   `<clef name>` - may be `treble`, `alto`, `tenor`, `bass`, `perc` or `none`. `perc` selects the drum clef. `clef=` may be omitted.
 
-    `<clef name>` - may be `treble`, `alto`, `tenor`, `bass`, `perc` or
-    `none`. `perc` selects the drum clef. `clef=` may be omitted.
+-   `[<line number>]` - indicates on which staff line the base clef is written. Defaults are: treble: `2`; alto: `3`; tenor: `4`; bass: `4`.
 
-    </div>
+-   `[+8 | -8]` - draws '8' above or below the staff. The player will transpose the notes one octave higher or lower.
 
--   <div class="li">
+-   `[middle=<pitch>]` - is an alternate way to define the line number of the clef. The pitch indicates what note is displayed on the 3rd line of the staff. Defaults are: treble: `B`; alto: `C`; tenor: `A,`; bass: `D,`; none: `B`. This setting does not affect the playback.
 
-    `[<line number>]` - indicates on which staff line the base clef
-    is written. Defaults are: treble: `2`; alto: `3`; tenor: `4`; bass:
-    `4`.
+-   `[transpose=<semitones>]` - for playback, transpose the current voice by the indicated amount of semitones; positive numbers transpose up, negative down. This setting does not affect the printed score. The default is 0.
 
-    </div>
+-   `[octave=<number>]` to raise (positive number) or lower (negative number) the <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> in the current voice by one or more octaves. This usage can help to avoid the need to write lots of apostrophes or commas to raise or lower notes.
 
--   <div class="li">
+-   `[stafflines=<lines>]` - the number of lines in the staff. The default is 5.
 
-    `[+8 | -8]` - draws '8' above or below the staff. The player will
-    transpose the notes one octave higher or lower.
-
-    </div>
-
--   <div class="li">
-
-    `[middle=<pitch>]` - is an alternate way to define the line number
-    of the clef. The pitch indicates what note is displayed on the 3rd
-    line of the staff. Defaults are: treble: `B`; alto: `C`; tenor:
-    `A,`; bass: `D,`; none: `B`. This setting does not affect
-    the playback.
-
-    </div>
-
--   <div class="li">
-
-    `[transpose=<semitones>]` - for playback, transpose the current
-    voice by the indicated amount of semitones; positive numbers
-    transpose up, negative down. This setting does not affect the
-    printed score. The default is 0.
-
-    </div>
-
--   <div class="li">
-
-    `[octave=<number>]` to raise (positive number) or lower
-    (negative number) the [music
-    code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1} in
-    the current voice by one or more octaves. This usage can help to
-    avoid the need to write lots of apostrophes or commas to raise or
-    lower notes.
-
-    </div>
-
--   <div class="li">
-
-    `[stafflines=<lines>]` - the number of lines in the staff. The
-    default is 5.
-
-    </div>
-
-Note that the `clef`, `middle`, `transpose`, `octave` and `stafflines`
-specifiers may be used independent of each other.
+Note that the `clef`, `middle`, `transpose`, `octave` and `stafflines` specifiers may be used independent of each other.
 
 *Examples:*
 
-``` {.code}
+``` code
 K:   clef=alto
 K:   perc stafflines=1
 K:Am transpose=-2
 V:B  middle=d bass
 ```
 
-Note that although this standard supports the drum clef, there is
-currently no support for special percussion notes.
+Note that although this standard supports the drum clef, there is currently no support for special percussion notes.
 
-The middle specifier can be handy when working in the bass clef. Setting
-`K:bass middle=d transpose=-24` will save you from adding comma
-specifiers to the notes (the `transpose` setting is required to get the
-playback sounding at the correct pitch). The specifier may be
-abbreviated to `m=`.
+The middle specifier can be handy when working in the bass clef. Setting `K:bass middle=d transpose=-24` will save you from adding comma specifiers to the notes (the `transpose` setting is required to get the playback sounding at the correct pitch). The specifier may be abbreviated to `m=`.
 
-The transpose specifier is useful, for example, for a Bb clarinet, for
-which the music is written in the key of C although the instrument plays
-it in the key of Bb:
+The transpose specifier is useful, for example, for a Bb clarinet, for which the music is written in the key of C although the instrument plays it in the key of Bb:
 
-``` {.code}
+``` code
 V:Clarinet
 K:C transpose=-2
 ```
 
 The transpose specifier may be abbreviated to `t=`.
 
-To notate the various standard clefs, one can use the following
-specifiers:
+To notate the various standard clefs, one can use the following specifiers:
 
 The seven clefs
 
-<div class="table sectionedit28">
+| Name         | specifier  |
+|--------------|------------|
+| Treble       | `K:treble` |
+| Bass         | `K:bass`   |
+| Baritone     | `K:bass3`  |
+| Tenor        | `K:tenor`  |
+| Alto         | `K:alto`   |
+| Mezzosoprano | `K:alto2`  |
+| Soprano      | `K:alto1`  |
 
-  Name           specifier
-  -------------- ------------
-  Treble         `K:treble`
-  Bass           `K:bass`
-  Baritone       `K:bass3`
-  Tenor          `K:tenor`
-  Alto           `K:alto`
-  Mezzosoprano   `K:alto2`
-  Soprano        `K:alto1`
+More clef names may be allowed in the future, therefore unknown names should be ignored. If the clef is unknown or not specified, the default is treble.
 
-</div>
-
-More clef names may be allowed in the future, therefore unknown names
-should be ignored. If the clef is unknown or not specified, the default
-is treble.
-
-Applications may introduce their own clef line specifiers. These
-specifiers should start with the name of the application, followed a
-colon, followed by the name of the specifier.
+Applications may introduce their own clef line specifiers. These specifiers should start with the name of the application, followed a colon, followed by the name of the specifier.
 
 *Example:*
 
-``` {.code}
+``` code
 V:p1 perc stafflines=3 m=C  mozart:noteC=snare-drum
 ```
 
-</div>
+### 4.7 Beams
 
-### 4.7 Beams {#beams .sectionedit29}
+To group notes together under one beam they must be grouped together without spaces. Thus in 2/4, `A2BC` will produce an eighth note followed by two sixteenth notes under one beam whilst `A2 B C` will produce the same notes separated. The beam slopes and the choice of upper or lower stems are typeset automatically.
 
-<div class="level3">
+Notes that cannot be beamed may be placed next to each other. For example, if `L:1/8` then `ABC2DE` is equivalent to `AB C2 DE`.
 
-To group notes together under one beam they must be grouped together
-without spaces. Thus in 2/4, `A2BC` will produce an eighth note followed
-by two sixteenth notes under one beam whilst `A2 B C` will produce the
-same notes separated. The beam slopes and the choice of upper or lower
-stems are typeset automatically.
+Back quotes `` ` `` may be used freely between notes to be beamed, to increase legibility. They are ignored by computer programs. For example, ``` A2``B``C ``` is equivalent to `A2BC`.
 
-Notes that cannot be beamed may be placed next to each other. For
-example, if `L:1/8` then `ABC2DE` is equivalent to `AB C2 DE`.
-
-Back quotes `` ` `` may be used freely between notes to be beamed, to
-increase legibility. They are ignored by computer programs. For example,
-``` A2``B``C ``` is equivalent to `A2BC`.
-
-</div>
-
-### 4.8 Repeat/bar symbols {#repeat_bar_symbols .sectionedit30}
-
-<div class="level3">
+### 4.8 Repeat/bar symbols
 
 Bar line symbols are notated as follows:
 
-<div class="table sectionedit31">
+| **Symbol** | **Meaning**                          |
+|------------|--------------------------------------|
+| `|`        | bar line                             |
+| `|]`       | thin-thick double bar line           |
+| `||`       | thin-thin double bar line            |
+| `[|`       | thick-thin double bar line           |
+| `|:`       | start of repeated section            |
+| `:|`       | end of repeated section              |
+| `::`       | start & end of two repeated sections |
 
-  **Symbol**   **Meaning**
-  ------------ --------------------------------------
-  `|`          bar line
-  `|]`         thin-thick double bar line
-  `||`         thin-thin double bar line
-  `[|`         thick-thin double bar line
-  `|:`         start of repeated section
-  `:|`         end of repeated section
-  `::`         start & end of two repeated sections
+*Recommendation for developers:* If an 'end of repeated section' is found without a previous 'start of repeated section', playback programs should restart the music from the beginning of the tune, or from the latest double bar line or end of repeated section.
 
-</div>
+Note that the notation `::` is short for `:|` followed by `|:`. The variants `::`, `:|:` and `:||:` are all equivalent.
 
-*Recommendation for developers:* If an 'end of repeated section' is
-found without a previous 'start of repeated section', playback programs
-should restart the music from the beginning of the tune, or from the
-latest double bar line or end of repeated section.
+By extension, `|::` and `::|` mean the start and end of a section that is to be repeated three times, and so on.
 
-Note that the notation `::` is short for `:|` followed by `|:`. The
-variants `::`, `:|:` and `:||:` are all equivalent.
+A dotted bar line can be notated by preceding it with a dot, e.g. `.|` - this may be useful for notating editorial bar lines in music with very long measures.
 
-By extension, `|::` and `::|` mean the start and end of a section that
-is to be repeated three times, and so on.
+An invisible bar line may be notated by putting the bar line in brackets, e.g. `[|]` - this may be useful for notating <a href="#voice_overlay" class="wikilink1" title="abc:standard:v2.1 ↵">voice overlay</a> in meter-free music.
 
-A dotted bar line can be notated by preceding it with a dot, e.g. `.|` -
-this may be useful for notating editorial bar lines in music with very
-long measures.
+Abc parsers should be quite liberal in recognizing bar lines. In the wild, bar lines may have any shape, using a sequence of `|` (thin bar line), `[` or `]` (thick bar line), and `:` (dots), e.g. `|[|` or `[|:::` .
 
-An invisible bar line may be notated by putting the bar line in
-brackets, e.g. `[|]` - this may be useful for notating [voice
-overlay](#voice_overlay "abc:standard:v2.1 ↵"){.wikilink1} in meter-free
-music.
+### 4.9 First and second repeats
 
-Abc parsers should be quite liberal in recognizing bar lines. In the
-wild, bar lines may have any shape, using a sequence of `|` (thin bar
-line), `[` or `]` (thick bar line), and `:` (dots), e.g. `|[|` or
-`[|:::` .
+First and second repeats can be notated with the symbols `[1` and `[2`, e.g.
 
-</div>
-
-### 4.9 First and second repeats {#first_and_second_repeats .sectionedit32}
-
-<div class="level3">
-
-First and second repeats can be notated with the symbols `[1` and `[2`,
-e.g.
-
-``` {.code}
+``` code
 faf gfe|[1 dfe dBA:|[2 d2e dcB|].
 ```
 
-When adjacent to bar lines, these can be shortened to ` |1` and `:|2`,
-but with regard to spaces
+When adjacent to bar lines, these can be shortened to ` |1` and `:|2`, but with regard to spaces
 
-``` {.code}
+``` code
 | [1
 ```
 
 is legal, while
 
-``` {.code}
+``` code
 | 1
 ```
 
 is not.
 
-Thus, a tune with different ending for the first and second repeats has
-the general form:
+Thus, a tune with different ending for the first and second repeats has the general form:
 
-``` {.code}
+``` code
 |:  <common body of tune>  |1  <first ending>  :|2  <second ending>  |]
 ```
 
-Note that in many [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} the `|:`
-may not be present.
+Note that in many <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a> the `|:` may not be present.
 
-</div>
+### 4.10 Variant endings
 
-### 4.10 Variant endings {#variant_endings .sectionedit33}
+In combination with `P:` <a href="#pparts" class="wikilink1" title="abc:standard:v2.1 ↵">part notation</a>, it is possible to notate more than two variant endings for a section that is to be repeated a number of times.
 
-<div class="level3">
+For example, if the header of the tune contains `P:A4.B4` then parts A and B will each be played 4 times. To play a different ending each time, you could write in the tune:
 
-In combination with `P:` [part
-notation](#pparts "abc:standard:v2.1 ↵"){.wikilink1}, it is possible to
-notate more than two variant endings for a section that is to be
-repeated a number of times.
-
-For example, if the header of the tune contains `P:A4.B4` then parts A
-and B will each be played 4 times. To play a different ending each time,
-you could write in the tune:
-
-``` {.code}
+``` code
 P:A
 <notes> | [1  <notes>  :| [2 <notes> :| [3 <notes> :| [4 <notes> |]
 ```
 
-The Nth ending starts with `[N` and ends with one of `||`, `:|` `|]` or
-`[|`. You can also mark a section as being used for more than one ending
-e.g.
+The Nth ending starts with `[N` and ends with one of `||`, `:|` `|]` or `[|`. You can also mark a section as being used for more than one ending e.g.
 
-``` {.code}
+``` code
 [1,3 <notes> :|
 ```
 
 plays on the 1st and 3rd endings and
 
-``` {.code}
+``` code
 [1-3 <notes> :|
 ```
 
-plays on endings 1, 2 and 3. In general, '\[' can be followed by any
-list of numbers and ranges as long as it contains no spaces e.g.
+plays on endings 1, 2 and 3. In general, '\[' can be followed by any list of numbers and ranges as long as it contains no spaces e.g.
 
-``` {.code}
+``` code
 [1,3,5-7  <notes>  :| [2,4,8 <notes> :|
 ```
 
-</div>
+### 4.11 Ties and slurs
 
-### 4.11 Ties and slurs {#ties_and_slurs .sectionedit34}
+You can tie two notes of the same pitch together, within or between bars, with a `-` symbol, e.g. `abc-|cba` or `c4-c4`. The tie symbol must always be adjacent to the first note of the pair, but does not need to be adjacent to the second, e.g. `c4 -c4` and `abc|-cba` are not legal - see <a href="#order_of_abc_constructs" class="wikilink1" title="abc:standard:v2.1 ↵">order of abc constructs</a>.
 
-<div class="level3">
-
-You can tie two notes of the same pitch together, within or between
-bars, with a `-` symbol, e.g. `abc-|cba` or `c4-c4`. The tie symbol must
-always be adjacent to the first note of the pair, but does not need to
-be adjacent to the second, e.g. `c4 -c4` and `abc|-cba` are not legal -
-see [order of abc
-constructs](#order_of_abc_constructs "abc:standard:v2.1 ↵"){.wikilink1}.
-
-More general slurs can be put in with `()` symbols. Thus `(DEFG)` puts a
-slur over the four notes. Spaces within a slur are OK, e.g.
-` ( D E F G ) `.
+More general slurs can be put in with `()` symbols. Thus `(DEFG)` puts a slur over the four notes. Spaces within a slur are OK, e.g. ` ( D E F G ) `.
 
 Slurs may be nested:
 
-``` {.code}
+``` code
 (c (d e f) g a)
 ```
 
-[![](wiki/_media/abc-standard-slur1-80.png){.media}](/wiki/_detail/abc:standard:slur1-80.png?id=abc%3Astandard%3Av2.1 "abc:standard:slur1-80.png"){.media}
+<a href="/wiki/_detail/abc:standard:slur1-80.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:slur1-80.png"><img src="wiki/_media/abc-standard-slur1-80.png" class="media" /></a>
 
 and they may also start and end on the same note:
 
-``` {.code}
+``` code
 (c d (e) f g a)
 ```
 
-[![](wiki/_media/abc-standard-slur2-80.png){.media}](/wiki/_detail/abc:standard:slur2-80.png?id=abc%3Astandard%3Av2.1 "abc:standard:slur2-80.png"){.media}
+<a href="/wiki/_detail/abc:standard:slur2-80.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:slur2-80.png"><img src="wiki/_media/abc-standard-slur2-80.png" class="media" /></a>
 
-A dotted slur may be notated by preceding the opening brace with a dot,
-e.g. `.(cde)`; it is optional to place a dot immediately before the
-closing brace. Likewise, a dotted tie can be transcribed by preceding it
-with a dot, e.g. `C.-C`. This is especially useful in parts with
-multiple verses: some verses may require a slur, some may not.
+A dotted slur may be notated by preceding the opening brace with a dot, e.g. `.(cde)`; it is optional to place a dot immediately before the closing brace. Likewise, a dotted tie can be transcribed by preceding it with a dot, e.g. `C.-C`. This is especially useful in parts with multiple verses: some verses may require a slur, some may not.
 
-It should be noted that although the tie `-` and slur `()` produce
-similar symbols in staff notation they have completely different
-meanings to player programs and should not be interchanged. Ties connect
-two successive notes *of the same pitch*, causing them to be played as a
-single note, while slurs connect the first and last note of any series
-of notes, and may be used to indicate phrasing, or that the group should
-be played legato. Both ties and slurs may be used into, out of and
-between chords, and in this case the distinction between them is
-particularly important.
+It should be noted that although the tie `-` and slur `()` produce similar symbols in staff notation they have completely different meanings to player programs and should not be interchanged. Ties connect two successive notes *of the same pitch*, causing them to be played as a single note, while slurs connect the first and last note of any series of notes, and may be used to indicate phrasing, or that the group should be played legato. Both ties and slurs may be used into, out of and between chords, and in this case the distinction between them is particularly important.
 
-</div>
+### 4.12 Grace notes
 
-### 4.12 Grace notes {#grace_notes .sectionedit35}
+Grace notes can be written by enclosing them in curly braces, `{}`. For example, a taorluath on the Highland pipes would be written `{GdGe}`. The tune 'Athol Brose' (in the file <a href="#strspysabc" class="wikilink1" title="abc:standard:v2.1 ↵">Strspys.abc</a>) has an example of complex Highland pipe gracing in all its glory. Although nominally grace notes have no melodic time value, expressions such as `{a3/2b/}` or `{a>b}` can be useful and are legal although some software may ignore them. The unit duration to use for gracenotes is not specified by the <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a>, but by the software, and might be a specific amount of time (for playback purposes) or a note length (e.g. 1/32 for Highland pipe music, which would allow `{ge4d}` to code a piobaireachd 'cadence').
 
-<div class="level3">
+To distinguish between appoggiaturas and acciaccaturas, the latter are notated with a forward slash immediately following the open brace, e.g. `{/g}C` or `{/gagab}C`:
 
-Grace notes can be written by enclosing them in curly braces, `{}`. For
-example, a taorluath on the Highland pipes would be written `{GdGe}`.
-The tune 'Athol Brose' (in the file
-[Strspys.abc](#strspysabc "abc:standard:v2.1 ↵"){.wikilink1}) has an
-example of complex Highland pipe gracing in all its glory. Although
-nominally grace notes have no melodic time value, expressions such as
-`{a3/2b/}` or `{a>b}` can be useful and are legal although some software
-may ignore them. The unit duration to use for gracenotes is not
-specified by the [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}, but by
-the software, and might be a specific amount of time (for playback
-purposes) or a note length (e.g. 1/32 for Highland pipe music, which
-would allow `{ge4d}` to code a piobaireachd 'cadence').
+<a href="/wiki/_detail/abc:standard:graces-80.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:graces-80.png"><img src="wiki/_media/abc-standard-graces-80.png" class="media" /></a>
 
-To distinguish between appoggiaturas and acciaccaturas, the latter are
-notated with a forward slash immediately following the open brace, e.g.
-`{/g}C` or `{/gagab}C`:
+The presence of gracenotes is transparent to the broken rhythm construct. Thus the forms `A<{g}A` and `A{g}<A` are legal and equivalent to `A/2{g}A3/2`.
 
-[![](wiki/_media/abc-standard-graces-80.png){.media}](/wiki/_detail/abc:standard:graces-80.png?id=abc%3Astandard%3Av2.1 "abc:standard:graces-80.png"){.media}
+### 4.13 Duplets, triplets, quadruplets, etc.
 
-The presence of gracenotes is transparent to the broken rhythm
-construct. Thus the forms `A<{g}A` and `A{g}<A` are legal and equivalent
-to `A/2{g}A3/2`.
+These can be simply coded with the notation `(2ab` for a duplet, `(3abc` for a triplet or `(4abcd` for a quadruplet, etc, up to `(9`. The musical meanings are:
 
-</div>
+| **Symbol** | **Meaning**                |
+|------------|----------------------------|
+| `(2`       | 2 notes in the time of 3   |
+| `(3`       | 3 notes in the time of 2   |
+| `(4`       | 4 notes in the time of 3   |
+| `(5`       | 5 notes in the time of *n* |
+| `(6`       | 6 notes in the time of 2   |
+| `(7`       | 7 notes in the time of *n* |
+| `(8`       | 8 notes in the time of 3   |
+| `(9`       | 9 notes in the time of *n* |
 
-### 4.13 Duplets, triplets, quadruplets, etc. {#duplets_triplets_quadruplets_etc .sectionedit36}
+If the time signature is compound (6/8, 9/8, 12/8) then *n* is three, otherwise *n* is two.
 
-<div class="level3">
+More general tuplets can be specified using the syntax `(p:q:r` which means 'put *p* notes into the time of *q* for the next *r* notes'. If *q* is not given, it defaults as above. If *r* is not given, it defaults to *p*.
 
-These can be simply coded with the notation `(2ab` for a duplet, `(3abc`
-for a triplet or `(4abcd` for a quadruplet, etc, up to `(9`. The musical
-meanings are:
+For example, `(3` is equivalent to `(3::` or `(3:2` , which in turn are equivalent to `(3:2:3`, whereas `(3::2` is equivalent to `(3:2:2`.
 
-<div class="table sectionedit37">
+This can be useful to include notes of different lengths within a tuplet, for example `(3:2:2 G4c2` or `(3:2:4 G2A2Bc`. It also describes more precisely how the simple syntax works in cases like `(3 D2E2F2` or even `(3 D3EF2`. The number written over the tuplet is *p*.
 
-  **Symbol**   **Meaning**
-  ------------ ----------------------------
-  `(2`         2 notes in the time of 3
-  `(3`         3 notes in the time of 2
-  `(4`         4 notes in the time of 3
-  `(5`         5 notes in the time of *n*
-  `(6`         6 notes in the time of 2
-  `(7`         7 notes in the time of *n*
-  `(8`         8 notes in the time of 3
-  `(9`         9 notes in the time of *n*
+Spaces that appear between the tuplet specifier and the following notes are to be ignored.
 
-</div>
-
-If the time signature is compound (6/8, 9/8, 12/8) then *n* is three,
-otherwise *n* is two.
-
-More general tuplets can be specified using the syntax `(p:q:r` which
-means 'put *p* notes into the time of *q* for the next *r* notes'. If
-*q* is not given, it defaults as above. If *r* is not given, it defaults
-to *p*.
-
-For example, `(3` is equivalent to `(3::` or `(3:2` , which in turn are
-equivalent to `(3:2:3`, whereas `(3::2` is equivalent to `(3:2:2`.
-
-This can be useful to include notes of different lengths within a
-tuplet, for example `(3:2:2 G4c2` or `(3:2:4 G2A2Bc`. It also describes
-more precisely how the simple syntax works in cases like `(3 D2E2F2` or
-even `(3 D3EF2`. The number written over the tuplet is *p*.
-
-Spaces that appear between the tuplet specifier and the following notes
-are to be ignored.
-
-</div>
-
-### 4.14 Decorations {#decorations .sectionedit38}
-
-<div class="level3">
+### 4.14 Decorations
 
 A number of shorthand decoration symbols are available:
 
-``` {.code}
+``` code
 .       staccato mark
 ~       Irish roll
 H       fermata
@@ -4277,32 +1524,22 @@ u       up-bow
 v       down-bow
 ```
 
-Decorations should be placed before the note which they decorate - see
-[order of abc
-constructs](#order_of_abc_constructs "abc:standard:v2.1 ↵"){.wikilink1}
+Decorations should be placed before the note which they decorate - see <a href="#order_of_abc_constructs" class="wikilink1" title="abc:standard:v2.1 ↵">order of abc constructs</a>
 
 *Examples:*
 
-``` {.code}
+``` code
 (3.a.b.c    % staccato triplet
 vAuBvA      % bowing marks (for fiddlers)
 ```
 
-Most of the characters above (`~HLMOPSTuv`) are just short-cuts for
-commonly used decorations and can even be redefined (see [redefinable
-symbols](#redefinable_symbols "abc:standard:v2.1 ↵"){.wikilink1}).
+Most of the characters above (`~HLMOPSTuv`) are just short-cuts for commonly used decorations and can even be redefined (see <a href="#redefinable_symbols" class="wikilink1" title="abc:standard:v2.1 ↵">redefinable symbols</a>).
 
-More generally, symbols can be entered using the syntax `!symbol!`, e.g.
-`!trill!A4` for a trill symbol. (Note that the abc standard version 2.0
-used instead the syntax `+symbol+` - this dialect of abc is still
-available, but is now
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} - see
-[decoration
-dialects](#decoration_dialects "abc:standard:v2.1 ↵"){.wikilink1}.)
+More generally, symbols can be entered using the syntax `!symbol!`, e.g. `!trill!A4` for a trill symbol. (Note that the abc standard version 2.0 used instead the syntax `+symbol+` - this dialect of abc is still available, but is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> - see <a href="#decoration_dialects" class="wikilink1" title="abc:standard:v2.1 ↵">decoration dialects</a>.)
 
 The currently defined symbols are:
 
-``` {.code}
+``` code
 !trill!                "tr" (trill mark)
 !trill(!               start of an extended trill
 !trill)!               end of an extended trill
@@ -4358,147 +1595,95 @@ The currently defined symbols are:
 
 Here is a picture of most decorations:
 
-[![](wiki/_media/abc-standard-decorations.0000.png){.media}](/wiki/_detail/abc:standard:decorations.0000.png?id=abc%3Astandard%3Av2.1 "abc:standard:decorations.0000.png"){.media}
+<a href="/wiki/_detail/abc:standard:decorations.0000.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:decorations.0000.png"><img src="wiki/_media/abc-standard-decorations.0000.png" class="media" /></a>
 
-Note that the decorations may be applied to notes, rests, note groups,
-and bar lines. If a decoration is to be typeset between notes, it may be
-attached to the `y` spacer - see [typesetting extra
-space](#typesetting_extra_space "abc:standard:v2.1 ↵"){.wikilink1}.
+Note that the decorations may be applied to notes, rests, note groups, and bar lines. If a decoration is to be typeset between notes, it may be attached to the `y` spacer - see <a href="#typesetting_extra_space" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting extra space</a>.
 
-Spaces may be used freely between each of the symbols and the object to
-which it should be attached. Also an object may be preceded by multiple
-symbols, which should be printed one over another, each on a different
-line.
+Spaces may be used freely between each of the symbols and the object to which it should be attached. Also an object may be preceded by multiple symbols, which should be printed one over another, each on a different line.
 
 *Example:*
 
-``` {.code}
+``` code
 [!1!C!3!E!5!G]  !coda! y  !p! !trill! C   !fermata!|
 ```
 
-[![](wiki/_media/abc-standard-decorations2-80.png){.media}](/wiki/_detail/abc:standard:decorations2-80.png?id=abc%3Astandard%3Av2.1 "abc:standard:decorations2-80.png"){.media}
+<a href="/wiki/_detail/abc:standard:decorations2-80.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:decorations2-80.png"><img src="wiki/_media/abc-standard-decorations2-80.png" class="media" /></a>
 
-Player programs may choose to ignore most of the symbols mentioned
-above, though they may be expected to implement the dynamics marks, the
-accent mark and the staccato dot. Default volume is equivalent to !mf!.
-On a scale from 0-127, the relative volumes can be roughly defined as:
-`!pppp!` = `!ppp!` = 30, `!pp!` = 45, `!p!` = 60, `!mp!` = 75, `!mf!` =
-90, `!f!` = 105, `!ff!` = 120, `!fff!` = `!ffff!` = 127.
+Player programs may choose to ignore most of the symbols mentioned above, though they may be expected to implement the dynamics marks, the accent mark and the staccato dot. Default volume is equivalent to !mf!. On a scale from 0-127, the relative volumes can be roughly defined as: `!pppp!` = `!ppp!` = 30, `!pp!` = 45, `!p!` = 60, `!mp!` = 75, `!mf!` = 90, `!f!` = 105, `!ff!` = 120, `!fff!` = `!ffff!` = 127.
 
-Abc software may also allow users to define new symbols in a package
-dependent way.
+Abc software may also allow users to define new symbols in a package dependent way.
 
-Note that symbol names may not contain any spaces, `[`, `]`, `|` or `:`
-signs, e.g. while !dacapo! is legal, !da capo! is not.
+Note that symbol names may not contain any spaces, `[`, `]`, `|` or `:` signs, e.g. while !dacapo! is legal, !da capo! is not.
 
 If an unimplemented or unknown symbol is found, it should be ignored.
 
-*Recommendation:* A good source of general information about decorations
-can be found at <http://www.dolmetsch.com/musicalsymbols.htm>.
+*Recommendation:* A good source of general information about decorations can be found at <a href="http://www.dolmetsch.com/musicalsymbols.htm" class="uri" class="urlextern" title="http://www.dolmetsch.com/musicalsymbols.htm">http://www.dolmetsch.com/musicalsymbols.htm</a>.
 
-</div>
+### 4.15 Symbol lines
 
-### 4.15 Symbol lines {#symbol_lines .sectionedit39}
+Adding many symbols to a line of music can make a tune difficult to read. In such cases, a symbol line (a line that contains only `!…!` <a href="#decorations" class="wikilink1" title="abc:standard:v2.1 ↵">decorations</a>, `"…"` <a href="#chord_symbols" class="wikilink1" title="abc:standard:v2.1 ↵">chord symbols</a> or <a href="#annotations" class="wikilink1" title="abc:standard:v2.1 ↵">annotations</a>) can be used, analogous to a line of <a href="#lyrics" class="wikilink1" title="abc:standard:v2.1 ↵">lyrics</a>.
 
-<div class="level3">
-
-Adding many symbols to a line of music can make a tune difficult to
-read. In such cases, a symbol line (a line that contains only `!…!`
-[decorations](#decorations "abc:standard:v2.1 ↵"){.wikilink1}, `"…"`
-[chord symbols](#chord_symbols "abc:standard:v2.1 ↵"){.wikilink1} or
-[annotations](#annotations "abc:standard:v2.1 ↵"){.wikilink1}) can be
-used, analogous to a line of
-[lyrics](#lyrics "abc:standard:v2.1 ↵"){.wikilink1}.
-
-A symbol line starts with `s:`, followed by a line of symbols. Matching
-of notes and symbols follow the [alignment
-rules](#alignment "abc:standard:v2.1 ↵"){.wikilink1} defined for lyrics
-(meaning that symbols in an `s:` line cannot be aligned on [grace
-notes](#grace_notes "abc:standard:v2.1 ↵"){.wikilink1},
-[rests](#rests "abc:standard:v2.1 ↵"){.wikilink1} or
-[spacers](#typesetting_extra_space "abc:standard:v2.1 ↵"){.wikilink1}).
+A symbol line starts with `s:`, followed by a line of symbols. Matching of notes and symbols follow the <a href="#alignment" class="wikilink1" title="abc:standard:v2.1 ↵">alignment rules</a> defined for lyrics (meaning that symbols in an `s:` line cannot be aligned on <a href="#grace_notes" class="wikilink1" title="abc:standard:v2.1 ↵">grace notes</a>, <a href="#rests" class="wikilink1" title="abc:standard:v2.1 ↵">rests</a> or <a href="#typesetting_extra_space" class="wikilink1" title="abc:standard:v2.1 ↵">spacers</a>).
 
 *Example:*
 
-``` {.code}
+``` code
    CDEF    | G```AB`c
 s: "^slow" | !f! ** !fff!
 ```
 
-It is also possible to stack `s:` lines to produced multiple symbols on
-a note.
+It is also possible to stack `s:` lines to produced multiple symbols on a note.
 
-*Example:* The following two excerpts are equivalent and would place a
-decorations plus a chord on the `E`.
+*Example:* The following two excerpts are equivalent and would place a decorations plus a chord on the `E`.
 
-``` {.code}
+``` code
    C2  C2 Ez   A2|
 s: "C" *  "Am" * |
 s: *   *  !>!  * |
 ```
 
-``` {.code}
+``` code
 "C" C2 C2 "Am" !>! Ez A2|
 ```
 
-</div>
+### 4.16 Redefinable symbols
 
-### 4.16 Redefinable symbols {#redefinable_symbols .sectionedit40}
+As a short cut to writing symbols which avoids the `!symbol!` syntax (see <a href="#decorations" class="wikilink1" title="abc:standard:v2.1 ↵">decorations</a>), the letters `H-W` and `h-w` and the symbol `~` can be assigned with the `U:` field. For example, to assign the letter `T` to represent the trill, you can write:
 
-<div class="level3">
-
-As a short cut to writing symbols which avoids the `!symbol!` syntax
-(see [decorations](#decorations "abc:standard:v2.1 ↵"){.wikilink1}), the
-letters `H-W` and `h-w` and the symbol `~` can be assigned with the `U:`
-field. For example, to assign the letter `T` to represent the trill, you
-can write:
-
-``` {.code}
+``` code
 U: T = !trill!
 ```
 
-You can also use `"^text"`, etc (see
-[annotations](#annotations "abc:standard:v2.1 ↵"){.wikilink1} below) in
-definitions
+You can also use `"^text"`, etc (see <a href="#annotations" class="wikilink1" title="abc:standard:v2.1 ↵">annotations</a> below) in definitions
 
-*Example:* To print a plus sign over notes, define `p` as follows and
-use it before the required notes:
+*Example:* To print a plus sign over notes, define `p` as follows and use it before the required notes:
 
-``` {.code}
+``` code
 U: p = "^+"
 ```
 
-Symbol definitions can be written in the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}, in
-which case they apply to all the tunes in that file, or in a [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}, when
-they apply only to that tune, and override any previous definitions.
-Programs may also make use of a set of global default definitions, which
-apply everywhere unless overridden by local definitions. You can assign
-the same symbol to two or more letters e.g.
+Symbol definitions can be written in the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>, in which case they apply to all the tunes in that file, or in a <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a>, when they apply only to that tune, and override any previous definitions. Programs may also make use of a set of global default definitions, which apply everywhere unless overridden by local definitions. You can assign the same symbol to two or more letters e.g.
 
-``` {.code}
+``` code
 U: T = !trill!
 U: U = !trill!
 ```
 
-in which case the same visible symbol will be produced by both letters
-(but they may be played differently), and you can de-assign a symbol by
-writing:
+in which case the same visible symbol will be produced by both letters (but they may be played differently), and you can de-assign a symbol by writing:
 
-``` {.code}
+``` code
 U: T = !nil!
 ```
 
 or
 
-``` {.code}
+``` code
 U: T = !none!
 ```
 
 The standard set of definitions (if you do not redefine them) is:
 
-``` {.code}
+``` code
 U: ~ = !roll!
 U: H = !fermata!
 U: L = !accent!
@@ -4511,96 +1696,61 @@ U: u = !upbow!
 U: v = !downbow!
 ```
 
-Please see [macros](#macros "abc:standard:v2.1 ↵"){.wikilink1} for an
-advanced macro mechanism.
+Please see <a href="#macros" class="wikilink1" title="abc:standard:v2.1 ↵">macros</a> for an advanced macro mechanism.
 
-</div>
+### 4.17 Chords and unisons
 
-### 4.17 Chords and unisons {#chords_and_unisons .sectionedit41}
+Chords (i.e. more than one note head on a single stem) can be coded with `[]` symbols around the notes, e.g.
 
-<div class="level3">
-
-Chords (i.e. more than one note head on a single stem) can be coded with
-`[]` symbols around the notes, e.g.
-
-``` {.code}
+``` code
 [CEGc]
 ```
 
 indicates the chord of C major. They can be grouped in beams, e.g.
 
-``` {.code}
+``` code
 [d2f2][ce][df]
 ```
 
-but there should be no spaces within the notation for a chord. See the
-tune 'Kitchen Girl' in the sample file
-[Reels.abc](#reelsabc "abc:standard:v2.1 ↵"){.wikilink1} for a simple
-example.
+but there should be no spaces within the notation for a chord. See the tune 'Kitchen Girl' in the sample file <a href="#reelsabc" class="wikilink1" title="abc:standard:v2.1 ↵">Reels.abc</a> for a simple example.
 
-All the notes within a chord should normally have the same length, but
-if not, the chord duration is that of the first note.
+All the notes within a chord should normally have the same length, but if not, the chord duration is that of the first note.
 
-*Recommendation:* Although playback programs should not have any
-difficulty with notes of different lengths, typesetting programs may not
-always be able to render the resulting chord to staff notation (for
-example, an eighth and a quarter note cannot be represented on the same
-stem) and the result is undefined. Consequently, this is not
-recommended.
+*Recommendation:* Although playback programs should not have any difficulty with notes of different lengths, typesetting programs may not always be able to render the resulting chord to staff notation (for example, an eighth and a quarter note cannot be represented on the same stem) and the result is undefined. Consequently, this is not recommended.
 
-More complicated chords can be transcribed with the `&` operator (see
-[voice overlay](#voice_overlay "abc:standard:v2.1 ↵"){.wikilink1}).
+More complicated chords can be transcribed with the `&` operator (see <a href="#voice_overlay" class="wikilink1" title="abc:standard:v2.1 ↵">voice overlay</a>).
 
-The chord forms a syntactic grouping, to which the same prefixes and
-postfixes can be attached as to an ordinary note (except for accidentals
-which should be attached to individual notes within the chord and
-decorations which may be attached to individual notes within the chord
-or may be attached to the chord as a whole).
+The chord forms a syntactic grouping, to which the same prefixes and postfixes can be attached as to an ordinary note (except for accidentals which should be attached to individual notes within the chord and decorations which may be attached to individual notes within the chord or may be attached to the chord as a whole).
 
 *Example:*
 
-``` {.code}
+``` code
 ( "^I" !f! [CEG]- > [CEG] "^IV" [F=AC]3/2"^V"[GBD]/  H[CEG]2 )
 ```
 
-[![](wiki/_media/abc-standard-chords-80.png){.media}](/wiki/_detail/abc:standard:chords-80.png?id=abc%3Astandard%3Av2.1 "abc:standard:chords-80.png"){.media}
+<a href="/wiki/_detail/abc:standard:chords-80.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:chords-80.png"><img src="wiki/_media/abc-standard-chords-80.png" class="media" /></a>
 
-When both inside and outside the chord length modifiers are used, they
-should be multiplied. *Example:* `[C2E2G2]3` has the same meaning as
-`[CEG]6`.
+When both inside and outside the chord length modifiers are used, they should be multiplied. *Example:* `[C2E2G2]3` has the same meaning as `[CEG]6`.
 
-If the chord contains two notes of the same pitch, then it is a unison
-(e.g. a note played on two strings of a violin simultaneously) and is
-shown with one stem and two note-heads.
+If the chord contains two notes of the same pitch, then it is a unison (e.g. a note played on two strings of a violin simultaneously) and is shown with one stem and two note-heads.
 
 *Example:*
 
-``` {.code}
+``` code
 [DD]
 ```
 
-[![](wiki/_media/abc-standard-unison-80.png){.media}](/wiki/_detail/abc:standard:unison-80.png?id=abc%3Astandard%3Av2.1 "abc:standard:unison-80.png"){.media}
+<a href="/wiki/_detail/abc:standard:unison-80.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:unison-80.png"><img src="wiki/_media/abc-standard-unison-80.png" class="media" /></a>
 
-</div>
+### 4.18 Chord symbols
 
-### 4.18 Chord symbols {#chord_symbols .sectionedit42}
+*VOLATILE:* The list of chords and how they are handled will be extended at some point. Until then programs should treat chord symbols quite liberally.
 
-<div class="level3">
+Chord symbols (e.g. chords/bass notes) can be put in under the melody line (or above, depending on the package) using double-quotation marks placed to the left of the note it is sounded with, e.g. `"Am7"A2D2`.
 
-*VOLATILE:* The list of chords and how they are handled will be extended
-at some point. Until then programs should treat chord symbols quite
-liberally.
+The chord has the format *&lt;note&gt;&lt;accidental&gt;&lt;type&gt;&lt;/bass&gt;*, where *&lt;note&gt;* can be `A-G`, the optional *&lt;accidental&gt;* can be `b`, `#`, the optional *&lt;type&gt;* is one or more of
 
-Chord symbols (e.g. chords/bass notes) can be put in under the melody
-line (or above, depending on the package) using double-quotation marks
-placed to the left of the note it is sounded with, e.g. `"Am7"A2D2`.
-
-The chord has the format
-*&lt;note&gt;&lt;accidental&gt;&lt;type&gt;&lt;/bass&gt;*, where
-*&lt;note&gt;* can be `A-G`, the optional *&lt;accidental&gt;* can be
-`b`, `#`, the optional *&lt;type&gt;* is one or more of
-
-``` {.code}
+``` code
 m or min        minor
 maj             major
 dim             diminished
@@ -4611,167 +1761,82 @@ sus             suspended
 
 and *&lt;/bass&gt;* is an optional bass note.
 
-A slash after the chord type is used only if the optional bass note is
-also used, e.g., `"C/E"`. If the bass note is a regular part of the
-chord, it indicates the inversion, i.e., which note of the chord is
-lowest in pitch. If the bass note is not a regular part of the chord, it
-indicates an additional note that should be sounded with the chord,
-below it in pitch. The bass note can be any letter (`A-G` or `a-g`),
-with or without a trailing accidental sign (`b` or `#`). The case of the
-letter used for the bass note does not affect the pitch.
+A slash after the chord type is used only if the optional bass note is also used, e.g., `"C/E"`. If the bass note is a regular part of the chord, it indicates the inversion, i.e., which note of the chord is lowest in pitch. If the bass note is not a regular part of the chord, it indicates an additional note that should be sounded with the chord, below it in pitch. The bass note can be any letter (`A-G` or `a-g`), with or without a trailing accidental sign (`b` or `#`). The case of the letter used for the bass note does not affect the pitch.
 
-Alternate chords can be indicated for printing purposes (but not for
-playback) by enclosing them in parentheses inside the double-quotation
-marks after the regular chord, e.g., `"G(Em)"`.
+Alternate chords can be indicated for printing purposes (but not for playback) by enclosing them in parentheses inside the double-quotation marks after the regular chord, e.g., `"G(Em)"`.
 
-*Note to developers:* Software should also be able to recognise and
-handle appropriately the unicode versions of flat, natural and sharp
-symbols (♭, ♮, ♯) - see [special
-symbols](#special_symbols "abc:standard:v2.1 ↵"){.wikilink1}.
+*Note to developers:* Software should also be able to recognise and handle appropriately the unicode versions of flat, natural and sharp symbols (♭, ♮, ♯) - see <a href="#special_symbols" class="wikilink1" title="abc:standard:v2.1 ↵">special symbols</a>.
 
-</div>
+### 4.19 Annotations
 
-### 4.19 Annotations {#annotations .sectionedit43}
+General text annotations can be added above, below or on the staff in a similar way to chord symbols. In this case, the string within double quotes is preceded by one of five symbols `^`, `_`, `<`, `>` or `@` which controls where the annotation is to be placed; above, below, to the left or right respectively of the following note, rest or bar line. Using the `@` symbol leaves the exact placing of the string to the discretion of the interpreting program. These placement specifiers distinguish annotations from chord symbols, and should prevent programs from attempting to play or transpose them. All text that follows the placement specifier is treated as a <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text string</a>.
 
-<div class="level3">
-
-General text annotations can be added above, below or on the staff in a
-similar way to chord symbols. In this case, the string within double
-quotes is preceded by one of five symbols `^`, `_`, `<`, `>` or `@`
-which controls where the annotation is to be placed; above, below, to
-the left or right respectively of the following note, rest or bar line.
-Using the `@` symbol leaves the exact placing of the string to the
-discretion of the interpreting program. These placement specifiers
-distinguish annotations from chord symbols, and should prevent programs
-from attempting to play or transpose them. All text that follows the
-placement specifier is treated as a [text
-string](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-Where two or more annotations with the same placement specifier are
-placed consecutively, e.g. for fingerings, the notation program should
-draw them on separate lines, with the first listed at the top.
+Where two or more annotations with the same placement specifier are placed consecutively, e.g. for fingerings, the notation program should draw them on separate lines, with the first listed at the top.
 
 *Example:* The following annotations place the note between parentheses.
 
-``` {.code}
+``` code
 "<(" ">)" C
 ```
 
-</div>
+### 4.20 Order of abc constructs
 
-### 4.20 Order of abc constructs {#order_of_abc_constructs .sectionedit44}
+The order of abc constructs for a note is: *&lt;grace notes&gt;*, *&lt;chord symbols&gt;*, *&lt;annotations&gt;/&lt;decorations&gt;* (e.g. Irish roll, staccato marker or up/downbow), *&lt;accidentals&gt;*, *&lt;note&gt;*, *&lt;octave&gt;*, *&lt;note length&gt;*, i.e. `~^c'3` or even `"Gm7"v.=G,2`.
 
-<div class="level3">
+Each <a href="#ties_and_slurs" class="wikilink1" title="abc:standard:v2.1 ↵">tie symbol</a>, `-`, should come immediately after a note group but may be followed by a space, i.e. `=G,2- `. Open and close chord delimiters, `[` and `]`, should enclose entire note sequences (except for chord symbols), e.g.
 
-The order of abc constructs for a note is: *&lt;grace notes&gt;*,
-*&lt;chord symbols&gt;*, *&lt;annotations&gt;/&lt;decorations&gt;* (e.g.
-Irish roll, staccato marker or up/downbow), *&lt;accidentals&gt;*,
-*&lt;note&gt;*, *&lt;octave&gt;*, *&lt;note length&gt;*, i.e. `~^c'3` or
-even `"Gm7"v.=G,2`.
-
-Each [tie symbol](#ties_and_slurs "abc:standard:v2.1 ↵"){.wikilink1},
-`-`, should come immediately after a note group but may be followed by a
-space, i.e. `=G,2- `. Open and close chord delimiters, `[` and `]`,
-should enclose entire note sequences (except for chord symbols), e.g.
-
-``` {.code}
+``` code
 "C"[CEGc]|
 |"Gm7"[.=G,^c']
 ```
 
 and open and close slur symbols, `()`, should do likewise, i.e.
 
-``` {.code}
+``` code
 "Gm7"(v.=G,2~^c'2)
 ```
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-5. Lyrics {#lyrics .sectionedit45}
+5. Lyrics
 ---------
 
-<div class="level2">
+The `W:` <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information field</a> (uppercase W) can be used for lyrics to be printed separately below the tune.
 
-The `W:` [information
-field](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-(uppercase W) can be used for lyrics to be printed separately below the
-tune.
+The `w:` <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information field</a> (lowercase w) in the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>, supplies lyrics to be aligned syllable by syllable with previous notes of the current voice.
 
-The `w:` [information
-field](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-(lowercase w) in the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}, supplies
-lyrics to be aligned syllable by syllable with previous notes of the
-current voice.
+### 5.1 Alignment
 
-</div>
+When adjacent, `w:` fields indicate different verses (<a href="#verses" class="wikilink1" title="abc:standard:v2.1 ↵">see below</a>), but for non-adjacent `w:` fields, the alignment of the lyrics:
 
-### 5.1 Alignment {#alignment .sectionedit46}
+-   starts at the first note of the voice if there is no previous `w:` field; or
 
-<div class="level3">
+-   starts at the first note after the notes aligned to the previous `w:` field; and
 
-When adjacent, `w:` fields indicate different verses ([see
-below](#verses "abc:standard:v2.1 ↵"){.wikilink1}), but for non-adjacent
-`w:` fields, the alignment of the lyrics:
-
--   <div class="li">
-
-    starts at the first note of the voice if there is no previous `w:`
-    field; or
-
-    </div>
-
--   <div class="li">
-
-    starts at the first note after the notes aligned to the previous
-    `w:` field; and
-
-    </div>
-
--   <div class="li">
-
-    associates syllables to notes up to the end of the `w:` line.
-
-    </div>
+-   associates syllables to notes up to the end of the `w:` line.
 
 *Example:* The following two examples are equivalent.
 
-``` {.code}
+``` code
 C D E F|
 w: doh re mi fa
 G A B c|
 w: sol la ti doh
 ```
 
-``` {.code}
+``` code
 C D E F|
 G A B c|
 w: doh re mi fa sol la ti doh
 ```
 
-*Comment:* The second example, made possible by an extension (introduced
-in abc 2.1) of the alignment rules, means that lyrics no longer have to
-follow immediately after the line of notes to which they are attached.
-Indeed, the placement of the lyrics can be postponed to the end of the
-[tune body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-However, the extension of the alignment rules is not fully backwards
-compatible with abc 2.0 - see [outdated lyrics
-alignment](#outdated_lyrics_alignment "abc:standard:v2.1 ↵"){.wikilink1}
-for an explanation.
+*Comment:* The second example, made possible by an extension (introduced in abc 2.1) of the alignment rules, means that lyrics no longer have to follow immediately after the line of notes to which they are attached. Indeed, the placement of the lyrics can be postponed to the end of the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>. However, the extension of the alignment rules is not fully backwards compatible with abc 2.0 - see <a href="#outdated_lyrics_alignment" class="wikilink1" title="abc:standard:v2.1 ↵">outdated lyrics alignment</a> for an explanation.
 
-If there are fewer syllables than available notes, the remaining notes
-have no lyric (blank syllables); thus the appearance of a `w:` field
-associates all the notes that have appeared previously with a syllable
-(either real or blank).
+If there are fewer syllables than available notes, the remaining notes have no lyric (blank syllables); thus the appearance of a `w:` field associates all the notes that have appeared previously with a syllable (either real or blank).
 
-*Example:* In the following example the empty `w:` field means that the
-4 `G` notes have no lyric associated with them.
+*Example:* In the following example the empty `w:` field means that the 4 `G` notes have no lyric associated with them.
 
-``` {.code}
+``` code
 C D E F|
 w: doh re mi fa
 G G G G|
@@ -4780,53 +1845,32 @@ F E F C|
 w: fa mi re doh
 ```
 
-If there are more syllables than available notes, any excess syllables
-will be ignored.
+If there are more syllables than available notes, any excess syllables will be ignored.
 
-*Recommendation for developers:* If a `w:` line does not contain the
-correct number of syllables for the corresponding notes, the program
-should warn the user. However, having insufficient syllables is
-legitimate usage (as above) and so the program may allow these warnings
-to be switched off.
+*Recommendation for developers:* If a `w:` line does not contain the correct number of syllables for the corresponding notes, the program should warn the user. However, having insufficient syllables is legitimate usage (as above) and so the program may allow these warnings to be switched off.
 
-Note that syllables are not aligned on [grace
-notes](#grace_notes "abc:standard:v2.1 ↵"){.wikilink1},
-[rests](#rests "abc:standard:v2.1 ↵"){.wikilink1} or
-[spacers](#typesetting_extra_space "abc:standard:v2.1 ↵"){.wikilink1}
-and that tied, slurred or beamed notes are treated as separate notes in
-this context.
+Note that syllables are not aligned on <a href="#grace_notes" class="wikilink1" title="abc:standard:v2.1 ↵">grace notes</a>, <a href="#rests" class="wikilink1" title="abc:standard:v2.1 ↵">rests</a> or <a href="#typesetting_extra_space" class="wikilink1" title="abc:standard:v2.1 ↵">spacers</a> and that tied, slurred or beamed notes are treated as separate notes in this context.
 
-The lyrics lines are treated as [text
-strings](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-Within the lyrics, the words should be separated by one or more spaces
-and to correctly align them the following symbols may be used:
+The lyrics lines are treated as <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text strings</a>. Within the lyrics, the words should be separated by one or more spaces and to correctly align them the following symbols may be used:
 
-<div class="table sectionedit47">
+| **Symbol** | **Meaning**                                                     |
+|------------|-----------------------------------------------------------------|
+| `-`        | (hyphen) break between syllables within a word                  |
+| `_`        | (underscore) previous syllable is to be held for an extra note  |
+| `*`        | one note is skipped (i.e. \* is equivalent to a blank syllable) |
+| `~`        | appears as a space; aligns multiple words under one note        |
+| `\-`       | appears as hyphen; aligns multiple syllables under one note     |
+| `|`        | advances to the next bar                                        |
 
-  **Symbol**   **Meaning**
-  ------------ -----------------------------------------------------------------
-  `-`          (hyphen) break between syllables within a word
-  `_`          (underscore) previous syllable is to be held for an extra note
-  `*`          one note is skipped (i.e. \* is equivalent to a blank syllable)
-  `~`          appears as a space; aligns multiple words under one note
-  `\-`         appears as hyphen; aligns multiple syllables under one note
-  `|`          advances to the next bar
+Note that if `-` is preceded by a space or another hyphen, the `-` is regarded as a separate syllable.
 
-</div>
+When an underscore is used next to a hyphen, the hyphen must always come first.
 
-Note that if `-` is preceded by a space or another hyphen, the `-` is
-regarded as a separate syllable.
-
-When an underscore is used next to a hyphen, the hyphen must always come
-first.
-
-If there are not as many syllables as notes in a measure, typing a `|`
-automatically advances to the next bar; if there are enough syllables
-the `|` is just ignored.
+If there are not as many syllables as notes in a measure, typing a `|` automatically advances to the next bar; if there are enough syllables the `|` is just ignored.
 
 *Examples:*
 
-``` {.code}
+``` code
 w: syll-a-ble    is aligned with three notes
 w: syll-a--ble   is aligned with four notes
 w: syll-a -ble   (equivalent to the previous line)
@@ -4835,37 +1879,27 @@ w: of~the~day    is treated as one syllable (i.e. aligned with one note)
                  but appears as three separate words
 ```
 
-``` {.code}
+``` code
  gf|e2dc B2A2|B2G2 E2D2|.G2.G2 GABc|d4 B2
 w: Sa-ys my au-l' wan to your aul' wan,
 +: Will~ye come to the Wa-x-ies dar-gle?
 ```
 
-See [field
-continuation](#field_continuation "abc:standard:v2.1 ↵"){.wikilink1} for
-the meaning of the `+:` field continuation.
+See <a href="#field_continuation" class="wikilink1" title="abc:standard:v2.1 ↵">field continuation</a> for the meaning of the `+:` field continuation.
 
-</div>
+### 5.2 Verses
 
-### 5.2 Verses {#verses .sectionedit48}
+It is possible for a music line to be followed by several adjacent `w:` fields, i.e. immediately after each other. This can be used, together with part notation, to represent different verses. The first `w:` field is used the first time that part is played, then the second and so on.
 
-<div class="level3">
+*Examples:* The following two examples are equivalent and contain two verses:
 
-It is possible for a music line to be followed by several adjacent `w:`
-fields, i.e. immediately after each other. This can be used, together
-with part notation, to represent different verses. The first `w:` field
-is used the first time that part is played, then the second and so on.
-
-*Examples:* The following two examples are equivalent and contain two
-verses:
-
-``` {.code}
+``` code
 CDEF FEDC|
 w: these are the lyr-ics for verse one
 w: these are the lyr-ics for verse two
 ```
 
-``` {.code}
+``` code
 CDEF FEDC|
 w: these are the lyr-ics
 +:  for verse one
@@ -4873,271 +1907,103 @@ w: these are the lyr-ics
 +:  for verse two  
 ```
 
-</div>
+### 5.3 Numbering
 
-### 5.3 Numbering {#numbering .sectionedit49}
+*VOLATILE:* The following syntax may be extended to include non-numeric "numbering".
 
-<div class="level3">
+If the first word of a `w:` line starts with a digit, this is interpreted as numbering of a stanza. Typesetting programs should align the corresponding note with the first letter that occurs. This can be used in conjunction with the `~` symbol mentioned in the table above to create a space between the digit and the first letter.
 
-*VOLATILE:* The following syntax may be extended to include non-numeric
-"numbering".
+*Example:* In the following, the `1.~Three` is treated as a single word with a space created by the `~`, but the fact that the `w:` line starts with a number means that the first note of the corresponding music line is aligned to `Three`.
 
-If the first word of a `w:` line starts with a digit, this is
-interpreted as numbering of a stanza. Typesetting programs should align
-the corresponding note with the first letter that occurs. This can be
-used in conjunction with the `~` symbol mentioned in the table above to
-create a space between the digit and the first letter.
-
-*Example:* In the following, the `1.~Three` is treated as a single word
-with a space created by the `~`, but the fact that the `w:` line starts
-with a number means that the first note of the corresponding music line
-is aligned to `Three`.
-
-``` {.code}
+``` code
    w: 1.~Three blind mice
 ```
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-6. Typesetting and playback {#typesetting_and_playback .sectionedit50}
+6. Typesetting and playback
 ---------------------------
 
-<div class="level2">
+### 6.1 Typesetting
 
-</div>
+#### 6.1.1 Typesetting line-breaks
 
-### 6.1 Typesetting {#typesetting .sectionedit51}
+*Terminology:* **Line-breaks** in a document (also known in computing as new lines, line-feeds, carriage-returns, end-of-lines, etc.) determine how the document is set out on the page. Throughout this section, and elsewhere in the standard, a distinction should be noted between
 
-<div class="level3">
+-   []()a **code line-break**, meaning a line-break in the abc <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>, and, in particular, at the end of a line of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>;
 
-</div>
+-   []()a **score line-break**, meaning a line-break in the printed score.
 
-#### 6.1.1 Typesetting line-breaks {#typesetting_line-breaks}
+The fundamental mechanism for typesetting <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a> is by using <a href="#code_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">code line-breaks</a> - one line of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> in the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> normally corresponds to one line of printed music.
 
-<div class="level4">
+Of course the printed representation of a line of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> may be too long for the staff, so if necessary, typesetting programs should introduce additional <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a>. As a consequence, if you would prefer <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a> to be handled completely automatically (as is common in non-abc scoring software), then just type the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> on a single line of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>.
 
-*Terminology:* **Line-breaks** in a document (also known in computing as
-new lines, line-feeds, carriage-returns, end-of-lines, etc.) determine
-how the document is set out on the page. Throughout this section, and
-elsewhere in the standard, a distinction should be noted between
+Even though most abc GUI software should wrap over-long lines, typing the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> on a single line may not always be convenient, particularly for users who wish to include <a href="#code_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">code line-breaks</a> to aid readability or if the abc code is to be emailed (see <a href="#continuation_of_input_lines" class="wikilink1" title="abc:standard:v2.1 ↵">continuation of input lines</a>).
 
--   <div class="li">
-
-    []()a **code line-break**, meaning a line-break in the abc [tune
-    body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}, and,
-    in particular, at the end of a line of [music
-    code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1};
-
-    </div>
-
--   <div class="li">
-
-    []()a **score line-break**, meaning a line-break in the
-    printed score.
-
-    </div>
-
-The fundamental mechanism for typesetting [score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-is by using [code
-line-breaks](#code_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-- one line of [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1} in the
-[tune body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}
-normally corresponds to one line of printed music.
-
-Of course the printed representation of a line of [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1} may be
-too long for the staff, so if necessary, typesetting programs should
-introduce additional [score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-As a consequence, if you would prefer [score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-to be handled completely automatically (as is common in non-abc scoring
-software), then just type the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} on a
-single line of [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-Even though most abc GUI software should wrap over-long lines, typing
-the [tune body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}
-on a single line may not always be convenient, particularly for users
-who wish to include [code
-line-breaks](#code_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-to aid readability or if the abc code is to be emailed (see
-[continuation of input
-lines](#continuation_of_input_lines "abc:standard:v2.1 ↵"){.wikilink1}).
-
-Furthermore, in the past some typesetting programs used `!` characters
-in the abc code to force [score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+Furthermore, in the past some typesetting programs used `!` characters in the abc code to force <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a>.
 
 As a result, abc 2.1 introduces a new line-breaking instruction.
 
-</div>
-
 ##### I:linebreak
 
-<div class="level5">
+To allow for all line-breaking preferences, the `I:linebreak` instruction may be used, together with four possible values, to control <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaking</a>.
 
-To allow for all line-breaking preferences, the `I:linebreak`
-instruction may be used, together with four possible values, to control
-[score
-line-breaking](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
--   <div class="li">
-
-    "`I:linebreak $`" indicates that the `$` symbol is used in the [tune
-    body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} to
-    typeset a [score
-    line-break](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-    Any [code
-    line-breaks](#code_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    are ignored for typesetting purposes.
-
-    </div>
+-   "`I:linebreak $`" indicates that the `$` symbol is used in the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> to typeset a <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-break</a>. Any <a href="#code_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">code line-breaks</a> are ignored for typesetting purposes.
 
 *Example:* The following abc code should be typeset on two lines.
 
-``` {.code}
+``` code
 I:linebreak $
 K:G
 |:abc def|$fed cba:|
 ```
 
--   <div class="li">
+-   "`I:linebreak !`" indicates that the `!` symbol is used to typeset a <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-break</a>. Any <a href="#code_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">code line-breaks</a> are ignored for typesetting purposes.
 
-    "`I:linebreak !`" indicates that the `!` symbol is used to typeset a
-    [score
-    line-break](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-    Any [code
-    line-breaks](#code_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    are ignored for typesetting purposes.
+*Comment:* The "`I:linebreak !`" instruction works in the same way as `I:linebreak $` and is primarily provided for backwards compatibility - see <a href="#line-breaking_dialects" class="wikilink1" title="abc:standard:v2.1 ↵">line-breaking dialects</a>, so that "`I:linebreak $`" is the preferred usage. "`I:linebreak !`" also automatically invokes the "`I:decoration +`" instruction - see <a href="#decoration_dialects" class="wikilink1" title="abc:standard:v2.1 ↵">decoration dialects</a>. Finally, "`I:linebreak !`" is equivalent to the <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> directive `%%continueall true` - see <a href="#outdated_directives" class="wikilink1" title="abc:standard:v2.1 ↵">outdated directives</a>.
 
-    </div>
-
-*Comment:* The "`I:linebreak !`" instruction works in the same way as
-`I:linebreak $` and is primarily provided for backwards compatibility -
-see [line-breaking
-dialects](#line-breaking_dialects "abc:standard:v2.1 ↵"){.wikilink1}, so
-that "`I:linebreak $`" is the preferred usage. "`I:linebreak !`" also
-automatically invokes the "`I:decoration +`" instruction - see
-[decoration
-dialects](#decoration_dialects "abc:standard:v2.1 ↵"){.wikilink1}.
-Finally, "`I:linebreak !`" is equivalent to the
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1}
-directive `%%continueall true` - see [outdated
-directives](#outdated_directives "abc:standard:v2.1 ↵"){.wikilink1}.
-
--   <div class="li">
-
-    "`I:linebreak <EOL>`" indicates that the End Of Line character (CR,
-    LF or CRLF) is used to typeset a [score
-    line-break](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-    In other words, [code
-    line-breaks](#code_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    are used for typesetting [score
-    line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-    </div>
+-   "`I:linebreak <EOL>`" indicates that the End Of Line character (CR, LF or CRLF) is used to typeset a <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-break</a>. In other words, <a href="#code_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">code line-breaks</a> are used for typesetting <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a>.
 
 <!-- -->
 
--   <div class="li">
+-   "`I:linebreak <none>`" indicates that all line-breaking is to be carried out automatically and any <a href="#code_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">code line-breaks</a> are ignored for typesetting purposes.
 
-    "`I:linebreak <none>`" indicates that all line-breaking is to be
-    carried out automatically and any [code
-    line-breaks](#code_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    are ignored for typesetting purposes.
-
-    </div>
-
-The values `<EOL>`, `$` and `!` may also be combined so that more that
-one symbol can indicate a [score
-line-break](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+The values `<EOL>`, `$` and `!` may also be combined so that more that one symbol can indicate a <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-break</a>.
 
 The default line-break setting is:
 
-``` {.code}
+``` code
 I:linebreak <EOL> $
 ```
 
-meaning that both [code
-line-breaks](#code_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1},
-and `$` symbols, generate a [score
-line-break](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+meaning that both <a href="#code_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">code line-breaks</a>, and `$` symbols, generate a <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-break</a>.
 
-*Comment:* Although "`I:linebreak $ !`" is legal it is not recommended
-as it uses two different symbols to mean the same thing.
+*Comment:* Although "`I:linebreak $ !`" is legal it is not recommended as it uses two different symbols to mean the same thing.
 
-An `I:linebreak` instruction can be used either in the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} (in
-which case it is applied to every
-[tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1} in the
-[abc file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}), or
-in a [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} (in
-which case it is applied to that tune only and overrides a line-breaking
-instruction in the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}).
-Similarly, if two `I:linebreak` instructions appear in a [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} or a
-[tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}, the
-second cancels the first.
+An `I:linebreak` instruction can be used either in the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> (in which case it is applied to every <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune</a> in the <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a>), or in a <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> (in which case it is applied to that tune only and overrides a line-breaking instruction in the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>). Similarly, if two `I:linebreak` instructions appear in a <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> or a <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a>, the second cancels the first.
 
-*Comment:* It can be sometimes be useful to include two instructions
-together - for example, "`I:linebreak <EOL> $`" and
-"`I:linebreak <none>`" can be used to toggle between default and
-automatic line-breaking simply by swapping the position of the two
-lines.
+*Comment:* It can be sometimes be useful to include two instructions together - for example, "`I:linebreak <EOL> $`" and "`I:linebreak <none>`" can be used to toggle between default and automatic line-breaking simply by swapping the position of the two lines.
 
-`I:linebreak` instructions are not allowed in the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}
-(principally because it conflicts with the human readability of the
-[music code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}).
+`I:linebreak` instructions are not allowed in the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> (principally because it conflicts with the human readability of the <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>).
 
-</div>
+##### Suppressing score line-breaks
 
-##### Suppressing score line-breaks {#suppressing_score_line-breaks}
+When the `<EOL>` character is being used in the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> to indicate <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a>, it sometimes useful to be able to tell typesetting software to ignore a particular <a href="#code_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">code line-breaks</a>. This is achieved using a backslash (`\`) at the end of a line of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>. The backslash may be followed by trailing whitespace and/or <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comments</a>, since they are removed before the line is processed.
 
-<div class="level5">
+*Example:* The following two excerpts are considered equivalent and should be typeset as a single staff in the printed score.
 
-When the `<EOL>` character is being used in the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} to
-indicate [score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1},
-it sometimes useful to be able to tell typesetting software to ignore a
-particular [code
-line-breaks](#code_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-This is achieved using a backslash (`\`) at the end of a line of [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}. The
-backslash may be followed by trailing whitespace and/or
-[comments](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1}, since
-they are removed before the line is processed.
-
-*Example:* The following two excerpts are considered equivalent and
-should be typeset as a single staff in the printed score.
-
-``` {.code}
+``` code
 abc cba|\ % end of line comment
 abc cba|
 
 abc cba|abc cba|
 ```
 
-The backslash effectively joins two lines together for processing so if
-space is required between the two half lines (for example, to prevent
-the notes from being beamed together), it can be placed before the
-backslash, or at the beginning of the next half line.
+The backslash effectively joins two lines together for processing so if space is required between the two half lines (for example, to prevent the notes from being beamed together), it can be placed before the backslash, or at the beginning of the next half line.
 
 *Example:* The following three excerpts are considered equivalent.
 
-``` {.code}
+``` code
 abc \
 cba|
 
@@ -5147,13 +2013,11 @@ abc\
 abc cba|  
 ```
 
-There is no limit to the number of lines that may be joined together in
-this way. However, a backslash must not be used before an [empty
-line](#empty_line_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+There is no limit to the number of lines that may be joined together in this way. However, a backslash must not be used before an <a href="#empty_line_definition" class="wikilink1" title="abc:standard:v2.1 ↵">empty line</a>.
 
 *Example:* The following is legal.
 
-``` {.code}
+``` code
 cdef|\
 \
 cedf:|
@@ -5161,34 +2025,19 @@ cedf:|
 
 *Example:* The following is not legal.
 
-``` {.code}
+``` code
 cdef|\
 
 cdef:|
 ```
 
-In the examples above, where a line of [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1} follows
-immediately after a line ending in backslash, the backslash acts as a
-continuation for two lines of [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1} and can
-therefore be used to split up long [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1} lines.
+In the examples above, where a line of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> follows immediately after a line ending in backslash, the backslash acts as a continuation for two lines of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> and can therefore be used to split up long <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> lines.
 
-More importantly, however, any [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-and [stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-are processed (and
-[comments](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1} are
-removed) at the point where the physical line-break occurs. Hence the
-backslash is commonly used to include meter or key changes halfway
-through a line of music.
+More importantly, however, any <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> and <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a> are processed (and <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comments</a> are removed) at the point where the physical line-break occurs. Hence the backslash is commonly used to include meter or key changes halfway through a line of music.
 
-*Example:* The following should be typeset as a single staff in the
-printed score.
+*Example:* The following should be typeset as a single staff in the printed score.
 
-``` {.code}
+``` code
 abc cab|\
 %%setbarnb 10
 M:9/8
@@ -5196,188 +2045,78 @@ M:9/8
 abc cba abc|
 ```
 
-*Alternative usage example:* The above could also be achieved using
-[inline
-fields](#inline_field_definition "abc:standard:v2.1 ↵"){.wikilink1}, the
-`I:<directive>` form instead of `%%<directive>` and a `r:remark` in
-place of the
-[comment](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1}, i.e.
+*Alternative usage example:* The above could also be achieved using <a href="#inline_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">inline fields</a>, the `I:<directive>` form instead of `%%<directive>` and a `r:remark` in place of the <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comment</a>, i.e.
 
-``` {.code}
+``` code
 abc cab|[I:setbarnb 10][M:9/8][r:comment]abc cba abc|
 ```
 
-Finally, note that if the the `<EOL>` character is not being used to
-indicate [score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1},
-then the backslash is effectively redundant.
+Finally, note that if the the `<EOL>` character is not being used to indicate <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a>, then the backslash is effectively redundant.
 
-*Recommendation to users:* If you find that you are using backslash
-symbols on most lines of [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}, then
-consider instead using "`I:linebreak <none>`" or "`I:linebreak $`" which
-will mean that all the [code
-line-breaks](#code_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-will be ignored for the purposes of generating [score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-(and, in the latter case, you can encode a [score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-with the `$` character).
+*Recommendation to users:* If you find that you are using backslash symbols on most lines of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>, then consider instead using "`I:linebreak <none>`" or "`I:linebreak $`" which will mean that all the <a href="#code_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">code line-breaks</a> will be ignored for the purposes of generating <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a> (and, in the latter case, you can encode a <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a> with the `$` character).
 
-</div>
+#### 6.1.2 Typesetting extra space
 
-#### 6.1.2 Typesetting extra space {#typesetting_extra_space}
-
-<div class="level4">
-
-`y` can be used to add extra space between the surrounding notes;
-moreover, [chord
-symbols](#chord_symbols "abc:standard:v2.1 ↵"){.wikilink1} and
-[decorations](#decorations "abc:standard:v2.1 ↵"){.wikilink1} can be
-attached to it, to separate them from notes.
+`y` can be used to add extra space between the surrounding notes; moreover, <a href="#chord_symbols" class="wikilink1" title="abc:standard:v2.1 ↵">chord symbols</a> and <a href="#decorations" class="wikilink1" title="abc:standard:v2.1 ↵">decorations</a> can be attached to it, to separate them from notes.
 
 *Example:*
 
-``` {.code}
+``` code
 "Am" !pp! y
 ```
 
-Note that the `y` symbol does *not* create
-[rests](#rests "abc:standard:v2.1 ↵"){.wikilink1} in the music.
+Note that the `y` symbol does *not* create <a href="#rests" class="wikilink1" title="abc:standard:v2.1 ↵">rests</a> in the music.
 
-</div>
+#### 6.1.3 Typesetting information fields
 
-#### 6.1.3 Typesetting information fields {#typesetting_information_fields}
+By default typesetting programs should include the the title (T), composer (C), origin (O), parts (P), tempo (Q), aligned words (w) and other words (W) in the printed score, using the follow scheme:
 
-<div class="level4">
+-   the `T:title` should be printed centred above the tune; alternative titles should be printed underneath the main title in smaller print
 
-By default typesetting programs should include the the title (T),
-composer (C), origin (O), parts (P), tempo (Q), aligned words (w) and
-other words (W) in the printed score, using the follow scheme:
+-   the `C:composer` should be printed right-aligned, just below the title, each composer on a separate line
 
--   <div class="li">
+-   the contents of the `O:origin` field should be appended to the `C:composer` field, surrounded by parentheses
 
-    the `T:title` should be printed centred above the tune; alternative
-    titles should be printed underneath the main title in smaller print
+-   each `P:part` in the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> should have the string identifying it printed immediately above the start of that part; if there is a `P:parts` field in the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> (describing which order the parts are played in) it should be printed left-aligned above the start of the tune
 
-    </div>
+-   the `Q:tempo` should be printed above the tune at the start of the section to which it applies
 
--   <div class="li">
+-   the aligned `w:words` (lyrics) should be printed under each line of music with other `W:words` printed beneath the tune - see <a href="#lyrics" class="wikilink1" title="abc:standard:v2.1 ↵">lyrics</a>
 
-    the `C:composer` should be printed right-aligned, just below the
-    title, each composer on a separate line
+To suppress any of these, or alternatively to typeset additional <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> such as notes (N), history (H), rhythm (R), book (B), discography (D), file (F), source (S) or transcription (Z), use the `%%writefields` directive - see <a href="#information_directives" class="wikilink1" title="abc:standard:v2.1 ↵">information directives</a>.
 
-    </div>
+To customise the typesetting (for example, by changing the font), see <a href="#formatting_directives" class="wikilink1" title="abc:standard:v2.1 ↵">formatting directives</a>.
 
--   <div class="li">
+### 6.2 Playback
 
-    the contents of the `O:origin` field should be appended to the
-    `C:composer` field, surrounded by parentheses
+Many of the <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> are ignored by playback programs - exceptions are `I:`, `K:`, `L:`, `M:`, `m:`, `P;`, `Q:`, `s:`, `U:` and `V:`.
 
-    </div>
+In addition, playback programs that store their output in file types which have provisions for metadata (e.g. MIDI, ogg, mp3), may record the contents the `T:`, `C:`, `w:` and `W:` fields in that metadata.
 
--   <div class="li">
+Furthermore, playback programs may use the `R:` field to infer stress patterns in a tune (i.e. to make playback closer to real music, by for example, placing more stress on the first note in each bar); however, such usage is not standardised.
 
-    each `P:part` in the [tune
-    body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    should have the string identifying it printed immediately above the
-    start of that part; if there is a `P:parts` field in the [tune
-    header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    (describing which order the parts are played in) it should be
-    printed left-aligned above the start of the tune
-
-    </div>
-
--   <div class="li">
-
-    the `Q:tempo` should be printed above the tune at the start of the
-    section to which it applies
-
-    </div>
-
--   <div class="li">
-
-    the aligned `w:words` (lyrics) should be printed under each line of
-    music with other `W:words` printed beneath the tune - see
-    [lyrics](#lyrics "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-To suppress any of these, or alternatively to typeset additional
-[information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-such as notes (N), history (H), rhythm (R), book (B), discography (D),
-file (F), source (S) or transcription (Z), use the `%%writefields`
-directive - see [information
-directives](#information_directives "abc:standard:v2.1 ↵"){.wikilink1}.
-
-To customise the typesetting (for example, by changing the font), see
-[formatting
-directives](#formatting_directives "abc:standard:v2.1 ↵"){.wikilink1}.
-
-</div>
-
-### 6.2 Playback {#playback .sectionedit52}
-
-<div class="level3">
-
-Many of the [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-are ignored by playback programs - exceptions are `I:`, `K:`, `L:`,
-`M:`, `m:`, `P;`, `Q:`, `s:`, `U:` and `V:`.
-
-In addition, playback programs that store their output in file types
-which have provisions for metadata (e.g. MIDI, ogg, mp3), may record the
-contents the `T:`, `C:`, `w:` and `W:` fields in that metadata.
-
-Furthermore, playback programs may use the `R:` field to infer stress
-patterns in a tune (i.e. to make playback closer to real music, by for
-example, placing more stress on the first note in each bar); however,
-such usage is not standardised.
-
-Most playback customisation is handled by [instrumentation
-directives](#instrumentation_directives "abc:standard:v2.1 ↵"){.wikilink1}.
+Most playback customisation is handled by <a href="#instrumentation_directives" class="wikilink1" title="abc:standard:v2.1 ↵">instrumentation directives</a>.
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-7. Multiple voices {#multiple_voices .sectionedit53}
+7. Multiple voices
 ------------------
 
-<div class="level2">
+*VOLATILE:* Multi-voice music is under active review, with discussion about control voices and interaction between `P:`, `V:` and `T:` fields. It is intended that the syntax will be finalised in abc 2.2.
 
-*VOLATILE:* Multi-voice music is under active review, with discussion
-about control voices and interaction between `P:`, `V:` and `T:` fields.
-It is intended that the syntax will be finalised in abc 2.2.
-
-The `V:` field allows the writing of multi-voice music. In multi-voice
-[abc tunes](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}, the
-[tune body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} is
-divided into several voices, each beginning with a `V:` field. All the
-notes following such a `V:` field, up to the next `V:` field or the end
-of the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}, belong
-to the voice.
+The `V:` field allows the writing of multi-voice music. In multi-voice <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunes</a>, the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> is divided into several voices, each beginning with a `V:` field. All the notes following such a `V:` field, up to the next `V:` field or the end of the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>, belong to the voice.
 
 The basic syntax of the field is:
 
-``` {.code}
+``` code
 V:ID
 ```
 
-where ID can be either a number or a string, that uniquely identifies
-the voice in question. When using a string, only the first 20 characters
-of it will be distinguished. The ID will not be printed on the staff;
-it's only function is to indicate, throughout the [abc
-tune](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1}, which
-music line belongs to which voice.
+where ID can be either a number or a string, that uniquely identifies the voice in question. When using a string, only the first 20 characters of it will be distinguished. The ID will not be printed on the staff; it's only function is to indicate, throughout the <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tune</a>, which music line belongs to which voice.
 
 Example:
 
-``` {.code}
+``` code
 X:1
 T:Zocharti Loch
 C:Louis Lewandowski (1821-1894)
@@ -5402,43 +2141,21 @@ K:Gm
 [V:B2]       x8      | z2B2 c2d2 | e3e (d2c2)  | H d6    ||
 ```
 
-This layout closely resembles printed music, and permits the
-corresponding notes on different voices to be vertically aligned so that
-the chords can be read directly from the abc. The addition of single
-remark lines "%" between the grouped staves, indicating the bar numbers,
-also makes the source more legible.
+This layout closely resembles printed music, and permits the corresponding notes on different voices to be vertically aligned so that the chords can be read directly from the abc. The addition of single remark lines "%" between the grouped staves, indicating the bar numbers, also makes the source more legible.
 
 Here follows the visible output:
 
-[![](wiki/_media/abc-standard-multivoice-80.png){.media}](/wiki/_detail/abc:standard:multivoice-80.png?id=abc%3Astandard%3Av2.1 "abc:standard:multivoice-80.png"){.media}
+<a href="/wiki/_detail/abc:standard:multivoice-80.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:multivoice-80.png"><img src="wiki/_media/abc-standard-multivoice-80.png" class="media" /></a>
 
-`V:` can appear both in the body and the header. In the latter case,
-`V:` is used exclusively to set voice properties. For example, the
-`name` property in the example above, specifies which label should be
-printed on the first staff of the voice in question. Note that these
-properties may be also set or changed in the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}. The `V:`
-properties are fully explained
-[below](#voice_properties "abc:standard:v2.1 ↵"){.wikilink1}.
+`V:` can appear both in the body and the header. In the latter case, `V:` is used exclusively to set voice properties. For example, the `name` property in the example above, specifies which label should be printed on the first staff of the voice in question. Note that these properties may be also set or changed in the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>. The `V:` properties are fully explained <a href="#voice_properties" class="wikilink1" title="abc:standard:v2.1 ↵">below</a>.
 
-Please note that the exact grouping of voices on the staff or staves is
-not specified by `V:` itself. This may be specified with the `%%score`
-[stylesheet
-directive](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-See [voice grouping](#voice_grouping "abc:standard:v2.1 ↵"){.wikilink1}
-for details.
+Please note that the exact grouping of voices on the staff or staves is not specified by `V:` itself. This may be specified with the `%%score` <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directive</a>. See <a href="#voice_grouping" class="wikilink1" title="abc:standard:v2.1 ↵">voice grouping</a> for details.
 
-For playback, see [instrumentation
-directives](#instrumentation_directives "abc:standard:v2.1 ↵"){.wikilink1}
-for details of how to assign a General MIDI instrument to a voice using
-a `%%MIDI` [stylesheet
-directive](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+For playback, see <a href="#instrumentation_directives" class="wikilink1" title="abc:standard:v2.1 ↵">instrumentation directives</a> for details of how to assign a General MIDI instrument to a voice using a `%%MIDI` <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directive</a>.
 
-Although it is not recommended, the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} of
-fragment `X:1`, could also be notated this way:
+Although it is not recommended, the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> of fragment `X:1`, could also be notated this way:
 
-``` {.code}
+``` code
 X:2
 T:Zocharti Loch
 %...skipping rest of the header...
@@ -5458,186 +2175,94 @@ V:B2
  x8 | z2B2 c2d2 | e3e (d2c2) | H d6 ||
 ```
 
-In the example above, each `V:` label occurs only once, and the complete
-part for that voice follows. The output of tune `X:2` will be exactly
-the same as the output of tune `X:1`; the source code of `X:1`, however,
-is much easier to read.
+In the example above, each `V:` label occurs only once, and the complete part for that voice follows. The output of tune `X:2` will be exactly the same as the output of tune `X:1`; the source code of `X:1`, however, is much easier to read.
 
-</div>
+### 7.1 Voice properties
 
-### 7.1 Voice properties {#voice_properties .sectionedit54}
+*VOLATILE:* See <a href="#multiple_voices" class="wikilink1" title="abc:standard:v2.1 ↵">above</a>.
 
-<div class="level3">
+`V:` fields can contain voice specifiers such as name, clef, and so on. For example,
 
-*VOLATILE:* See
-[above](#multiple_voices "abc:standard:v2.1 ↵"){.wikilink1}.
-
-`V:` fields can contain voice specifiers such as name, clef, and so on.
-For example,
-
-``` {.code}
+``` code
 V:T name="Tenor" clef=treble-8
 ```
 
-indicates that voice `T` will be drawn on a staff labelled `Tenor`,
-using the treble clef with a small `8` underneath. Player programs will
-transpose the notes by one octave. Possible voice definitions include:
+indicates that voice `T` will be drawn on a staff labelled `Tenor`, using the treble clef with a small `8` underneath. Player programs will transpose the notes by one octave. Possible voice definitions include:
 
--   <div class="li">
+-   **name="voice name"** - the voice name is printed on the left of the first staff only. The characters `\n` produce a newline in the output.
 
-    **name="voice name"** - the voice name is printed on the left of the
-    first staff only. The characters `\n` produce a newline in
-    the output.
+-   **subname="voice subname"** - the voice subname is printed on the left of all staves but the first one.
 
-    </div>
+-   **stem=up/down** - forces the note stem direction.
 
--   <div class="li">
+-   **clef=** - specifies a clef; see <a href="#clefs_and_transposition" class="wikilink1" title="abc:standard:v2.1 ↵">clefs and transposition</a> for details.
 
-    **subname="voice subname"** - the voice subname is printed on the
-    left of all staves but the first one.
+The name specifier may be abbreviated to `nm=`. The subname specifier may be abbreviated to `snm=`.
 
-    </div>
+Applications may implement their own specifiers, but must gracefully ignore specifiers they don't understand or implement. This is required for portability of <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a> between applications.
 
--   <div class="li">
+### 7.2 Breaking lines
 
-    **stem=up/down** - forces the note stem direction.
+*VOLATILE:* See <a href="#multiple_voices" class="wikilink1" title="abc:standard:v2.1 ↵">above</a>. In particular the following may be relaxed with the introduction of a control voice.
 
-    </div>
+The rules for <a href="#typesetting_line-breaks" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting line-breaks</a> in multi-voice <a href="#abc_tune_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc tunes</a> are the same as for single voice music although additionally a line-break in one voice must be matched in the other voices. See the example tune <a href="#canzonettaabc" class="wikilink1" title="abc:standard:v2.1 ↵">Canzonetta.abc</a>.
 
--   <div class="li">
+### 7.3 Inline fields
 
-    **clef=** - specifies a clef; see [clefs and
-    transposition](#clefs_and_transposition "abc:standard:v2.1 ↵"){.wikilink1}
-    for details.
+*VOLATILE:* See <a href="#multiple_voices" class="wikilink1" title="abc:standard:v2.1 ↵">above</a>.
 
-    </div>
-
-The name specifier may be abbreviated to `nm=`. The subname specifier
-may be abbreviated to `snm=`.
-
-Applications may implement their own specifiers, but must gracefully
-ignore specifiers they don't understand or implement. This is required
-for portability of [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} between
-applications.
-
-</div>
-
-### 7.2 Breaking lines {#breaking_lines .sectionedit55}
-
-<div class="level3">
-
-*VOLATILE:* See
-[above](#multiple_voices "abc:standard:v2.1 ↵"){.wikilink1}. In
-particular the following may be relaxed with the introduction of a
-control voice.
-
-The rules for [typesetting
-line-breaks](#typesetting_line-breaks "abc:standard:v2.1 ↵"){.wikilink1}
-in multi-voice [abc
-tunes](#abc_tune_definition "abc:standard:v2.1 ↵"){.wikilink1} are the
-same as for single voice music although additionally a line-break in one
-voice must be matched in the other voices. See the example tune
-[Canzonetta.abc](#canzonettaabc "abc:standard:v2.1 ↵"){.wikilink1}.
-
-</div>
-
-### 7.3 Inline fields {#inline_fields .sectionedit56}
-
-<div class="level3">
-
-*VOLATILE:* See
-[above](#multiple_voices "abc:standard:v2.1 ↵"){.wikilink1}.
-
-To avoid ambiguity, [inline
-fields](#inline_field_definition "abc:standard:v2.1 ↵"){.wikilink1} that
-specify music properties should be repeated in every voice to which they
-apply.
+To avoid ambiguity, <a href="#inline_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">inline fields</a> that specify music properties should be repeated in every voice to which they apply.
 
 *Example:*
 
-``` {.code}
+``` code
 [V:1] C4|[M:3/4]CEG|Gce|
 [V:2] E4|[M:3/4]G3 |E3 |
 ```
 
-</div>
+### 7.4 Voice overlay
 
-### 7.4 Voice overlay {#voice_overlay .sectionedit57}
+*VOLATILE:* See <a href="#multiple_voices" class="wikilink1" title="abc:standard:v2.1 ↵">above</a>.
 
-<div class="level3">
-
-*VOLATILE:* See
-[above](#multiple_voices "abc:standard:v2.1 ↵"){.wikilink1}.
-
-The `&` operator may be used to temporarily overlay several voices
-within one measure. Each `&` operator sets the time point of the music
-back by one bar line, and the notes which follow it form a temporary
-voice in parallel with the preceding one. This may only be used to add
-one complete bar's worth of music for each `&`.
+The `&` operator may be used to temporarily overlay several voices within one measure. Each `&` operator sets the time point of the music back by one bar line, and the notes which follow it form a temporary voice in parallel with the preceding one. This may only be used to add one complete bar's worth of music for each `&`.
 
 Example:
 
-``` {.code}
+``` code
 A2 | c d e f g  a  &\
      A A A A A  A  &\
      F E D C B, A, |]
 ```
 
-[![](wiki/_media/abc-standard-overlay1-80.png){.media}](/wiki/_detail/abc:standard:overlay1-80.png?id=abc%3Astandard%3Av2.1 "abc:standard:overlay1-80.png"){.media}
+<a href="/wiki/_detail/abc:standard:overlay1-80.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:overlay1-80.png"><img src="wiki/_media/abc-standard-overlay1-80.png" class="media" /></a>
 
-Words in `w:` lines (and symbols in `s:` lines) are matched to the
-corresponding notes as per the normal rules for lyric alignment (see
-[lyrics](#lyrics "abc:standard:v2.1 ↵"){.wikilink1}), disregarding any
-overlay in the accompanying [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+Words in `w:` lines (and symbols in `s:` lines) are matched to the corresponding notes as per the normal rules for lyric alignment (see <a href="#lyrics" class="wikilink1" title="abc:standard:v2.1 ↵">lyrics</a>), disregarding any overlay in the accompanying <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>.
 
 *Example:*
 
-``` {.code}
+``` code
     g4 f4 | e6 e2 |
 && (d8    | c6) c2|
 w: ha-la-| lu-yoh
 +: lu-   |   -yoh
 ```
 
-[![](wiki/_media/abc-standard-overlay3-80.png){.media}](/wiki/_detail/abc:standard:overlay3-80.png?id=abc%3Astandard%3Av2.1 "abc:standard:overlay3-80.png"){.media}
+<a href="/wiki/_detail/abc:standard:overlay3-80.png?id=abc%3Astandard%3Av2.1" class="media" title="abc:standard:overlay3-80.png"><img src="wiki/_media/abc-standard-overlay3-80.png" class="media" /></a>
 
-This revokes the abc 2.0 usage of `&` in `w:` and `s:` lines, which is
-now [deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1}
-(see
-[disallowed](#disallowed_voice_overlay "abc:standard:v2.1 ↵"){.wikilink1}).
+This revokes the abc 2.0 usage of `&` in `w:` and `s:` lines, which is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> (see <a href="#disallowed_voice_overlay" class="wikilink1" title="abc:standard:v2.1 ↵">disallowed</a>).
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-8. Abc data format {#abc_data_format .sectionedit58}
+8. Abc data format
 ------------------
 
-<div class="level2">
+Each line in the file may end with white-space which will be ignored. For the purpose of this standard, ASCII tab and space characters are equivalent and are both included in the term 'white-space'. Applications must be able to interpret end-of-line markers in Unix (`<LF>`), Windows/DOS (`<CR><LF>`), and Macintosh style (`<CR>`) correctly.
 
-Each line in the file may end with white-space which will be ignored.
-For the purpose of this standard, ASCII tab and space characters are
-equivalent and are both included in the term 'white-space'. Applications
-must be able to interpret end-of-line markers in Unix (`<LF>`),
-Windows/DOS (`<CR><LF>`), and Macintosh style (`<CR>`) correctly.
+### 8.1 Tune body
 
-</div>
+Within the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>, all the printable ASCII characters may be used for the <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>. These are:
 
-### 8.1 Tune body {#tune_body .sectionedit59}
-
-<div class="level3">
-
-Within the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}, all the
-printable ASCII characters may be used for the [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}. These
-are:
-
-``` {.code}
+``` code
  !"#$%&'()*+,-./0123456789:;<=>?@
 ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`
 abcdefghijklmnopqrstuvwxyz{|}~
@@ -5645,268 +2270,119 @@ abcdefghijklmnopqrstuvwxyz{|}~
 
 Of these, the following characters are currently reserved:
 
-``` {.code}
+``` code
 # * ; ? @
 ```
 
 In future standards they may be used to extend the abc syntax.
 
-To ensure forward compatibility, current software should ignore these
-characters when they appear inside or between note groups, possibly
-giving a warning. However, these characters may not be ignored when they
-appear inside [text
-strings](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1} or
-[information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+To ensure forward compatibility, current software should ignore these characters when they appear inside or between note groups, possibly giving a warning. However, these characters may not be ignored when they appear inside <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text strings</a> or <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>.
 
 *Example:*
 
-``` {.code}
+``` code
 @a !pp! #bc2/3* [K:C#] de?f "@this $2was difficult to parse?" y |**
 ```
 
 should be treated as:
 
-``` {.code}
+``` code
 a !pp! bc2/3 [K:C#] def "@this $2was difficult to parse?" y |
 ```
 
-</div>
+### 8.2 Text strings
 
-### 8.2 Text strings {#text_strings .sectionedit60}
+[]()Text written within an <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a>, either as part of an <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information field</a>, an <a href="#annotations" class="wikilink1" title="abc:standard:v2.1 ↵">annotation</a> or as <a href="#free_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">free text</a> / <a href="#typeset_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">typeset text</a>, is known as a **text string**, or more fully, an **abc text string**. (Note that the abc standard version 2.0 referred to a <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text string</a> as an *abc string*.)
 
-<div class="level3">
+Typically when there are several lines of text, each line forms a separate <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text string</a>, although the distinction is not essential.
 
-[]()Text written within an [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}, either as
-part of an [information
-field](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1},
-an [annotation](#annotations "abc:standard:v2.1 ↵"){.wikilink1} or as
-[free text](#free_text_definition "abc:standard:v2.1 ↵"){.wikilink1} /
-[typeset
-text](#typeset_text_definition "abc:standard:v2.1 ↵"){.wikilink1}, is
-known as a **text string**, or more fully, an **abc text string**. (Note
-that the abc standard version 2.0 referred to a [text
-string](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1} as an
-*abc string*.)
+The contents of a text string may be written using any legal <a href="#charset_field" class="wikilink1" title="abc:standard:v2.1 ↵">character set</a>. The default character set is `utf-8`, giving access to every Unicode character.
 
-Typically when there are several lines of text, each line forms a
-separate [text
-string](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1},
-although the distinction is not essential.
+However, not all text editors support `utf-8` and so to avoid portability problems when writing accented characters in text strings, it also possible to use three other encoding options:
 
-The contents of a text string may be written using any legal [character
-set](#charset_field "abc:standard:v2.1 ↵"){.wikilink1}. The default
-character set is `utf-8`, giving access to every Unicode character.
+-   **mnemonics** - for example, é can be represented by `\'e`. These mnemonics are are based on TeX encodings and are always in the format *backslash-mnemonic-letter*. They have been available since the earliest days of abc and are widely used in legacy abc files. They are generally easy to remember and easy to read, but are not comprehensive in terms of the possible accents they can represent.
 
-However, not all text editors support `utf-8` and so to avoid
-portability problems when writing accented characters in text strings,
-it also possible to use three other encoding options:
+-   **named html entities** - for example, é can be represented by `&eacute;`. These encodings are not common in legacy abc files but are convenient for websites which use abc and generally easy to remember. However they are not particularly easy to read and are not fully comprehensive in terms of the possible accents they can represent.
 
--   <div class="li">
+-   **fixed width unicode** - for example, é can be represented by `\u00e9` using the 16-bit unicode representation `00e9` (or `\U000000e9` using 32-bit). These encodings are not common in legacy abc files and are not easy to read but give comprehensive access to all unicode characters.
 
-    **mnemonics** - for example, é can be represented by `\'e`. These
-    mnemonics are are based on TeX encodings and are always in the
-    format *backslash-mnemonic-letter*. They have been available since
-    the earliest days of abc and are widely used in legacy abc files.
-    They are generally easy to remember and easy to read, but are not
-    comprehensive in terms of the possible accents they can represent.
-
-    </div>
-
--   <div class="li">
-
-    **named html entities** - for example, é can be represented by
-    `&eacute;`. These encodings are not common in legacy abc files but
-    are convenient for websites which use abc and generally easy
-    to remember. However they are not particularly easy to read and are
-    not fully comprehensive in terms of the possible accents they
-    can represent.
-
-    </div>
-
--   <div class="li">
-
-    **fixed width unicode** - for example, é can be represented by
-    `\u00e9` using the 16-bit unicode representation `00e9` (or
-    `\U000000e9` using 32-bit). These encodings are not common in legacy
-    abc files and are not easy to read but give comprehensive access to
-    all unicode characters.
-
-    </div>
-
-All conforming abc typesetting software should support (understand and
-be able to convert) the subset of accents and ligatures given in the
-appendix, [supported accents &
-ligatures](#supported_accents_ligatures "abc:standard:v2.1 ↵"){.wikilink1},
-together with the special characters and symbols listed below.
+All conforming abc typesetting software should support (understand and be able to convert) the subset of accents and ligatures given in the appendix, <a href="#supported_accents_ligatures" class="wikilink1" title="abc:standard:v2.1 ↵">supported accents &amp; ligatures</a>, together with the special characters and symbols listed below.
 
 A summary, with examples, is as follows:
 
-<div class="table sectionedit61">
+| Accent       | Examples  | Encodings             |
+|--------------|-----------|-----------------------|
+| grave        | `À à è ò` | `` \`A \`a \`e \`o `` |
+| acute        | `Á á é ó` | `\'A \'a \'e \'o`     |
+| circumflex   | `Â â ê ô` | `\^A \^a \^e \^o`     |
+| tilde        | `Ã ã ñ õ` | `\~A \~a \~n \~o`     |
+| umlaut       | `Ä ä ë ö` | `\"A \"a \"e \"o`     |
+| cedilla      | `Ç ç`     | `\cC \cc`             |
+| ring         | `Å å`     | `\AA \aa`             |
+| slash        | `Ø ø`     | `\/O \/o`             |
+| breve        | `Ă ă Ĕ ĕ` | `\uA \ua \uE \ue`     |
+| caron        | `Š š Ž ž` | `\vS \vs \vZ \vz`     |
+| double acute | `Ő ő Ű ű` | `\HO \Ho \HU \Hu`     |
+| ligatures    | `ß Æ æ œ` | `\ss \AE \ae \oe`     |
 
-  Accent         Examples    Encodings
-  -------------- ----------- -----------------------
-  grave          `À à è ò`   `` \`A \`a \`e \`o ``
-  acute          `Á á é ó`   `\'A \'a \'e \'o`
-  circumflex     `Â â ê ô`   `\^A \^a \^e \^o`
-  tilde          `Ã ã ñ õ`   `\~A \~a \~n \~o`
-  umlaut         `Ä ä ë ö`   `\"A \"a \"e \"o`
-  cedilla        `Ç ç`       `\cC \cc`
-  ring           `Å å`       `\AA \aa`
-  slash          `Ø ø`       `\/O \/o`
-  breve          `Ă ă Ĕ ĕ`   `\uA \ua \uE \ue`
-  caron          `Š š Ž ž`   `\vS \vs \vZ \vz`
-  double acute   `Ő ő Ű ű`   `\HO \Ho \HU \Hu`
-  ligatures      `ß Æ æ œ`   `\ss \AE \ae \oe`
+Programs that have difficulty typesetting accented letters may reduce them to the base letter or, in the case of ligatures, the two base letters ignoring the backslash.
 
-</div>
+*Examples:* When reduced to the base letter, `\oA` becomes `A`, `\"o` becomes `o`, `\ss` becomes `ss`, `\AE` becomes `AE`, etc.
 
-Programs that have difficulty typesetting accented letters may reduce
-them to the base letter or, in the case of ligatures, the two base
-letters ignoring the backslash.
+For fixed width unicode, `\u` or `\U` must be followed by 4 or 8 hexadecimal characters respectively. Thus if any of the 4 characters after `\u` is not hexadecimal, then it is interpreted as a breve.
 
-*Examples:* When reduced to the base letter, `\oA` becomes `A`, `\"o`
-becomes `o`, `\ss` becomes `ss`, `\AE` becomes `AE`, etc.
+##### Special characters
 
-For fixed width unicode, `\u` or `\U` must be followed by 4 or 8
-hexadecimal characters respectively. Thus if any of the 4 characters
-after `\u` is not hexadecimal, then it is interpreted as a breve.
+Characters that are meaningful in the context of a <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text string</a> can be escaped using a backslash as follows:
 
-</div>
+-   type `\\` to get a backslash;
 
-##### Special characters {#special_characters}
+-   type `\%` to get a percent symbol that is not interpreted as the start of a <a href="#comments_and_remarks" class="wikilink1" title="abc:standard:v2.1 ↵">comment</a>;
 
-<div class="level5">
+-   type `\&` to get an ampersand that is not interpreted as the start of a named html entity (although an ampersand followed by white-space is interpreted as is - for example, `gin & tonic` is OK, but `G\&T` requires the backslash);
 
-Characters that are meaningful in the context of a [text
-string](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1} can
-be escaped using a backslash as follows:
+-   type `&quot;` or `\u0022` to get double quote marks in an <a href="#annotations" class="wikilink1" title="abc:standard:v2.1 ↵">annotation</a>
 
--   <div class="li">
-
-    type `\\` to get a backslash;
-
-    </div>
-
--   <div class="li">
-
-    type `\%` to get a percent symbol that is not interpreted as the
-    start of a
-    [comment](#comments_and_remarks "abc:standard:v2.1 ↵"){.wikilink1};
-
-    </div>
-
--   <div class="li">
-
-    type `\&` to get an ampersand that is not interpreted as the start
-    of a named html entity (although an ampersand followed by
-    white-space is interpreted as is - for example, `gin & tonic` is OK,
-    but `G\&T` requires the backslash);
-
-    </div>
-
--   <div class="li">
-
-    type `&quot;` or `\u0022` to get double quote marks in an
-    [annotation](#annotations "abc:standard:v2.1 ↵"){.wikilink1}
-
-    </div>
-
-</div>
-
-##### Special symbols {#special_symbols}
-
-<div class="level5">
+##### Special symbols
 
 The following symbols are also useful:
 
--   <div class="li">
+-   type `&copy;` or `\u00a9` for the copyright symbol ©
 
-    type `&copy;` or `\u00a9` for the copyright symbol ©
+-   type `\u266d` for a flat symbol ♭
 
-    </div>
+-   type `\u266e` for a natural symbol ♮
 
--   <div class="li">
+-   type `\u266f` for a sharp symbol ♯
 
-    type `\u266d` for a flat symbol ♭
-
-    </div>
-
--   <div class="li">
-
-    type `\u266e` for a natural symbol ♮
-
-    </div>
-
--   <div class="li">
-
-    type `\u266f` for a sharp symbol ♯
-
-    </div>
-
-*VOLATILE:* Finally note that currently the specifiers `$1`, `$2`, `$3`
-and `$4` can be used to change the font within a [text
-string](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-However, this feature is likely to change in future versions of the
-standard - see [font
-directives](#font_directives "abc:standard:v2.1 ↵"){.wikilink1} for more
-details.
+*VOLATILE:* Finally note that currently the specifiers `$1`, `$2`, `$3` and `$4` can be used to change the font within a <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text string</a>. However, this feature is likely to change in future versions of the standard - see <a href="#font_directives" class="wikilink1" title="abc:standard:v2.1 ↵">font directives</a> for more details.
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-9. Macros {#macros .sectionedit62}
+9. Macros
 ---------
 
-<div class="level2">
+This standard defines an **optional** system of macros which is principally used to define the way in which ornament symbols such as the tilde `~` are played (although it could be used for many other purposes).
 
-This standard defines an **optional** system of macros which is
-principally used to define the way in which ornament symbols such as the
-tilde `~` are played (although it could be used for many other
-purposes).
+Software implementing these macros, should first expand the macros defined in this section, and only afterwards apply any relevant `U:` replacement (see <a href="#redefinable_symbols" class="wikilink1" title="abc:standard:v2.1 ↵">Redefinable symbols</a>).
 
-Software implementing these macros, should first expand the macros
-defined in this section, and only afterwards apply any relevant `U:`
-replacement (see [Redefinable
-symbols](#redefinable_symbols "abc:standard:v2.1 ↵"){.wikilink1}).
-
-When these macros are stored in an abc header file (see [include
-field](#include_field "abc:standard:v2.1 ↵"){.wikilink1}), they may form
-a powerful library.
+When these macros are stored in an abc header file (see <a href="#include_field" class="wikilink1" title="abc:standard:v2.1 ↵">include field</a>), they may form a powerful library.
 
 There are two kinds of macro, called Static and Transposing.
 
-</div>
+### 9.1 Static macros
 
-### 9.1 Static macros {#static_macros .sectionedit63}
+You define a static macro by writing into the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> something like this:
 
-<div class="level3">
-
-You define a static macro by writing into the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}
-something like this:
-
-``` {.code}
+``` code
  m: ~G3 = G{A}G{F}G
 ```
 
-When you play the tune, the program searches the [tune
-header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1} for
-macro definitions, then does a search and replace on its internal copy
-of the text before passing that to the parser which plays the tune.
-Every occurence of `~G3` in the tune is replaced by `G{A}G{F}G`, and
-that is what gets played. Only `~G3` notes are affected, `~G2`, `~g3`,
-`~F3` etc. are ignored.
+When you play the tune, the program searches the <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> for macro definitions, then does a search and replace on its internal copy of the text before passing that to the parser which plays the tune. Every occurence of `~G3` in the tune is replaced by `G{A}G{F}G`, and that is what gets played. Only `~G3` notes are affected, `~G2`, `~g3`, `~F3` etc. are ignored.
 
-You can put in as many macros as you want, and indeed, if you only use
-static macros you will need to write a separate macro for each
-combination of pitch and note-length. Here is an example:
+You can put in as many macros as you want, and indeed, if you only use static macros you will need to write a separate macro for each combination of pitch and note-length. Here is an example:
 
-``` {.code}
+``` code
 X:50
 T:Apples in Winter
 S:Trad, arr. Paddy O'Brien
@@ -5922,77 +2398,37 @@ d|efe edB|ege fdB|dec dAF|DFA def|
 [2edB def|gba ~g2e|fdB AGF|GEE E2||
 ```
 
-Here I have put in two static macros, since there are two different
-notes in the tune marked with a tilde.
+Here I have put in two static macros, since there are two different notes in the tune marked with a tilde.
 
 A static macro definition consists of four parts:
 
--   <div class="li">
+-   the field identifier `m:`
 
-    the field identifier `m:`
+-   the target string - e.g `~G3`
 
-    </div>
+-   the equals sign
 
--   <div class="li">
+-   the replacement string - e.g. `G{A}G{F}G`
 
-    the target string - e.g `~G3`
+The target string can consist of any string up to 31 characters in length, except that it may not include the letter 'n', for reasons which will become obvious later. You don't have to use the tilde, but of course if you don't use a legal combination of abc, other programs will not be able to play your tune.
 
-    </div>
+The replacement string consists of any legal abc text up to 200 characters in length. It's up to you to ensure that the target and replacement strings occupy the same time interval (the program does not check this). Both the target and replacement strings may include spaces if necessary, but leading and trailing spaces are stripped off so
 
--   <div class="li">
-
-    the equals sign
-
-    </div>
-
--   <div class="li">
-
-    the replacement string - e.g. `G{A}G{F}G`
-
-    </div>
-
-The target string can consist of any string up to 31 characters in
-length, except that it may not include the letter 'n', for reasons which
-will become obvious later. You don't have to use the tilde, but of
-course if you don't use a legal combination of abc, other programs will
-not be able to play your tune.
-
-The replacement string consists of any legal abc text up to 200
-characters in length. It's up to you to ensure that the target and
-replacement strings occupy the same time interval (the program does not
-check this). Both the target and replacement strings may include spaces
-if necessary, but leading and trailing spaces are stripped off so
-
-``` {.code}
+``` code
 m:~g2={a}g{f}g
 ```
 
 is perfectly OK, although less readable.
 
-</div>
+### 9.2 Transposing macros
 
-### 9.2 Transposing macros {#transposing_macros .sectionedit64}
+If your tune has ornaments on lots of different notes, and you want them to all play with the same ornament pattern, you can use transposing macros to achieve this. Transposing macros are written in exactly the same way as static macros, except that the note symbol in the target string is represented by 'n' (meaning any note) and the note symbols in the replacement string by other letters (h to z) which are interpreted according to their position in the alphabet relative to n.
 
-<div class="level3">
-
-If your tune has ornaments on lots of different notes, and you want them
-to all play with the same ornament pattern, you can use transposing
-macros to achieve this. Transposing macros are written in exactly the
-same way as static macros, except that the note symbol in the target
-string is represented by 'n' (meaning any note) and the note symbols in
-the replacement string by other letters (h to z) which are interpreted
-according to their position in the alphabet relative to n.
-
-So, for example I could re-write the static macro `m: ~G3 = G{A}G{F}G`
-as a transposing macro `m: ~n3 = n{o}n{m}n`. When the transposing macro
-is expanded, any note of the form `~n3` will be replaced by the
-appropriate pattern of notes. Notes of the form `~n2` (or other lengths)
-will be ignored, so you will have to write separate transposing macros
-for each note length.
+So, for example I could re-write the static macro `m: ~G3 = G{A}G{F}G` as a transposing macro `m: ~n3 = n{o}n{m}n`. When the transposing macro is expanded, any note of the form `~n3` will be replaced by the appropriate pattern of notes. Notes of the form `~n2` (or other lengths) will be ignored, so you will have to write separate transposing macros for each note length.
 
 Here's an example:
 
-``` {.code}
+``` code
 X:35
 T:Down the Broom
 S:Trad, arr. Paddy O'Brien
@@ -6008,381 +2444,127 @@ EAAG ~A2 Bd|eg~g2 egdg|eg~g2 dgba|gedB BAA2:|
 
 A transposing macro definition consists of four parts:
 
--   <div class="li">
+-   the field identifier `m:`
 
-    the field identifier `m:`
+-   the target string - e.g `~n3`
 
-    </div>
+-   the equals sign
 
--   <div class="li">
+-   the replacement string - e.g. `n{o}n{m}n`
 
-    the target string - e.g `~n3`
+The target string can consist of any string up to 31 characters in length, except that it must conclude with the letter 'n', followed by a number which specifies the note length.
 
-    </div>
+The replacement string consists of any legal abc text up to 200 characters in length, where note pitches are defined by the letters h - z, the pitches being interpreted relative to that of the letter n. Once again you should ensure that the time intervals match. You should not use accidentals in transposing macros
 
--   <div class="li">
-
-    the equals sign
-
-    </div>
-
--   <div class="li">
-
-    the replacement string - e.g. `n{o}n{m}n`
-
-    </div>
-
-The target string can consist of any string up to 31 characters in
-length, except that it must conclude with the letter 'n', followed by a
-number which specifies the note length.
-
-The replacement string consists of any legal abc text up to 200
-characters in length, where note pitches are defined by the letters h -
-z, the pitches being interpreted relative to that of the letter n. Once
-again you should ensure that the time intervals match. You should not
-use accidentals in transposing macros
-
-*Comment:* It is almost impossible to think of a way to transpose `~=a3`
-or `~^G2` which will work correctly under all circumstances, so a static
-macro should be used for cases like these.
+*Comment:* It is almost impossible to think of a way to transpose `~=a3` or `~^G2` which will work correctly under all circumstances, so a static macro should be used for cases like these.
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-10. Outdated syntax {#outdated_syntax .sectionedit65}
+10. Outdated syntax
 -------------------
 
-<div class="level2">
+The abc standard contains a variety of outdated syntax that is no longer recommended or, in some cases even supported, according to the following definitions:
 
-The abc standard contains a variety of outdated syntax that is no longer
-recommended or, in some cases even supported, according to the following
-definitions:
+-   **Deprecated** syntax is rules or constructs that have been outdated by newer syntax. Deprecated syntax must be supported by conforming abc software under strict interpretation but is not recommended for new transcriptions. Deprecated syntax may become obsolete in future versions of abc. Conforming abc software that encounters deprecated syntax should issue a warning when using strict interpretation (although it may offer the user the option to switch warnings off).
 
--   <div class="li">
+-   **Obsolete** syntax is rules or constructs for which there is no guarantee of support by conforming abc software. Obsolete syntax may be supported under loose interpretation but must not be used for new transcriptions. Conforming abc software that encounters obsolete syntax should issue a (preferably non-fatal) error message when using strict interpretation, or a warning when using loose interpretation (although it may offer the user the option to switch warnings off).
 
-    **Deprecated** syntax is rules or constructs that have been outdated
-    by newer syntax. Deprecated syntax must be supported by conforming
-    abc software under strict interpretation but is not recommended for
-    new transcriptions. Deprecated syntax may become obsolete in future
-    versions of abc. Conforming abc software that encounters deprecated
-    syntax should issue a warning when using strict interpretation
-    (although it may offer the user the option to switch warnings off).
+-   **Disallowed** syntax has the same definition as obsolete syntax, but has not gone through a formal process of deprecation.
 
-    </div>
+-   **Outdated** syntax is the collective term for deprecated, obsolete and disallowed syntax.
 
--   <div class="li">
+Please see <a href="http://www.ietf.org/rfc/rfc2119.txt" class="uri" class="urlextern" title="http://www.ietf.org/rfc/rfc2119.txt">http://www.ietf.org/rfc/rfc2119.txt</a> for formal definitions of the key words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, and OPTIONAL in this context.
 
-    **Obsolete** syntax is rules or constructs for which there is no
-    guarantee of support by conforming abc software. Obsolete syntax may
-    be supported under loose interpretation but must not be used for
-    new transcriptions. Conforming abc software that encounters obsolete
-    syntax should issue a (preferably non-fatal) error message when
-    using strict interpretation, or a warning when using loose
-    interpretation (although it may offer the user the option to switch
-    warnings off).
+Outdated abc syntax is listed below so that users who come across it are able to interpret (and preferably update) it according to the latest standard.
 
-    </div>
+### 10.1 Outdated information field syntax
 
--   <div class="li">
+The `A:` <a href="#aarea" class="wikilink1" title="abc:standard:v2.1 ↵">field</a> was originally used to contain area information. In version 2.0 this was changed to contain the name of the lyrics author. In version 2.1, to maintain backwards compatibility, this has been changed back to area, but for clarity, the `A:` field is <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> - area information can be stored in the `O:` field and a new field *(to be decided)* will be used for author information.
 
-    **Disallowed** syntax has the same definition as obsolete syntax,
-    but has not gone through a formal process of deprecation.
+*Comment:* Of the 160,000 tunes currently available in the <a href="http://abcnotation.com/search" class="urlextern" title="http://abcnotation.com/search">abcnotation.com tune search</a> 16,300 contain an `A:` field with 680 distinct values. Of these, only around 10 contain author information rather than area (in some cases it is difficult to tell).
 
-    </div>
+An `E:` field was once used by `abc2mtex` to explicitly control note spacing; this is no longer necessary with current formatting algorithms and the `E:` field is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a>.
 
--   <div class="li">
+The original usage of the `H:` <a href="#hhistory" class="wikilink1" title="abc:standard:v2.1 ↵">history</a> field, where the contents of the history field is considered to continue over several lines until the next field occurs, is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a>.
 
-    **Outdated** syntax is the collective term for deprecated, obsolete
-    and disallowed syntax.
-
-    </div>
-
-Please see <http://www.ietf.org/rfc/rfc2119.txt> for formal definitions
-of the key words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD,
-SHOULD NOT, RECOMMENDED, MAY, and OPTIONAL in this context.
-
-Outdated abc syntax is listed below so that users who come across it are
-able to interpret (and preferably update) it according to the latest
-standard.
-
-</div>
-
-### 10.1 Outdated information field syntax {#outdated_information_field_syntax .sectionedit66}
-
-<div class="level3">
-
-The `A:` [field](#aarea "abc:standard:v2.1 ↵"){.wikilink1} was
-originally used to contain area information. In version 2.0 this was
-changed to contain the name of the lyrics author. In version 2.1, to
-maintain backwards compatibility, this has been changed back to area,
-but for clarity, the `A:` field is
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} - area
-information can be stored in the `O:` field and a new field *(to be
-decided)* will be used for author information.
-
-*Comment:* Of the 160,000 tunes currently available in the
-[abcnotation.com tune
-search](http://abcnotation.com/search "http://abcnotation.com/search"){.urlextern}
-16,300 contain an `A:` field with 680 distinct values. Of these, only
-around 10 contain author information rather than area (in some cases it
-is difficult to tell).
-
-An `E:` field was once used by `abc2mtex` to explicitly control note
-spacing; this is no longer necessary with current formatting algorithms
-and the `E:` field is now
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1}.
-
-The original usage of the `H:`
-[history](#hhistory "abc:standard:v2.1 ↵"){.wikilink1} field, where the
-contents of the history field is considered to continue over several
-lines until the next field occurs, is now
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1}.
-
-The `Q:` [tempo](#qtempo "abc:standard:v2.1 ↵"){.wikilink1} field is
-still very much in use, but earlier versions of the standard permitted
-two syntax variants, now
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1}, which
-specified how many unit note lengths to play per minute.
+The `Q:` <a href="#qtempo" class="wikilink1" title="abc:standard:v2.1 ↵">tempo</a> field is still very much in use, but earlier versions of the standard permitted two syntax variants, now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a>, which specified how many unit note lengths to play per minute.
 
 *Examples:* Both examples mean "play 120 unit note-lengths per minute".
 
-``` {.code}
+``` code
 Q:C=120
 Q:120
 ```
 
-This is not very musical, and the usage is
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1}.
-However, there are many [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} which
-employ this syntax and programs should accept it.
+This is not very musical, and the usage is <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a>. However, there are many <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a> which employ this syntax and programs should accept it.
 
-</div>
+### 10.2 Outdated dialects
 
-### 10.2 Outdated dialects {#outdated_dialects .sectionedit67}
+#### 10.2.1 Outdated line-breaking
 
-<div class="level3">
+The popular abc software abc2win introduced an exclamation mark (`!`) as a way of forcing a <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-break</a> and this was adopted by abc 2.0, conflicting with the previous usage of `!…!` to delimit decorations.
 
-</div>
+The `!` is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> for <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a> although it is still available (even under <a href="#strict_interpretation" class="wikilink1" title="abc:standard:v2.1 ↵">strict interpretation</a>) for legacy abc transcriptions by use of the "`I:linebreak !`" directive - see <a href="#line-breaking_dialects" class="wikilink1" title="abc:standard:v2.1 ↵">line-breaking dialects</a>.
 
-#### 10.2.1 Outdated line-breaking {#outdated_line-breaking}
+#### 10.2.2 Outdated decorations
 
-<div class="level4">
+Abc standard 2.0 adopted `+…+` syntax to indicate decorations in place of `!…!`. It never gained much favour, however, and the latter is in much more common (see <a href="#decoration_dialects" class="wikilink1" title="abc:standard:v2.1 ↵">decoration dialects</a>).
 
-The popular abc software abc2win introduced an exclamation mark (`!`) as
-a way of forcing a [score
-line-break](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-and this was adopted by abc 2.0, conflicting with the previous usage of
-`!…!` to delimit decorations.
+Therefore, and since a non-conflicting mechanism has now been found to allow `!` for line-breaking (see <a href="#line-breaking_dialects" class="wikilink1" title="abc:standard:v2.1 ↵">line-breaking dialects</a>), the `+…+` decoration syntax is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> in favour of `!…!`.
 
-The `!` is now
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} for
-[score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-although it is still available (even under [strict
-interpretation](#strict_interpretation "abc:standard:v2.1 ↵"){.wikilink1})
-for legacy abc transcriptions by use of the "`I:linebreak !`" directive
-- see [line-breaking
-dialects](#line-breaking_dialects "abc:standard:v2.1 ↵"){.wikilink1}.
+Nonetheless, the `+…+` decoration syntax is still available using the "`I:decoration +`" instruction (see <a href="#decoration_dialects" class="wikilink1" title="abc:standard:v2.1 ↵">decoration dialects</a>).
 
-</div>
+#### 10.2.3 Outdated chords
 
-#### 10.2.2 Outdated decorations {#outdated_decorations}
+Early versions of the abc standard used the `+` symbol to delimit chords (in place of `[]` symbols). This usage is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> - see <a href="#chord_dialects" class="wikilink1" title="abc:standard:v2.1 ↵">chord dialects</a> for more details.
 
-<div class="level4">
+### 10.3 Outdated continuations
 
-Abc standard 2.0 adopted `+…+` syntax to indicate decorations in place
-of `!…!`. It never gained much favour, however, and the latter is in
-much more common (see [decoration
-dialects](#decoration_dialects "abc:standard:v2.1 ↵"){.wikilink1}).
+From the earliest days of abc (in abc standard 1.0 through to abc 1.7.6), the backslash (`\`) has been used to suppress <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a> by placing it at the end of a line of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>. Thus, effectively, it has acted as a continuation character, although with its own special rules, in particular that it could act through <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> and <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comments</a>.
 
-Therefore, and since a non-conflicting mechanism has now been found to
-allow `!` for line-breaking (see [line-breaking
-dialects](#line-breaking_dialects "abc:standard:v2.1 ↵"){.wikilink1}),
-the `+…+` decoration syntax is now
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} in
-favour of `!…!`.
+Abc 2.0 extended this usage to make `\` a general continuation character, which also allows continuation of <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> and in particular the `w:` lyrics field (usually the only field which actually requires a continuation in typical transcriptions). Unfortunately, however, the rules of precedence were never well established (should the `\` be treated by a pre-processor joining together continued lines and, if so, should comments be removed before or after that happened?) and the usage was never widely adopted, nor even well understood.
 
-Nonetheless, the `+…+` decoration syntax is still available using the
-"`I:decoration +`" instruction (see [decoration
-dialects](#decoration_dialects "abc:standard:v2.1 ↵"){.wikilink1}).
+*Comment:* Of the 160,000 tunes currently available in the <a href="http://abcnotation.com/search" class="urlextern" title="http://abcnotation.com/search">abcnotation.com tune search</a>, only 22 (0.01%) use continuations for the `w:` field and only around 50 (0.03%) use it for any other field; of these latter usages, almost all are actually in error.
 
-</div>
+Furthermore, discussions during the development of abc 2.1 led to the suggestion that a new character should be introduced to suppress <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a> - in other words the `\` (as described in abc 2.0) had evolved far enough away from its initial definition so that another character was required to replace what it had originally been designed to do.
 
-#### 10.2.3 Outdated chords {#outdated_chords}
+Consequently, in abc 2.1 the `\` has been reinstated to its original purpose of suppressing <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a> (see <a href="#typesetting_line-breaks" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting line-breaks</a>) and its use a general continuation character is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">disallowed</a> (see <a href="#continuation_of_input_lines" class="wikilink1" title="abc:standard:v2.1 ↵">continuation of input lines</a> for the alternatives).
 
-<div class="level4">
+### 10.4 Outdated directives
 
-Early versions of the abc standard used the `+` symbol to delimit chords
-(in place of `[]` symbols). This usage is now
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} - see
-[chord dialects](#chord_dialects "abc:standard:v2.1 ↵"){.wikilink1} for
-more details.
+The `%%continueall true` directive is replaced by "`I:linebreak !`" in abc 2.1 (see <a href="#typesetting_line-breaks" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting line-breaks</a>) and <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a>.
 
-</div>
+The `%%abc-copyright` and `%%abc-edited-by` extended information fields from section 3.3. of abc 2.0 have been <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> in favour of the <a href="#ztranscription" class="wikilink1" title="abc:standard:v2.1 ↵">Z: - transcription</a> field.
 
-### 10.3 Outdated continuations {#outdated_continuations .sectionedit68}
+*Comment:* Of the 131,000 files currently available in the <a href="http://abcnotation.com/search" class="urlextern" title="http://abcnotation.com/search">abcnotation.com tune search</a> only 32 use `%%abc-edited-by` and only 1 uses `%%abc-copyright`.
 
-<div class="level3">
+### 10.5 Outdated file structure
 
-From the earliest days of abc (in abc standard 1.0 through to abc
-1.7.6), the backslash (`\`) has been used to suppress [score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-by placing it at the end of a line of [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}. Thus,
-effectively, it has acted as a continuation character, although with its
-own special rules, in particular that it could act through [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-and [comments](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+#### 10.5.1 Outdated tune header syntax
 
-Abc 2.0 extended this usage to make `\` a general continuation
-character, which also allows continuation of [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-and in particular the `w:` lyrics field (usually the only field which
-actually requires a continuation in typical transcriptions).
-Unfortunately, however, the rules of precedence were never well
-established (should the `\` be treated by a pre-processor joining
-together continued lines and, if so, should comments be removed before
-or after that happened?) and the usage was never widely adopted, nor
-even well understood.
+Abc standard 2.0 included the rule that 'if the <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> contains only one tune the `X:` field may be dropped'. However, it was pointed out that as a consequence, a user who pasted an additional tune into such a file would get an error message from a tune which previously contained no errors.
 
-*Comment:* Of the 160,000 tunes currently available in the
-[abcnotation.com tune
-search](http://abcnotation.com/search "http://abcnotation.com/search"){.urlextern},
-only 22 (0.01%) use continuations for the `w:` field and only around 50
-(0.03%) use it for any other field; of these latter usages, almost all
-are actually in error.
+Despite considerable discussion on the abcusers mail list (see for example the threads <a href="http://tech.groups.yahoo.com/group/abcusers/message/3950" class="uri" class="urlextern" title="http://tech.groups.yahoo.com/group/abcusers/message/3950">http://tech.groups.yahoo.com/group/abcusers/message/3950</a> and <a href="http://tech.groups.yahoo.com/group/abcusers/message/4113" class="uri" class="urlextern" title="http://tech.groups.yahoo.com/group/abcusers/message/4113">http://tech.groups.yahoo.com/group/abcusers/message/4113</a>) and, a number of good suggestions, no consensus was reached. As a result the above rule is <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> in abc 2.1; a tune must start with a `X:` field followed by a `T:` field.
 
-Furthermore, discussions during the development of abc 2.1 led to the
-suggestion that a new character should be introduced to suppress [score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-- in other words the `\` (as described in abc 2.0) had evolved far
-enough away from its initial definition so that another character was
-required to replace what it had originally been designed to do.
+However, this decision may be revisited in the future and the specification relaxed.
 
-Consequently, in abc 2.1 the `\` has been reinstated to its original
-purpose of suppressing [score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-(see [typesetting
-line-breaks](#typesetting_line-breaks "abc:standard:v2.1 ↵"){.wikilink1})
-and its use a general continuation character is now
-[disallowed](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} (see
-[continuation of input
-lines](#continuation_of_input_lines "abc:standard:v2.1 ↵"){.wikilink1}
-for the alternatives).
+#### 10.5.2 Outdated defaults
 
-</div>
+In early versions of the abc standard, defaults could be set throughout an <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a>, using <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>, which applied to all subsequent tune. In other words, the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> could effectively appear anywhere inside a file instead of just at the top.
 
-### 10.4 Outdated directives {#outdated_directives .sectionedit69}
+This usage significantly complicates random access of the tunes in the file, since the all the preceding contents of the file must be scanned for default settings before a tune can be processed. As result this was <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> in abc 2.0 and is <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> in abc 2.1.
 
-<div class="level3">
+### 10.6 Outdated lyrics alignment
 
-The `%%continueall true` directive is replaced by "`I:linebreak !`" in
-abc 2.1 (see [typesetting
-line-breaks](#typesetting_line-breaks "abc:standard:v2.1 ↵"){.wikilink1})
-and [deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1}.
+Abc 2.1 introduced an extension to <a href="#alignment" class="wikilink1" title="abc:standard:v2.1 ↵">lyrics alignment</a> meaning that lyric lines (i.e. those using the `w:` field) no longer need to follow immediately after the line of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> to which they are attached, meaning that they can even be postponed to the end of the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>.
 
-The `%%abc-copyright` and `%%abc-edited-by` extended information fields
-from section 3.3. of abc 2.0 have been
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} in
-favour of the [Z: -
-transcription](#ztranscription "abc:standard:v2.1 ↵"){.wikilink1} field.
+*Examples:* The following two excerpts are equivalent in abc 2.1; under abc 2.0 and previous versions of the standard, only the first version would be legal. Note that there are 4 (<a href="#numbering" class="wikilink1" title="abc:standard:v2.1 ↵">numbered</a>) verses and hence 4 `w:` fields for each line of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>.
 
-*Comment:* Of the 131,000 files currently available in the
-[abcnotation.com tune
-search](http://abcnotation.com/search "http://abcnotation.com/search"){.urlextern}
-only 32 use `%%abc-edited-by` and only 1 uses `%%abc-copyright`.
+In the first excerpt the lyrics follow immediately after the line of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> to which they are attached.
 
-</div>
+In the second excerpt, the lyrics are postponed to the end of the tune, arguably aiding readability substantially and meaning that each verse is contiguous. The <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comment lines</a> in the second excerpt (those lines beginning with `%`) are added for readability and are entirely optional.
 
-### 10.5 Outdated file structure {#outdated_file_structure .sectionedit70}
-
-<div class="level3">
-
-</div>
-
-#### 10.5.1 Outdated tune header syntax {#outdated_tune_header_syntax}
-
-<div class="level4">
-
-Abc standard 2.0 included the rule that 'if the [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} contains
-only one tune the `X:` field may be dropped'. However, it was pointed
-out that as a consequence, a user who pasted an additional tune into
-such a file would get an error message from a tune which previously
-contained no errors.
-
-Despite considerable discussion on the abcusers mail list (see for
-example the threads
-<http://tech.groups.yahoo.com/group/abcusers/message/3950> and
-<http://tech.groups.yahoo.com/group/abcusers/message/4113>) and, a
-number of good suggestions, no consensus was reached. As a result the
-above rule is
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} in abc
-2.1; a tune must start with a `X:` field followed by a `T:` field.
-
-However, this decision may be revisited in the future and the
-specification relaxed.
-
-</div>
-
-#### 10.5.2 Outdated defaults {#outdated_defaults}
-
-<div class="level4">
-
-In early versions of the abc standard, defaults could be set throughout
-an [abc file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1},
-using [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1},
-which applied to all subsequent tune. In other words, the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} could
-effectively appear anywhere inside a file instead of just at the top.
-
-This usage significantly complicates random access of the tunes in the
-file, since the all the preceding contents of the file must be scanned
-for default settings before a tune can be processed. As result this was
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} in abc
-2.0 and is
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} in abc
-2.1.
-
-</div>
-
-### 10.6 Outdated lyrics alignment {#outdated_lyrics_alignment .sectionedit71}
-
-<div class="level3">
-
-Abc 2.1 introduced an extension to [lyrics
-alignment](#alignment "abc:standard:v2.1 ↵"){.wikilink1} meaning that
-lyric lines (i.e. those using the `w:` field) no longer need to follow
-immediately after the line of [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1} to which
-they are attached, meaning that they can even be postponed to the end of
-the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-*Examples:* The following two excerpts are equivalent in abc 2.1; under
-abc 2.0 and previous versions of the standard, only the first version
-would be legal. Note that there are 4
-([numbered](#numbering "abc:standard:v2.1 ↵"){.wikilink1}) verses and
-hence 4 `w:` fields for each line of [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-In the first excerpt the lyrics follow immediately after the line of
-[music code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}
-to which they are attached.
-
-In the second excerpt, the lyrics are postponed to the end of the tune,
-arguably aiding readability substantially and meaning that each verse is
-contiguous. The [comment
-lines](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1} in the
-second excerpt (those lines beginning with `%`) are added for
-readability and are entirely optional.
-
-``` {.code}
+``` code
 D2DE G2GG|A2EE ED-D2|c2cc B2AG|
 w:1\-~Si les ma-tins de gri-sail-le se tein-tent,*s'ils ont cou-leur en la
 w:2\-~Si mo-ri-bonds sont les rois en ri-pail-le,*si leurs pri-sons sont des
@@ -6395,7 +2577,7 @@ w:\-tal font mer-veille vienn'nt des lu-eurs de ver-meil,******
 w:\-rents font ar-gent, vien-nent des fleurs de sa-fran,******
 ```
 
-``` {.code}
+``` code
 %
 % music
 %
@@ -6417,37 +2599,24 @@ w:4\-~Si mill' bri-gands à l'en-can font par-ta-ge,*dix mille en-fants des tor-
 +:\-rents font ar-gent, vien-nent des fleurs de sa-fran,******
 ```
 
-Unfortunately, however, this extension is not fully backwards compatible
-with abc 2.0.
+Unfortunately, however, this extension is not fully backwards compatible with abc 2.0.
 
-The difficulty arises when there is a line (or lines) of music code
-without lyrics attached, followed by a line with lyrics attached.
+The difficulty arises when there is a line (or lines) of music code without lyrics attached, followed by a line with lyrics attached.
 
-*Example:* In the following excerpt, using abc 2.0 the lyrics would be
-aligned with the adjacent [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1}, i.e.
-with `cdef`; using abc 2.1 they would be aligned at the start of the
-tune (or voice), i.e. with `CDEF`.
+*Example:* In the following excerpt, using abc 2.0 the lyrics would be aligned with the adjacent <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a>, i.e. with `cdef`; using abc 2.1 they would be aligned at the start of the tune (or voice), i.e. with `CDEF`.
 
-``` {.code}
+``` code
 CDEF|
 FEDC|
 cdef|]
 w:these are lyr-ics
 ```
 
-The work around for users who have files with such usage is either to
-avoid writing `%abc-2.1` as the [file
-identifier](#abc_file_identification "abc:standard:v2.1 ↵"){.wikilink1}
-or to add an empty `w:` field after the final line of [music
-code](#music_code_definition "abc:standard:v2.1 ↵"){.wikilink1} that
-should be without lyrics.
+The work around for users who have files with such usage is either to avoid writing `%abc-2.1` as the <a href="#abc_file_identification" class="wikilink1" title="abc:standard:v2.1 ↵">file identifier</a> or to add an empty `w:` field after the final line of <a href="#music_code_definition" class="wikilink1" title="abc:standard:v2.1 ↵">music code</a> that should be without lyrics.
 
-*Example:* The following excerpt should be treated the same way (with
-regard to lyrics alignment) under abc 2.0 and abc 2.1. Under abc 2.1 the
-empty `w:` field means that the lyrics are aligned with `cdef`.
+*Example:* The following excerpt should be treated the same way (with regard to lyrics alignment) under abc 2.0 and abc 2.1. Under abc 2.1 the empty `w:` field means that the lyrics are aligned with `cdef`.
 
-``` {.code}
+``` code
 CDEF|
 FEDC|
 w:
@@ -6455,297 +2624,155 @@ cdef|]
 w:these are lyr-ics
 ```
 
-</div>
+### 10.7 Other outdated syntax
 
-### 10.7 Other outdated syntax {#other_outdated_syntax .sectionedit72}
+#### 10.7.1 Disallowed voice overlay
 
-<div class="level3">
+Although the use of ampersand (`&`) to overlay voices (as introduced in abc 2.0) is still perfectly acceptable, this usage has been <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> within `w:` lyric and `s:` symbol <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a>.
 
-</div>
+The reason is that, as far as is known, this usage has never been implemented in software and, furthermore, `&` symbols are widely used within `w:` fields in legacy abc files to indicate ampersands.
 
-#### 10.7.1 Disallowed voice overlay {#disallowed_voice_overlay}
-
-<div class="level4">
-
-Although the use of ampersand (`&`) to overlay voices (as introduced in
-abc 2.0) is still perfectly acceptable, this usage has been
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} within
-`w:` lyric and `s:` symbol [information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-The reason is that, as far as is known, this usage has never been
-implemented in software and, furthermore, `&` symbols are widely used
-within `w:` fields in legacy abc files to indicate ampersands.
-
-Instead lyrics are matched to notes without regard to the voice overlay
-- see [voice overlay](#voice_overlay "abc:standard:v2.1 ↵"){.wikilink1}.
+Instead lyrics are matched to notes without regard to the voice overlay - see <a href="#voice_overlay" class="wikilink1" title="abc:standard:v2.1 ↵">voice overlay</a>.
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-11. Stylesheet directives and pseudo-comments {#stylesheet_directives_and_pseudo-comments .sectionedit73}
+11. Stylesheet directives and pseudo-comments
 ---------------------------------------------
 
-<div class="level2">
-
-</div>
-
-### 11.0 Introduction to directives {#introduction_to_directives .sectionedit74}
-
-<div class="level3">
-
-</div>
+### 11.0 Introduction to directives
 
 #### 11.0.1 Disclaimer
 
-<div class="level4">
+In the early days of abc, pseudo-comments (lines starting with `%%`) were introduced as a means of adding software-specific information and formatting instructions into <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a>; because they started with a `%` symbol software that didn't recognise them would ignore them as a <a href="#comment_definition" class="wikilink1" title="abc:standard:v2.1 ↵">comment</a>.
 
-In the early days of abc, pseudo-comments (lines starting with `%%`)
-were introduced as a means of adding software-specific information and
-formatting instructions into [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}; because
-they started with a `%` symbol software that didn't recognise them would
-ignore them as a
-[comment](#comment_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+In a valiant effort, abc 2.0 made an attempt to standardise these pseudo-comments with the introduction <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a> and the abc stylesheet specification. This was described as "not part of the ABC specification itself" but as "an additional standard" containing directives to control how the content and structural information described by the abc code "is to be actually rendered, for example by a typesetting or player program".
 
-In a valiant effort, abc 2.0 made an attempt to standardise these
-pseudo-comments with the introduction [stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-and the abc stylesheet specification. This was described as "not part of
-the ABC specification itself" but as "an additional standard" containing
-directives to control how the content and structural information
-described by the abc code "is to be actually rendered, for example by a
-typesetting or player program".
-
-Unfortunately, however, there are a very large number of pseudo-comment
-directives and not all of them are well-defined. Furthermore, some
-directives, in particular the [text
-directives](#text_directives "abc:standard:v2.1 ↵"){.wikilink1} and
-[accidental
-directives](#accidental_directives "abc:standard:v2.1 ↵"){.wikilink1},
-actually contain content and / or structural information (as opposed to
-rendering instructions).
+Unfortunately, however, there are a very large number of pseudo-comment directives and not all of them are well-defined. Furthermore, some directives, in particular the <a href="#text_directives" class="wikilink1" title="abc:standard:v2.1 ↵">text directives</a> and <a href="#accidental_directives" class="wikilink1" title="abc:standard:v2.1 ↵">accidental directives</a>, actually contain content and / or structural information (as opposed to rendering instructions).
 
 Abc 2.1 has stepped away from this approach somewhat.
 
-The pseudo-comments are still very much accepted as a way for developers
-to introduce experimental features and software-specific formatting
-instructions. However, when a directive gains acceptance, either by
-being implemented in more than one piece of software, or by its use in a
-substantial body of tunes, the aim is that the usage will be
-standardised and adopted in the standard and the `I:`
-[instruction](#iinstruction "abc:standard:v2.1 ↵"){.wikilink1} form
-recommended in place of the `%%` pseudo-comment form.
+The pseudo-comments are still very much accepted as a way for developers to introduce experimental features and software-specific formatting instructions. However, when a directive gains acceptance, either by being implemented in more than one piece of software, or by its use in a substantial body of tunes, the aim is that the usage will be standardised and adopted in the standard and the `I:` <a href="#iinstruction" class="wikilink1" title="abc:standard:v2.1 ↵">instruction</a> form recommended in place of the `%%` pseudo-comment form.
 
-In particular, it is intended that abc 2.3 will address markup and
-embedding and at that point a number of the text-based directives,
-together with other widely accepted forms, will be formally
-incorporated.
+In particular, it is intended that abc 2.3 will address markup and embedding and at that point a number of the text-based directives, together with other widely accepted forms, will be formally incorporated.
 
-For the moment, section 11 is retained mostly unchanged from abc 2.0
-(save for typo corrections) but, as a result of the foregoing, the whole
-of section 11 and all stylesheet directives should regarded as
-*VOLATILE*.
+For the moment, section 11 is retained mostly unchanged from abc 2.0 (save for typo corrections) but, as a result of the foregoing, the whole of section 11 and all stylesheet directives should regarded as *VOLATILE*.
 
-</div>
+#### 11.0.2 Stylesheet directives
 
-#### 11.0.2 Stylesheet directives {#stylesheet_directives}
-
-<div class="level4">
-
-[]()A **stylesheet directive** is a line that starts with `%%`, followed
-by a directive that gives instructions to typesetting or player
-programs.
+[]()A **stylesheet directive** is a line that starts with `%%`, followed by a directive that gives instructions to typesetting or player programs.
 
 *Examples:*
 
-``` {.code}
+``` code
 %%papersize A4
 %%newpage
 %%setbarnb 10
 ```
 
-Alternatively, any [stylesheet
-directive](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-may be written as an `I:instruction` field although this is not
-recommended for usages which have not been standardised (i.e. it is not
-recommended for any directives described in section 11).
+Alternatively, any <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directive</a> may be written as an `I:instruction` field although this is not recommended for usages which have not been standardised (i.e. it is not recommended for any directives described in section 11).
 
 *Examples:* Not recommended.
 
-``` {.code}
+``` code
 I:papersize A4
 I:newpage
 I:setbarnb 10
 ```
 
-[Inline
-field](#inline_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-notation may be used to place a [stylesheet
-directive](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-in the middle of a line of music:
+<a href="#inline_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">Inline field</a> notation may be used to place a <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directive</a> in the middle of a line of music:
 
 *Example:*
 
-``` {.code}
+``` code
 CDEFG|[I:setbarnb 10]ABc
 ```
 
-If a program doesn't recognise a [stylesheet
-directive](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1},
-it should just ignore it.
+If a program doesn't recognise a <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directive</a>, it should just ignore it.
 
-It should be stressed that the [stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-are not formally part of the abc standard itself. Furthermore, the list
-of possible
-[directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-is long and not standardised. They are provided by a variety of programs
-for specifying layout, text annotations, fonts, spacings, voice
-instruments, transposition and other details.
+It should be stressed that the <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a> are not formally part of the abc standard itself. Furthermore, the list of possible <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">directives</a> is long and not standardised. They are provided by a variety of programs for specifying layout, text annotations, fonts, spacings, voice instruments, transposition and other details.
 
-Strictly speaking, abc applications don't have to conform to the same
-set of [stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-However, it is desirable that they do in order to make [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} portable
-between different computer systems.
+Strictly speaking, abc applications don't have to conform to the same set of <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a>. However, it is desirable that they do in order to make <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a> portable between different computer systems.
 
-</div>
+### 11.1 Voice grouping
 
-### 11.1 Voice grouping {#voice_grouping .sectionedit75}
-
-<div class="level3">
-
-*VOLATILE:* This section is under review as part of the general
-discussion about [multiple
-voices](#multiple_voices "abc:standard:v2.1 ↵"){.wikilink1} for abc 2.2.
-See also the [section 11
-disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
+*VOLATILE:* This section is under review as part of the general discussion about <a href="#multiple_voices" class="wikilink1" title="abc:standard:v2.1 ↵">multiple voices</a> for abc 2.2. See also the <a href="#disclaimer" class="wikilink1" title="abc:standard:v2.1 ↵">section 11 disclaimer</a>.
 
 Basic syntax:
 
-``` {.code}
+``` code
 %%score <voice-id1> <voice-id2> ... <voice-idn>
 ```
 
-The score directive specifies which voices should be printed in the
-score and how they should be grouped on the staves.
+The score directive specifies which voices should be printed in the score and how they should be grouped on the staves.
 
-Voices that are enclosed by parentheses `()` will go on one staff.
-Together they form a voice group. A voice that is not enclosed by
-parentheses forms a voice group on its own that will be printed on a
-separate staff.
+Voices that are enclosed by parentheses `()` will go on one staff. Together they form a voice group. A voice that is not enclosed by parentheses forms a voice group on its own that will be printed on a separate staff.
 
-If voice groups are enclosed by curly braces `{}`, the corresponding
-staves will be connected by a big curly brace printed in front of the
-staves. Together they form a voice block. This format is used especially
-for typesetting keyboard music.
+If voice groups are enclosed by curly braces `{}`, the corresponding staves will be connected by a big curly brace printed in front of the staves. Together they form a voice block. This format is used especially for typesetting keyboard music.
 
-If voice groups or braced voice blocks are enclosed by brackets `[]`,
-the corresponding staves will be connected by a big bracket printed in
-front of the staves. Together they form a voice block.
+If voice groups or braced voice blocks are enclosed by brackets `[]`, the corresponding staves will be connected by a big bracket printed in front of the staves. Together they form a voice block.
 
-If voice blocks or voice groups are separated from each other by a `|`
-character, continued bar lines will be drawn between the associated
-staves.
+If voice blocks or voice groups are separated from each other by a `|` character, continued bar lines will be drawn between the associated staves.
 
 Example:
 
-``` {.code}
+``` code
 %%score Solo  [(S A) (T B)]  {RH | (LH1 LH2)}
 ```
 
-If a single voice surrounded by two voice groups is preceded by a star
-(`*`), the voice is marked to be floating. This means that the voice
-won't be printed on it's own staff; rather the software should
-automatically determine, for each note of the voice, whether it should
-be printed on the preceding staff or on the following staff.
+If a single voice surrounded by two voice groups is preceded by a star (`*`), the voice is marked to be floating. This means that the voice won't be printed on it's own staff; rather the software should automatically determine, for each note of the voice, whether it should be printed on the preceding staff or on the following staff.
 
-Software that does not support floating voices may simply print the
-voice on the preceding staff, as if it were part of the preceding voice
-group.
+Software that does not support floating voices may simply print the voice on the preceding staff, as if it were part of the preceding voice group.
 
 Examples:
 
-``` {.code}
+``` code
 %%score {RH *M| LH}
 %%score {(RH1 RH2) *M| (LH1 LH2)}
 ```
 
-String parts in an orchestral work are usually bracketed together and
-the top two (1st/2nd violins) then braced outside the bracket:
+String parts in an orchestral work are usually bracketed together and the top two (1st/2nd violins) then braced outside the bracket:
 
-``` {.code}
+``` code
 %%score [{Vln1 | Vln2} | Vla | Vc | DB]
 ```
 
-Any voices appearing in the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} will only
-be printed if it is mentioned in the score directive.
+Any voices appearing in the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> will only be printed if it is mentioned in the score directive.
 
-When the score directive occurs within the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}, it
-resets the music generator, so that voices may appear and disappear for
-some period of time.
+When the score directive occurs within the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a>, it resets the music generator, so that voices may appear and disappear for some period of time.
 
-If no score directive is used, all voices that appear in the [tune
-body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1} are
-printed on separate staves.
+If no score directive is used, all voices that appear in the <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> are printed on separate staves.
 
-See [Canzonetta.abc](#canzonettaabc "abc:standard:v2.1 ↵"){.wikilink1}
-for an extensive example.
+See <a href="#canzonettaabc" class="wikilink1" title="abc:standard:v2.1 ↵">Canzonetta.abc</a> for an extensive example.
 
 An alternative directive to `%%score` is `%%staves`.
 
-Both `%%score` and `%%staves` directives accept the same parameters, but
-measure bar indications work the opposite way. Therefore,
-`%%staves [S|A|T|B]` is equivalent to `%%score [S A T B]` and means that
-continued bar lines are not drawn between the associated staves, while
-`%%staves [S A T B]` is equivalent to `%%score [S|A|T|B]` and means that
-they are drawn.
+Both `%%score` and `%%staves` directives accept the same parameters, but measure bar indications work the opposite way. Therefore, `%%staves [S|A|T|B]` is equivalent to `%%score [S A T B]` and means that continued bar lines are not drawn between the associated staves, while `%%staves [S A T B]` is equivalent to `%%score [S|A|T|B]` and means that they are drawn.
 
-</div>
+### 11.2 Instrumentation directives
 
-### 11.2 Instrumentation directives {#instrumentation_directives .sectionedit76}
+*VOLATILE:* See the <a href="#disclaimer" class="wikilink1" title="abc:standard:v2.1 ↵">section 11 disclaimer</a>.
 
-<div class="level3">
-
-*VOLATILE:* See the [section 11
-disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
-
-``` {.code}
+``` code
 %%MIDI voice [<ID>] [instrument=<integer> [bank=<integer>]] [mute]
 ```
 
-Assigns a MIDI instrument to the indicated abc voice. The MIDI
-instruments are organized in banks of 128 instruments each. Both the
-instruments and the banks are numbered starting from one.
+Assigns a MIDI instrument to the indicated abc voice. The MIDI instruments are organized in banks of 128 instruments each. Both the instruments and the banks are numbered starting from one.
 
-The General MIDI (GM) standard defines a portable, numbered set of 128
-instruments (numbered from 1-128) - see
-<http://www.midi.org/techspecs/gm1sound.php>. The GM instruments can be
-used by selecting bank one. Since the contents of the other MIDI banks
-is platform dependent, it is highly recommended to only use the first
-MIDI bank in tunes that are to be distributed.
+The General MIDI (GM) standard defines a portable, numbered set of 128 instruments (numbered from 1-128) - see <a href="http://www.midi.org/techspecs/gm1sound.php" class="uri" class="urlextern" title="http://www.midi.org/techspecs/gm1sound.php">http://www.midi.org/techspecs/gm1sound.php</a>. The GM instruments can be used by selecting bank one. Since the contents of the other MIDI banks is platform dependent, it is highly recommended to only use the first MIDI bank in tunes that are to be distributed.
 
 The default bank number is 1 (one).
 
 *Example:* The following assigns GM instrument 59 (tuba) to voice 'Tb'.
 
-``` {.code}
+``` code
 %%MIDI voice Tb instrument=59
 ```
 
-If the voice ID is omitted, the instrument is assigned to the current
-voice.
+If the voice ID is omitted, the instrument is assigned to the current voice.
 
 *Example:*
 
-``` {.code}
+``` code
 M:C
 L:1/8
 Q:1/4=66
@@ -6760,79 +2787,45 @@ z2E2-  E2AG    |F2E2    F2E2        |F6  F2|E2CD   E3F/G/|
 
 You can use the keyword `mute` to mute the specified voice.
 
-Some abc players can automatically generate an accompaniment based on
-the [chord symbols](#chord_symbols "abc:standard:v2.1 ↵"){.wikilink1}
-specified in the melody line. To suggest a GM instrument for playing
-this accompaniment, use the following directive:
+Some abc players can automatically generate an accompaniment based on the <a href="#chord_symbols" class="wikilink1" title="abc:standard:v2.1 ↵">chord symbols</a> specified in the melody line. To suggest a GM instrument for playing this accompaniment, use the following directive:
 
-``` {.code}
+``` code
 %%MIDI chordprog 20 % Church organ
 ```
 
-</div>
+### 11.3 Accidental directives
 
-### 11.3 Accidental directives {#accidental_directives .sectionedit77}
+*VOLATILE:* This section is under active discussion. See also the <a href="#disclaimer" class="wikilink1" title="abc:standard:v2.1 ↵">section 11 disclaimer</a>.
 
-<div class="level3">
-
-*VOLATILE:* This section is under active discussion. See also the
-[section 11 disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
-
-``` {.code}
+``` code
 %%propagate-accidentals not | octave | pitch
 ```
 
-When set to `not`, accidentals apply only to the note they're attached
-to. When set to `octave`, accidentals also apply to all the notes of the
-same pitch in the same octave up to the end of the bar. When set to
-`pitch`, accidentals also apply to all the notes of the same pitch in
-all octaves up to the end of the bar.
+When set to `not`, accidentals apply only to the note they're attached to. When set to `octave`, accidentals also apply to all the notes of the same pitch in the same octave up to the end of the bar. When set to `pitch`, accidentals also apply to all the notes of the same pitch in all octaves up to the end of the bar.
 
 The default value is `pitch`.
 
-``` {.code}
+``` code
 %%writeout-accidentals none | added | all
 ```
 
-When set to `none`, modifying or explicit accidentals that appear in the
-key signature field (`K:`) are printed in the key signature. When set to
-`added`, only the accidentals belonging to the mode indicated in the
-`K:` field, are printed in the key signature. Modifying or explicit
-accidentals are printed in front of the notes to which they apply. When
-set to `all`, both the accidentals belonging to the mode and possible
-modifying or explicit accidentals are printed in front of the notes to
-which they apply; no key signature will be printed.
+When set to `none`, modifying or explicit accidentals that appear in the key signature field (`K:`) are printed in the key signature. When set to `added`, only the accidentals belonging to the mode indicated in the `K:` field, are printed in the key signature. Modifying or explicit accidentals are printed in front of the notes to which they apply. When set to `all`, both the accidentals belonging to the mode and possible modifying or explicit accidentals are printed in front of the notes to which they apply; no key signature will be printed.
 
 The default value is `none`.
 
-</div>
+### 11.4 Formatting directives
 
-### 11.4 Formatting directives {#formatting_directives .sectionedit78}
+*VOLATILE:* See the <a href="#disclaimer" class="wikilink1" title="abc:standard:v2.1 ↵">section 11 disclaimer</a>.
 
-<div class="level3">
-
-*VOLATILE:* See the [section 11
-disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
-
-Typesetting programs should accept the set of directives in the next
-sections. The parameter of a directive can be a [text
-string](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1}, a
-logical value `true` or `false`, an integer number, a number with
-decimals (just 'number' in the following), or a unit of length. Units
-can be expressed in cm, in, and pt (points, 1/72 inch).
+Typesetting programs should accept the set of directives in the next sections. The parameter of a directive can be a <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text string</a>, a logical value `true` or `false`, an integer number, a number with decimals (just 'number' in the following), or a unit of length. Units can be expressed in cm, in, and pt (points, 1/72 inch).
 
 The following directives should be self-explanatory.
 
-</div>
+#### 11.4.1 Page format directives
 
-#### 11.4.1 Page format directives {#page_format_directives}
+*VOLATILE:* See the <a href="#disclaimer" class="wikilink1" title="abc:standard:v2.1 ↵">section 11 disclaimer</a>.
 
-<div class="level4">
-
-*VOLATILE:* See the [section 11
-disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
-
-``` {.code}
+``` code
 %%pageheight       <length>
 %%pagewidth        <length>
 %%topmargin        <length>
@@ -6843,22 +2836,13 @@ disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
 %%landscape        <logical>
 ```
 
-</div>
+#### 11.4.2 Font directives
 
-#### 11.4.2 Font directives {#font_directives}
+*VOLATILE:* Font directives are due to be considered in abc 2.3 - see the <a href="#disclaimer" class="wikilink1" title="abc:standard:v2.1 ↵">section 11 disclaimer</a>.
 
-<div class="level4">
+PostScript and PDF are the standard file formats for distributing printable material. For portability reasons, typesetters will use the PostScript font names. The size parameter should be an integer, but is optional.
 
-*VOLATILE:* Font directives are due to be considered in abc 2.3 - see
-the [section 11
-disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
-
-PostScript and PDF are the standard file formats for distributing
-printable material. For portability reasons, typesetters will use the
-PostScript font names. The size parameter should be an integer, but is
-optional.
-
-``` {.code}
+``` code
 %%titlefont        <font name>  <size>
 %%subtitlefont     <font name>  <size>
 %%composerfont     <font name>  <size>
@@ -6872,29 +2856,20 @@ optional.
 %%wordsfont        <font name>  <size> % for W:
 ```
 
-The specifiers `$1`, `$2`, `$3` and `$4` can be used to change the font
-within a [text
-string](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1}. The
-font to be used can be specified with the `%%setfont-n` directives. `$0`
-resets the font to its default value. `$$` gives an actual dollar sign.
+The specifiers `$1`, `$2`, `$3` and `$4` can be used to change the font within a <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text string</a>. The font to be used can be specified with the `%%setfont-n` directives. `$0` resets the font to its default value. `$$` gives an actual dollar sign.
 
-``` {.code}
+``` code
 %%setfont-1        <font name>  <size>
 %%setfont-2        <font name>  <size>
 %%setfont-3        <font name>  <size>
 %%setfont-4        <font name>  <size>
 ```
 
-</div>
+#### 11.4.3 Space directives
 
-#### 11.4.3 Space directives {#space_directives}
+*VOLATILE:* See the <a href="#disclaimer" class="wikilink1" title="abc:standard:v2.1 ↵">section 11 disclaimer</a>.
 
-<div class="level4">
-
-*VOLATILE:* See the [section 11
-disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
-
-``` {.code}
+``` code
 %%topspace         <length>
 %%titlespace       <length>
 %%subtitlespace    <length>
@@ -6916,16 +2891,11 @@ disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
 %%scale            <number>
 ```
 
-</div>
+#### 11.4.4 Measure directives
 
-#### 11.4.4 Measure directives {#measure_directives}
+*VOLATILE:* See the <a href="#disclaimer" class="wikilink1" title="abc:standard:v2.1 ↵">section 11 disclaimer</a>.
 
-<div class="level4">
-
-*VOLATILE:* See the [section 11
-disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
-
-``` {.code}
+``` code
 %%measurefirst     <integer> % number of first measure
 %%barnumbers       <integer> % bar numbers every 'n' measures
 %%measurenb        <integer> % same as %%barnumbers
@@ -6933,21 +2903,13 @@ disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
 %%setbarnb         <integer> % set measure number
 ```
 
-</div>
+#### 11.4.5 Text directives
 
-#### 11.4.5 Text directives {#text_directives}
+*VOLATILE:* Text directives are due to be considered in abc 2.3 - see the <a href="#disclaimer" class="wikilink1" title="abc:standard:v2.1 ↵">section 11 disclaimer</a>.
 
-<div class="level4">
+The following directives can be used for inserting <a href="#typeset_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">typeset text</a> within an <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a>.
 
-*VOLATILE:* Text directives are due to be considered in abc 2.3 - see
-the [section 11
-disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
-
-The following directives can be used for inserting [typeset
-text](#typeset_text_definition "abc:standard:v2.1 ↵"){.wikilink1} within
-an [abc file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}.
-
-``` {.code}
+``` code
 %%text             <text string>
 %%center           <text string>
 %%begintext
@@ -6957,156 +2919,67 @@ an [abc file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}.
 
 Notes:
 
--   <div class="li">
+-   `%%text` prints the following text, treated as a <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text string</a>.
 
-    `%%text` prints the following text, treated as a [text
-    string](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+-   `%%center` prints the following text, treated as a <a href="#text_string_definition" class="wikilink1" title="abc:standard:v2.1 ↵">text string</a> and centred.
 
-    </div>
+-   `%%begintext` and `%%endtext` mark a section of lines, each of which start with `%%`, followed by some text. It is an alternative to several `%%text` lines. \[*Important note:* some <a href="#abc_extensions" class="wikilink1" title="abc:standard:v2.1 ↵">extensions</a> offered by abc software programs relax the rule that each line between `%%begintext` and `%%endtext` must start with `%%`. Whilst this should not cause problems for <a href="#typeset_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">typeset text</a> between tunes, <a href="#typeset_text_definition" class="wikilink1" title="abc:standard:v2.1 ↵">typeset text</a> within a <a href="#tune_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune header</a> or <a href="#tune_body_definition" class="wikilink1" title="abc:standard:v2.1 ↵">tune body</a> should respect this rule and, in particular, must not introduce blank lines.\]
 
--   <div class="li">
+See <a href="#further_information_about_directives" class="wikilink1" title="abc:standard:v2.1 ↵">further information about directives</a> for more details and to find out about additional parameters for these directives.
 
-    `%%center` prints the following text, treated as a [text
-    string](#text_string_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    and centred.
+*Recommendation for users:* If you are using text directives for tune-specific information, consider instead using one of the <a href="#bdfsbackground_information" class="wikilink1" title="abc:standard:v2.1 ↵">background information fields</a> together with a `%%writefields` directive (see <a href="#information_directives" class="wikilink1" title="abc:standard:v2.1 ↵">information directives</a>) so that the information can correctly identified by databasing software.
 
-    </div>
+#### 11.4.6 Information directives
 
--   <div class="li">
+*VOLATILE:* The `%%writefields` directive and its formatting options are likely to be enhanced when markup is considered in abc 2.3. See also the <a href="#disclaimer" class="wikilink1" title="abc:standard:v2.1 ↵">section 11 disclaimer</a>.
 
-    `%%begintext` and `%%endtext` mark a section of lines, each of which
-    start with `%%`, followed by some text. It is an alternative to
-    several `%%text` lines. \[*Important note:* some
-    [extensions](#abc_extensions "abc:standard:v2.1 ↵"){.wikilink1}
-    offered by abc software programs relax the rule that each line
-    between `%%begintext` and `%%endtext` must start with `%%`. Whilst
-    this should not cause problems for [typeset
-    text](#typeset_text_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    between tunes, [typeset
-    text](#typeset_text_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    within a [tune
-    header](#tune_header_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    or [tune
-    body](#tune_body_definition "abc:standard:v2.1 ↵"){.wikilink1}
-    should respect this rule and, in particular, must not introduce
-    blank lines.\]
-
-    </div>
-
-See [further information about
-directives](#further_information_about_directives "abc:standard:v2.1 ↵"){.wikilink1}
-for more details and to find out about additional parameters for these
-directives.
-
-*Recommendation for users:* If you are using text directives for
-tune-specific information, consider instead using one of the [background
-information
-fields](#bdfsbackground_information "abc:standard:v2.1 ↵"){.wikilink1}
-together with a `%%writefields` directive (see [information
-directives](#information_directives "abc:standard:v2.1 ↵"){.wikilink1})
-so that the information can correctly identified by databasing software.
-
-</div>
-
-#### 11.4.6 Information directives {#information_directives}
-
-<div class="level4">
-
-*VOLATILE:* The `%%writefields` directive and its formatting options are
-likely to be enhanced when markup is considered in abc 2.3. See also the
-[section 11 disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
-
-``` {.code}
+``` code
 %%writefields <list of field identifiers> [<logical>]
 ```
 
-The `%%writefields` directive allows users to choose which string-type
-[information
-fields](#information_field_definition "abc:standard:v2.1 ↵"){.wikilink1}
-appear in the printed score (see the [information
-fields](#information_fields "abc:standard:v2.1 ↵"){.wikilink1} table for
-a list of string-type fields). It is followed by a list of field
-identifiers and, optionally, the logical value `true` or `false`. If the
-logical value is missing it is taken as `true`.
+The `%%writefields` directive allows users to choose which string-type <a href="#information_field_definition" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> appear in the printed score (see the <a href="#information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">information fields</a> table for a list of string-type fields). It is followed by a list of field identifiers and, optionally, the logical value `true` or `false`. If the logical value is missing it is taken as `true`.
 
-The `%%writefields` directive also applies to certain instruction fields
-- namely `X:reference number`, `P:parts` and `Q:tempo`.
+The `%%writefields` directive also applies to certain instruction fields - namely `X:reference number`, `P:parts` and `Q:tempo`.
 
-The default is "`%%writefields TCOPQwW`" meaning that the title (T),
-composer (C), origin (O), parts (P), tempo (Q), aligned words (w) and
-other words (W) are printed out by default (see [typesetting information
-fields](#typesetting_information_fields "abc:standard:v2.1 ↵"){.wikilink1}
-for how these should be typeset). Each subseqent `%%writefields`
-directive combines with this list, rather than overriding it.
+The default is "`%%writefields TCOPQwW`" meaning that the title (T), composer (C), origin (O), parts (P), tempo (Q), aligned words (w) and other words (W) are printed out by default (see <a href="#typesetting_information_fields" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting information fields</a> for how these should be typeset). Each subseqent `%%writefields` directive combines with this list, rather than overriding it.
 
 *Examples:*
 
-``` {.code}
+``` code
 %%writefields O false         % the O field is not printed out - other defaults remain
 %%writefields X               % the X: field is printed out
 %%writefields BCDFGHNORSTWwXZ % all string-type fields are printed out
 ```
 
-Typesetting software conforming to abc 2.1 may format the information
-strings in any way it chooses.
+Typesetting software conforming to abc 2.1 may format the information strings in any way it chooses.
 
-*Comment:* The `%%writefields` directive can be used in place of a
-number of directives introduced in abc 2.0:
+*Comment:* The `%%writefields` directive can be used in place of a number of directives introduced in abc 2.0:
 
--   <div class="li">
+-   "`%%writefields X`" can be used as an alternative to "`%%withxrefs`"
 
-    "`%%writefields X`" can be used as an alternative to "`%%withxrefs`"
+-   "`%%writefields Ww false`" can be used as an alternative to"`%%musiconly`"
 
-    </div>
+-   "`%%writefields`" is a partial alternative to "`%%writehistory`" and "`%%infoname`"
 
--   <div class="li">
+See <a href="#further_information_about_directives" class="wikilink1" title="abc:standard:v2.1 ↵">further information about directives</a> for more details of the 2.0 alternatives.
 
-    "`%%writefields Ww false`" can be used as an alternative
-    to"`%%musiconly`"
+#### 11.4.7 Separation directives
 
-    </div>
+*VOLATILE:* See the <a href="#disclaimer" class="wikilink1" title="abc:standard:v2.1 ↵">section 11 disclaimer</a>.
 
--   <div class="li">
-
-    "`%%writefields`" is a partial alternative to "`%%writehistory`" and
-    "`%%infoname`"
-
-    </div>
-
-See [further information about
-directives](#further_information_about_directives "abc:standard:v2.1 ↵"){.wikilink1}
-for more details of the 2.0 alternatives.
-
-</div>
-
-#### 11.4.7 Separation directives {#separation_directives}
-
-<div class="level4">
-
-*VOLATILE:* See the [section 11
-disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
-
-``` {.code}
+``` code
 %%sep     % draw a horizontal separator, i.e. a line
 %%vskip   % insert some vertical space
 %%newpage % start a new page
 ```
 
-See [further information about
-directives](#further_information_about_directives "abc:standard:v2.1 ↵"){.wikilink1}
-for more details and to find out about additional parameters for these
-directives.
+See <a href="#further_information_about_directives" class="wikilink1" title="abc:standard:v2.1 ↵">further information about directives</a> for more details and to find out about additional parameters for these directives.
 
-</div>
+#### 11.4.8 Miscellaneous directives
 
-#### 11.4.8 Miscellaneous directives {#miscellaneous_directives}
+*VOLATILE:* See the <a href="#disclaimer" class="wikilink1" title="abc:standard:v2.1 ↵">section 11 disclaimer</a>.
 
-<div class="level4">
-
-*VOLATILE:* See the [section 11
-disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
-
-``` {.code}
+``` code
 %%exprabove        <logical>
 %%exprbelow        <logical>
 %%graceslurs       <logical> % grace notes slur to main note
@@ -7119,320 +2992,123 @@ disclaimer](#disclaimer "abc:standard:v2.1 ↵"){.wikilink1}.
 
 The default value for these directives is false.
 
-</div>
+### 11.5 Application specific directives
 
-### 11.5 Application specific directives {#application_specific_directives .sectionedit79}
-
-<div class="level3">
-
-Applications may introduce their own directives. These directives should
-start with the name of the application, followed a colon, folowed by the
-name of the directive.
+Applications may introduce their own directives. These directives should start with the name of the application, followed a colon, folowed by the name of the directive.
 
 *Example:*
 
-``` {.code}
+``` code
 %%noteedit:fontcolor blue
 ```
 
-</div>
+### 11.6 Further information about directives
 
-### 11.6 Further information about directives {#further_information_about_directives .sectionedit80}
+Since <a href="#stylesheet_directive_definition" class="wikilink1" title="abc:standard:v2.1 ↵">stylesheet directives</a> are not formally part of the abc standard, only a subset is included here. For additional directives and further information about those listed here, see the user manuals for programs that implement them, in particular:
 
-<div class="level3">
+-   the `format.txt` file included with <a href="http://moinejf.free.fr/" class="urlextern" title="http://moinejf.free.fr/">abcm2ps</a>
 
-Since [stylesheet
-directives](#stylesheet_directive_definition "abc:standard:v2.1 ↵"){.wikilink1}
-are not formally part of the abc standard, only a subset is included
-here. For additional directives and further information about those
-listed here, see the user manuals for programs that implement them, in
-particular:
+-   the `abcguide.txt` file included with <a href="http://abc.sourceforge.net/abcMIDI/" class="urlextern" title="http://abc.sourceforge.net/abcMIDI/">abcMIDI</a>
 
--   <div class="li">
-
-    the `format.txt` file included with
-    [abcm2ps](http://moinejf.free.fr/ "http://moinejf.free.fr/"){.urlextern}
-
-    </div>
-
--   <div class="li">
-
-    the `abcguide.txt` file included with
-    [abcMIDI](http://abc.sourceforge.net/abcMIDI/ "http://abc.sourceforge.net/abcMIDI/"){.urlextern}
-
-    </div>
-
--   <div class="li">
-
-    the `abctab2ps` [User's
-    guide](http://www.lautengesellschaft.de/cdmm/userguide/userguide.html "http://www.lautengesellschaft.de/cdmm/userguide/userguide.html"){.urlextern}
-
-    </div>
+-   the `abctab2ps` <a href="http://www.lautengesellschaft.de/cdmm/userguide/userguide.html" class="urlextern" title="http://www.lautengesellschaft.de/cdmm/userguide/userguide.html">User's guide</a>
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-12. Dialects, strict / loose interpretation and backwards compatibility {#dialects_strict_loose_interpretation_and_backwards_compatibility .sectionedit81}
+12. Dialects, strict / loose interpretation and backwards compatibility
 -----------------------------------------------------------------------
 
-<div class="level2">
+Unfortunately a number of dialects of abc have arisen over the years, partly due to differences in implementation, together with unfinished drafts of the abc standard and ambiguities within it.
 
-Unfortunately a number of dialects of abc have arisen over the years,
-partly due to differences in implementation, together with unfinished
-drafts of the abc standard and ambiguities within it.
-
-Version 2.1 of the standard aims to address this fragmentation of abc
-notation with a robust, but tolerant approach that should accommodate as
-many users as possible for several years to come and, as far as
-possible, restore backwards compatibility.
+Version 2.1 of the standard aims to address this fragmentation of abc notation with a robust, but tolerant approach that should accommodate as many users as possible for several years to come and, as far as possible, restore backwards compatibility.
 
 There are three main approaches:
 
--   <div class="li">
+-   the introduction of new `I:` directives to allow for preferences in dialects;
 
-    the introduction of new `I:` directives to allow for preferences in
-    dialects;
+-   the concepts of strict and loose interpretation of the standard (together with recommendations to software developers for dealing with loose interpretations);
 
-    </div>
+-   statistically-based decisions about default settings.
 
--   <div class="li">
+The aim is that, even under strict interpretation, most current dialects are still available via the new `I:` directives.
 
-    the concepts of strict and loose interpretation of the standard
-    (together with recommendations to software developers for dealing
-    with loose interpretations);
+*Comment:* Dialects not available under strict interpretation are those where one symbol is used for two different purposes - for example, a `!` symbol used to denote both line-breaks and decorations; fortunately, of the 160,000 tunes currently available in the <a href="http://abcnotation.com/search" class="urlextern" title="http://abcnotation.com/search">abcnotation.com tune search</a> only around 60 (0.04%) employ this usage.
 
-    </div>
+### 12.1 Dialect differences
 
--   <div class="li">
+The main differences that have arisen are line-breaks, decoration delimiters and chord delimiters.
 
-    statistically-based decisions about default settings.
+#### 12.1.1 Line-breaking dialects
 
-    </div>
+By default, a (forced) <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-break</a> is typeset by using a <a href="#code_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">code line-break</a> - see <a href="#typesetting_line-breaks" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting line-breaks</a>.
 
-The aim is that, even under strict interpretation, most current dialects
-are still available via the new `I:` directives.
+In the past the `!` symbol has instead been used to indicate <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a> - this symbol is now used to denote decorations.
 
-*Comment:* Dialects not available under strict interpretation are those
-where one symbol is used for two different purposes - for example, a `!`
-symbol used to denote both line-breaks and decorations; fortunately, of
-the 160,000 tunes currently available in the [abcnotation.com tune
-search](http://abcnotation.com/search "http://abcnotation.com/search"){.urlextern}
-only around 60 (0.04%) employ this usage.
+*Comment:* The `!` symbol was introduced by abc2win, a very popular program in its time, although now moribund. Of the 160,000 tunes currently available in the <a href="http://abcnotation.com/search" class="urlextern" title="http://abcnotation.com/search">abcnotation.com tune search</a>, only around 1,600 (10%) use the ! symbol to denote line-breaks.
 
-</div>
-
-### 12.1 Dialect differences {#dialect_differences .sectionedit82}
-
-<div class="level3">
-
-The main differences that have arisen are line-breaks, decoration
-delimiters and chord delimiters.
-
-</div>
-
-#### 12.1.1 Line-breaking dialects {#line-breaking_dialects}
-
-<div class="level4">
-
-By default, a (forced) [score
-line-break](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-is typeset by using a [code
-line-break](#code_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-- see [typesetting
-line-breaks](#typesetting_line-breaks "abc:standard:v2.1 ↵"){.wikilink1}.
-
-In the past the `!` symbol has instead been used to indicate [score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-- this symbol is now used to denote decorations.
-
-*Comment:* The `!` symbol was introduced by abc2win, a very popular
-program in its time, although now moribund. Of the 160,000 tunes
-currently available in the [abcnotation.com tune
-search](http://abcnotation.com/search "http://abcnotation.com/search"){.urlextern},
-only around 1,600 (10%) use the ! symbol to denote line-breaks.
-
-Although the use of the `!` symbol for line-breaking is now
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} (see
-[outdated
-line-breaking](#outdated_line-breaking "abc:standard:v2.1 ↵"){.wikilink1}),
-users who wish to continue using the `!` symbol for line-breaking merely
-need to include the "`I:linebreak !`" directive, either in the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} or
-individually tune by tune - see [typesetting
-line-breaks](#typesetting_line-breaks "abc:standard:v2.1 ↵"){.wikilink1}.
+Although the use of the `!` symbol for line-breaking is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> (see <a href="#outdated_line-breaking" class="wikilink1" title="abc:standard:v2.1 ↵">outdated line-breaking</a>), users who wish to continue using the `!` symbol for line-breaking merely need to include the "`I:linebreak !`" directive, either in the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> or individually tune by tune - see <a href="#typesetting_line-breaks" class="wikilink1" title="abc:standard:v2.1 ↵">typesetting line-breaks</a>.
 
 *Example:* The following abc code would result in two lines of music.
 
-``` {.code}
+``` code
 I:linebreak !
 K:G
 ABC DEF|!FED ABC|]
 ```
 
-Finally a new line-breaking symbol, `$`, has been introduced as an
-alternative to using [code
-line-breaks](#code_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+Finally a new line-breaking symbol, `$`, has been introduced as an alternative to using <a href="#code_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">code line-breaks</a>.
 
-*Comment:* The `$` symbol is effectively a replacement for `!`. It is
-aimed at those users who want `!` as the decoration delimiter but who
-prefer to use [code
-line-breaks](#code_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}
-without generating corresponding [score
-line-breaks](#score_line-break_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+*Comment:* The `$` symbol is effectively a replacement for `!`. It is aimed at those users who want `!` as the decoration delimiter but who prefer to use <a href="#code_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">code line-breaks</a> without generating corresponding <a href="#score_line-break_definition" class="wikilink1" title="abc:standard:v2.1 ↵">score line-breaks</a>.
 
-</div>
+#### 12.1.2 Decoration dialects
 
-#### 12.1.2 Decoration dialects {#decoration_dialects}
+Decorations are delimited using the `!` symbol - see <a href="#decorations" class="wikilink1" title="abc:standard:v2.1 ↵">decorations</a>.
 
-<div class="level4">
+In the past the `+` symbol has instead been used to denote decorations - this symbol is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">deprecated</a> for decorations.
 
-Decorations are delimited using the `!` symbol - see
-[decorations](#decorations "abc:standard:v2.1 ↵"){.wikilink1}.
+*Comment:* Decorations were first introduced in draft standard 1.7.6 (which was never formally adopted) with the `!` symbol. In abc 2.0 (adopted briefly whilst discussions about abc 2.1 were taking place) this was changed to the `+` symbol. Neither are in widespread use, but the `!` symbol is much more common - of the 160,000 tunes currently available in the <a href="http://abcnotation.com/search" class="urlextern" title="http://abcnotation.com/search">abcnotation.com tune search</a>, only around 100 (0.07%) use the `+` symbol to delimit decorations, whereas around 1,350 (0.85%) use the `!` symbol.
 
-In the past the `+` symbol has instead been used to denote decorations -
-this symbol is now
-[deprecated](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1} for
-decorations.
+Users who wish to continue using the `+` symbol for decorations merely need to include the "`I:decoration +`" directive, either in the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a> or individually tune by tune - see <a href="#decorations" class="wikilink1" title="abc:standard:v2.1 ↵">decorations</a>. All `+…+` decorations will then be treated as if they were the corresponding `!…!` decoration and any `!…!` decorations will generate an error message.
 
-*Comment:* Decorations were first introduced in draft standard 1.7.6
-(which was never formally adopted) with the `!` symbol. In abc 2.0
-(adopted briefly whilst discussions about abc 2.1 were taking place)
-this was changed to the `+` symbol. Neither are in widespread use, but
-the `!` symbol is much more common - of the 160,000 tunes currently
-available in the [abcnotation.com tune
-search](http://abcnotation.com/search "http://abcnotation.com/search"){.urlextern},
-only around 100 (0.07%) use the `+` symbol to delimit decorations,
-whereas around 1,350 (0.85%) use the `!` symbol.
+Note that the "`I:decoration +`" directive is automatically invoked by the "`I:linebreak !`" directive. Also note that the `!+!` decoration has no `+` equivalent - `+plus+` should be used instead.
 
-Users who wish to continue using the `+` symbol for decorations merely
-need to include the "`I:decoration +`" directive, either in the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1} or
-individually tune by tune - see
-[decorations](#decorations "abc:standard:v2.1 ↵"){.wikilink1}. All `+…+`
-decorations will then be treated as if they were the corresponding `!…!`
-decoration and any `!…!` decorations will generate an error message.
+*Recommendation for users:* Given the very small uptake of the `+` symbol for decorations, "`I:decoration +`" directive is not recommended. However, it is retained for users who wish to use the `!` symbol for line-breaking in legacy <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a>.
 
-Note that the "`I:decoration +`" directive is automatically invoked by
-the "`I:linebreak !`" directive. Also note that the `!+!` decoration has
-no `+` equivalent - `+plus+` should be used instead.
+For completeness the "`I:decoration !`", the default setting, is also available to allow individual tunes to use `!…!` decorations in a file where "`I:decoration +`" is set in the <a href="#file_header_definition" class="wikilink1" title="abc:standard:v2.1 ↵">file header</a>.
 
-*Recommendation for users:* Given the very small uptake of the `+`
-symbol for decorations, "`I:decoration +`" directive is not recommended.
-However, it is retained for users who wish to use the `!` symbol for
-line-breaking in legacy [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+#### 12.1.3 Chord dialects
 
-For completeness the "`I:decoration !`", the default setting, is also
-available to allow individual tunes to use `!…!` decorations in a file
-where "`I:decoration +`" is set in the [file
-header](#file_header_definition "abc:standard:v2.1 ↵"){.wikilink1}.
+Chords are delimited using `[]` symbols - see <a href="#chords_and_unisons" class="wikilink1" title="abc:standard:v2.1 ↵">chords and unisons</a>.
 
-</div>
+In the past the `+` symbol has instead been used to delimit chords - this symbol is no longer in use for chords.
 
-#### 12.1.3 Chord dialects {#chord_dialects}
+*Comment:* In early versions of the abc standard (1.2 to 1.5), chords were delimited with `+` symbols. However, this made it hard to see where one chord ended and another began and the chord delimiters were changed to `[]` in 1.6 (November 1996). Of the 160,000 tunes currently available in the <a href="http://abcnotation.com/search" class="urlextern" title="http://abcnotation.com/search">abcnotation.com tune search</a>, only around 420 (0.25%) use the `+` symbol to delimit chords. Given the small uptake and the successful introduction of the `[]` symbols, there is no `I:` directive available which allows the use of `+` symbols and this usage is now <a href="#outdated_syntax" class="wikilink1" title="abc:standard:v2.1 ↵">obsolete</a>.
 
-<div class="level4">
+### 12.2 Loose interpretation
 
-Chords are delimited using `[]` symbols - see [chords and
-unisons](#chords_and_unisons "abc:standard:v2.1 ↵"){.wikilink1}.
+*Comment:* There are around 160,000 tunes currently available in the <a href="http://abcnotation.com/search" class="urlextern" title="http://abcnotation.com/search">abcnotation.com tune search</a> - loose interpretation of the abc standard maintains backwards compatibility without any changes required for this huge and valuable resource.
 
-In the past the `+` symbol has instead been used to delimit chords -
-this symbol is no longer in use for chords.
+Any <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> without a version number, or with a version number of 2.0 or less (see <a href="#abc_file_identification" class="wikilink1" title="abc:standard:v2.1 ↵">abc file identification</a> and <a href="#version_field" class="wikilink1" title="abc:standard:v2.1 ↵">version field</a>), should be interpreted loosely. Developers should do their best to provide programs that understand legacy <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc files</a>, but users should be aware that loose interpretations may different from one abc program to another.
 
-*Comment:* In early versions of the abc standard (1.2 to 1.5), chords
-were delimited with `+` symbols. However, this made it hard to see where
-one chord ended and another began and the chord delimiters were changed
-to `[]` in 1.6 (November 1996). Of the 160,000 tunes currently available
-in the [abcnotation.com tune
-search](http://abcnotation.com/search "http://abcnotation.com/search"){.urlextern},
-only around 420 (0.25%) use the `+` symbol to delimit chords. Given the
-small uptake and the successful introduction of the `[]` symbols, there
-is no `I:` directive available which allows the use of `+` symbols and
-this usage is now
-[obsolete](#outdated_syntax "abc:standard:v2.1 ↵"){.wikilink1}.
+*Recommendation for users:* Try to avoid loose interpretation if possible; loose interpretation means that if you pass abc notated tunes on to friends, or post them on the web, they may not appear as you hoped.
 
-</div>
+*Recommendation 1 for developers:* Do your best! The most difficult tunes to deal with are those which use the same symbol for two different purposes - in particular the ! symbol for both decorations and line-breaking. Here is an algorithm for helping to deal with `!decoration!` syntax and `!` line-breaks in the same tune:
 
-### 12.2 Loose interpretation {#loose_interpretation .sectionedit83}
+When encountering a !, scan forward. If you find another ! before encountering any of `|[:]`, a space, or the end of a line, then you have a decoration, otherwise it is a line-break.
 
-<div class="level3">
+*Recommendation 2 for developers:* Although moving towards strict interpretations should make life easier for everybody (developers and users alike), you should allow users to switch easily between strict and loose interpretation, perhaps via a command line switch or a GUI check-box. For example, a user who imports an old <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> may wish to see how it would be interpreted strictly, perhaps to establish how many strict errors need fixing.
 
-*Comment:* There are around 160,000 tunes currently available in the
-[abcnotation.com tune
-search](http://abcnotation.com/search "http://abcnotation.com/search"){.urlextern}
-- loose interpretation of the abc standard maintains backwards
-compatibility without any changes required for this huge and valuable
-resource.
+### 12.3 Strict interpretation
 
-Any [abc file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}
-without a version number, or with a version number of 2.0 or less (see
-[abc file
-identification](#abc_file_identification "abc:standard:v2.1 ↵"){.wikilink1}
-and [version field](#version_field "abc:standard:v2.1 ↵"){.wikilink1}),
-should be interpreted loosely. Developers should do their best to
-provide programs that understand legacy [abc
-files](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}, but
-users should be aware that loose interpretations may different from one
-abc program to another.
-
-*Recommendation for users:* Try to avoid loose interpretation if
-possible; loose interpretation means that if you pass abc notated tunes
-on to friends, or post them on the web, they may not appear as you
-hoped.
-
-*Recommendation 1 for developers:* Do your best! The most difficult
-tunes to deal with are those which use the same symbol for two different
-purposes - in particular the ! symbol for both decorations and
-line-breaking. Here is an algorithm for helping to deal with
-`!decoration!` syntax and `!` line-breaks in the same tune:
-
-When encountering a !, scan forward. If you find another ! before
-encountering any of `|[:]`, a space, or the end of a line, then you have
-a decoration, otherwise it is a line-break.
-
-*Recommendation 2 for developers:* Although moving towards strict
-interpretations should make life easier for everybody (developers and
-users alike), you should allow users to switch easily between strict and
-loose interpretation, perhaps via a command line switch or a GUI
-check-box. For example, a user who imports an old [abc
-file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1} may wish
-to see how it would be interpreted strictly, perhaps to establish how
-many strict errors need fixing.
-
-</div>
-
-### 12.3 Strict interpretation {#strict_interpretation .sectionedit84}
-
-<div class="level3">
-
-Any [abc file](#abc_file_definition "abc:standard:v2.1 ↵"){.wikilink1}
-with an abc version number greater than or equal to 2.1 (see [abc file
-identification](#abc_file_identification "abc:standard:v2.1 ↵"){.wikilink1}
-and [version field](#version_field "abc:standard:v2.1 ↵"){.wikilink1})
-should be interpreted strictly, with errors indicated to the user as
-such.
+Any <a href="#abc_file_definition" class="wikilink1" title="abc:standard:v2.1 ↵">abc file</a> with an abc version number greater than or equal to 2.1 (see <a href="#abc_file_identification" class="wikilink1" title="abc:standard:v2.1 ↵">abc file identification</a> and <a href="#version_field" class="wikilink1" title="abc:standard:v2.1 ↵">version field</a>) should be interpreted strictly, with errors indicated to the user as such.
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-13. Sample abc tunes {#sample_abc_tunes .sectionedit85}
+13. Sample abc tunes
 --------------------
 
-<div class="level2">
+### 13.1 English.abc
 
-</div>
-
-### 13.1 English.abc {#englishabc .sectionedit86}
-
-<div class="level3">
-
-``` {.code}
+``` code
 %abc-2.1
 H:This file contains some example English tunes
 % note that the comments (like this one) are to highlight usages
@@ -7491,13 +3167,9 @@ K:G
         "G"B2B Bcd|"C"e2e "G"dBG|"D7"A2d "G"BAG|"C"E2"D7"F "G"G2:|
 ```
 
-</div>
+### 13.2 Strspys.abc
 
-### 13.2 Strspys.abc {#strspysabc .sectionedit87}
-
-<div class="level3">
-
-``` {.code}
+``` code
 %abc-2.1
 M:4/4
 O:Scottish
@@ -7530,13 +3202,9 @@ K:D
 {g}e/f/g {Gdc}d>c {gBd}B<{e}G {dc}d2|]
 ```
 
-</div>
+### 13.3 Reels.abc
 
-### 13.3 Reels.abc {#reelsabc .sectionedit88}
-
-<div class="level3">
-
-``` {.code}
+``` code
 %abc-2.1
 M:4/4
 O:Irish
@@ -7562,13 +3230,9 @@ ABcA BAGB|ABAG EDEG|A2AB c2d2|e3f edcB|ABcA BAGB|
 ABAG EGAB|cBAc BAG2|A4 A4:|
 ```
 
-</div>
+### 13.4 Canzonetta.abc
 
-### 13.4 Canzonetta.abc {#canzonettaabc .sectionedit89}
-
-<div class="level3">
-
-``` {.code}
+``` code
 %abc-2.1
 %%pagewidth      21cm
 %%pageheight     29.7cm
@@ -7636,233 +3300,129 @@ w: dim-me-lo ben mi-o, che que-sto sol de-si-o_.
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
-
-</div>
-
-14. Appendix {#appendix .sectionedit90}
+14. Appendix
 ------------
 
-<div class="level2">
+### 14.1 Supported accents & ligatures
 
-</div>
+Conforming abc software must support the following encodings for accents and ligatures. It may offer support for other named entities and hex unicode representations (which may be adopted by the standard at a later date).
 
-### 14.1 Supported accents & ligatures {#supported_accents_ligatures .sectionedit91}
+For more details see <a href="#text_strings" class="wikilink1" title="abc:standard:v2.1 ↵">text strings</a> and for further information see, for example:
 
-<div class="level3">
+-   <a href="http://www.w3.org/TR/html4/sgml/entities.html" class="uri" class="urlextern" title="http://www.w3.org/TR/html4/sgml/entities.html">http://www.w3.org/TR/html4/sgml/entities.html</a>
 
-Conforming abc software must support the following encodings for accents
-and ligatures. It may offer support for other named entities and hex
-unicode representations (which may be adopted by the standard at a later
-date).
+-   <a href="http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references" class="uri" class="urlextern" title="http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references">http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references</a>
 
-For more details see [text
-strings](#text_strings "abc:standard:v2.1 ↵"){.wikilink1} and for
-further information see, for example:
+-   <a href="http://en.wikipedia.org/wiki/List_of_Unicode_characters" class="uri" class="urlextern" title="http://en.wikipedia.org/wiki/List_of_Unicode_characters">http://en.wikipedia.org/wiki/List_of_Unicode_characters</a>
 
--   <div class="li">
-
-    <http://www.w3.org/TR/html4/sgml/entities.html>
-
-    </div>
-
--   <div class="li">
-
-    <http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references>
-
-    </div>
-
--   <div class="li">
-
-    <http://en.wikipedia.org/wiki/List_of_Unicode_characters>
-
-    </div>
-
--   <div class="li">
-
-    <http://www.fileformat.info/info/unicode/char/search.htm> - unicode
-    character search
-
-    </div>
+-   <a href="http://www.fileformat.info/info/unicode/char/search.htm" class="uri" class="urlextern" title="http://www.fileformat.info/info/unicode/char/search.htm">http://www.fileformat.info/info/unicode/char/search.htm</a> - unicode character search
 
 **Accents:**
 
-<div class="table sectionedit92">
-
-  Character   Mnemonic    Named html entity   16-bit hex unicode
-  ----------- ----------- ------------------- --------------------
-  À           `` \`A ``   `&Agrave;`          `\u00c0`
-  à           `` \`a ``   `&agrave;`          `\u00e0`
-  È           `` \`E ``   `&Egrave;`          `\u00c8`
-  è           `` \`e ``   `&egrave;`          `\u00e8`
-  Ì           `` \`I ``   `&Igrave;`          `\u00cc`
-  ì           `` \`i ``   `&igrave;`          `\u00ec`
-  Ò           `` \`O ``   `&Ograve;`          `\u00d2`
-  ò           `` \`o ``   `&ograve;`          `\u00f2`
-  Ù           `` \`U ``   `&Ugrave;`          `\u00d9`
-  ù           `` \`u ``   `&ugrave;`          `\u00f9`
-  Á           `\'A`       `&Aacute;`          `\u00c1`
-  á           `\'a`       `&aacute;`          `\u00e1`
-  É           `\'E`       `&Eacute;`          `\u00c9`
-  é           `\'e`       `&eacute;`          `\u00e9`
-  Í           `\'I`       `&Iacute;`          `\u00cd`
-  í           `\'i`       `&iacute;`          `\u00ed`
-  Ó           `\'O`       `&Oacute;`          `\u00d3`
-  ó           `\'o`       `&oacute;`          `\u00f3`
-  Ú           `\'U`       `&Uacute;`          `\u00da`
-  ú           `\'u`       `&uacute;`          `\u00fa`
-  Ý           `\'Y`       `&Yacute;`          `\u00dd`
-  ý           `\'y`       `&yacute;`          `\u00fd`
-  Â           `\^A`       `&Acirc;`           `\u00c2`
-  â           `\^a`       `&acirc;`           `\u00e2`
-  Ê           `\^E`       `&Ecirc;`           `\u00ca`
-  ê           `\^e`       `&ecirc;`           `\u00ea`
-  Î           `\^I`       `&Icirc;`           `\u00ce`
-  î           `\^i`       `&icirc;`           `\u00ee`
-  Ô           `\^O`       `&Ocirc;`           `\u00d4`
-  ô           `\^o`       `&ocirc;`           `\u00f4`
-  Û           `\^U`       `&Ucirc;`           `\u00db`
-  û           `\^u`       `&ucirc;`           `\u00fb`
-  Ŷ           `\^Y`       `&Ycirc;`           `\u0176`
-  ŷ           `\^y`       `&ycirc;`           `\u0177`
-  Ã           `\~A`       `&Atilde;`          `\u00c3`
-  ã           `\~a`       `&atilde;`          `\u00e3`
-  Ñ           `\~N`       `&Ntilde;`          `\u00d1`
-  ñ           `\~n`       `&ntilde;`          `\u00f1`
-  Õ           `\~O`       `&Otilde;`          `\u00d5`
-  õ           `\~o`       `&otilde;`          `\u00f5`
-  Ä           `\"A`       `&Auml;`            `\u00c4`
-  ä           `\"a`       `&auml;`            `\u00e4`
-  Ë           `\"E`       `&Euml;`            `\u00cb`
-  ë           `\"e`       `&euml;`            `\u00eb`
-  Ï           `\"I`       `&Iuml;`            `\u00cf`
-  ï           `\"i`       `&iuml;`            `\u00ef`
-  Ö           `\"O`       `&Ouml;`            `\u00d6`
-  ö           `\"o`       `&ouml;`            `\u00f6`
-  Ü           `\"U`       `&Uuml;`            `\u00dc`
-  ü           `\"u`       `&uuml;`            `\u00fc`
-  Ÿ           `\"Y`       `&Yuml;`            `\u0178`
-  ÿ           `\"y`       `&yuml;`            `\u00ff`
-  Ç           `\cC`       `&Ccedil;`          `\u00c7`
-  ç           `\cc`       `&ccedil;`          `\u00e7`
-  Å           `\AA`       `&Aring;`           `\u00c5`
-  å           `\aa`       `&aring;`           `\u00e5`
-  Ø           `\/O`       `&Oslash;`          `\u00d8`
-  ø           `\/o`       `&oslash;`          `\u00f8`
-  Ă           `\uA`       `&Abreve;`          `\u0102`
-  ă           `\ua`       `&abreve;`          `\u0103`
-  Ĕ           `\uE`       not available       `\u0114`
-  ĕ           `\ue`       not available       `\u0115`
-  Š           `\vS`       `&Scaron;`          `\u0160`
-  š           `\vs`       `&scaron;`          `\u0161`
-  Ž           `\vZ`       `&Zcaron;`          `\u017d`
-  ž           `\vz`       `&zcaron;`          `\u017e`
-  Ő           `\HO`       not available       `\u0150`
-  ő           `\Ho`       not available       `\u0151`
-  Ű           `\HU`       not available       `\u0170`
-  ű           `\Hu`       not available       `\u0171`
-
-</div>
+| Character | Mnemonic  | Named html entity | 16-bit hex unicode |
+|-----------|-----------|-------------------|--------------------|
+| À         | `` \`A `` | `&Agrave;`        | `\u00c0`           |
+| à         | `` \`a `` | `&agrave;`        | `\u00e0`           |
+| È         | `` \`E `` | `&Egrave;`        | `\u00c8`           |
+| è         | `` \`e `` | `&egrave;`        | `\u00e8`           |
+| Ì         | `` \`I `` | `&Igrave;`        | `\u00cc`           |
+| ì         | `` \`i `` | `&igrave;`        | `\u00ec`           |
+| Ò         | `` \`O `` | `&Ograve;`        | `\u00d2`           |
+| ò         | `` \`o `` | `&ograve;`        | `\u00f2`           |
+| Ù         | `` \`U `` | `&Ugrave;`        | `\u00d9`           |
+| ù         | `` \`u `` | `&ugrave;`        | `\u00f9`           |
+| Á         | `\'A`     | `&Aacute;`        | `\u00c1`           |
+| á         | `\'a`     | `&aacute;`        | `\u00e1`           |
+| É         | `\'E`     | `&Eacute;`        | `\u00c9`           |
+| é         | `\'e`     | `&eacute;`        | `\u00e9`           |
+| Í         | `\'I`     | `&Iacute;`        | `\u00cd`           |
+| í         | `\'i`     | `&iacute;`        | `\u00ed`           |
+| Ó         | `\'O`     | `&Oacute;`        | `\u00d3`           |
+| ó         | `\'o`     | `&oacute;`        | `\u00f3`           |
+| Ú         | `\'U`     | `&Uacute;`        | `\u00da`           |
+| ú         | `\'u`     | `&uacute;`        | `\u00fa`           |
+| Ý         | `\'Y`     | `&Yacute;`        | `\u00dd`           |
+| ý         | `\'y`     | `&yacute;`        | `\u00fd`           |
+| Â         | `\^A`     | `&Acirc;`         | `\u00c2`           |
+| â         | `\^a`     | `&acirc;`         | `\u00e2`           |
+| Ê         | `\^E`     | `&Ecirc;`         | `\u00ca`           |
+| ê         | `\^e`     | `&ecirc;`         | `\u00ea`           |
+| Î         | `\^I`     | `&Icirc;`         | `\u00ce`           |
+| î         | `\^i`     | `&icirc;`         | `\u00ee`           |
+| Ô         | `\^O`     | `&Ocirc;`         | `\u00d4`           |
+| ô         | `\^o`     | `&ocirc;`         | `\u00f4`           |
+| Û         | `\^U`     | `&Ucirc;`         | `\u00db`           |
+| û         | `\^u`     | `&ucirc;`         | `\u00fb`           |
+| Ŷ         | `\^Y`     | `&Ycirc;`         | `\u0176`           |
+| ŷ         | `\^y`     | `&ycirc;`         | `\u0177`           |
+| Ã         | `\~A`     | `&Atilde;`        | `\u00c3`           |
+| ã         | `\~a`     | `&atilde;`        | `\u00e3`           |
+| Ñ         | `\~N`     | `&Ntilde;`        | `\u00d1`           |
+| ñ         | `\~n`     | `&ntilde;`        | `\u00f1`           |
+| Õ         | `\~O`     | `&Otilde;`        | `\u00d5`           |
+| õ         | `\~o`     | `&otilde;`        | `\u00f5`           |
+| Ä         | `\"A`     | `&Auml;`          | `\u00c4`           |
+| ä         | `\"a`     | `&auml;`          | `\u00e4`           |
+| Ë         | `\"E`     | `&Euml;`          | `\u00cb`           |
+| ë         | `\"e`     | `&euml;`          | `\u00eb`           |
+| Ï         | `\"I`     | `&Iuml;`          | `\u00cf`           |
+| ï         | `\"i`     | `&iuml;`          | `\u00ef`           |
+| Ö         | `\"O`     | `&Ouml;`          | `\u00d6`           |
+| ö         | `\"o`     | `&ouml;`          | `\u00f6`           |
+| Ü         | `\"U`     | `&Uuml;`          | `\u00dc`           |
+| ü         | `\"u`     | `&uuml;`          | `\u00fc`           |
+| Ÿ         | `\"Y`     | `&Yuml;`          | `\u0178`           |
+| ÿ         | `\"y`     | `&yuml;`          | `\u00ff`           |
+| Ç         | `\cC`     | `&Ccedil;`        | `\u00c7`           |
+| ç         | `\cc`     | `&ccedil;`        | `\u00e7`           |
+| Å         | `\AA`     | `&Aring;`         | `\u00c5`           |
+| å         | `\aa`     | `&aring;`         | `\u00e5`           |
+| Ø         | `\/O`     | `&Oslash;`        | `\u00d8`           |
+| ø         | `\/o`     | `&oslash;`        | `\u00f8`           |
+| Ă         | `\uA`     | `&Abreve;`        | `\u0102`           |
+| ă         | `\ua`     | `&abreve;`        | `\u0103`           |
+| Ĕ         | `\uE`     | not available     | `\u0114`           |
+| ĕ         | `\ue`     | not available     | `\u0115`           |
+| Š         | `\vS`     | `&Scaron;`        | `\u0160`           |
+| š         | `\vs`     | `&scaron;`        | `\u0161`           |
+| Ž         | `\vZ`     | `&Zcaron;`        | `\u017d`           |
+| ž         | `\vz`     | `&zcaron;`        | `\u017e`           |
+| Ő         | `\HO`     | not available     | `\u0150`           |
+| ő         | `\Ho`     | not available     | `\u0151`           |
+| Ű         | `\HU`     | not available     | `\u0170`           |
+| ű         | `\Hu`     | not available     | `\u0171`           |
 
 **Ligatures, etc:**
 
-<div class="table sectionedit93">
+| Character | Mnemonic | Named html entity | 16-bit hex unicode |
+|-----------|----------|-------------------|--------------------|
+| Æ         | `\AE`    | `&AElig;`         | `\u00c6`           |
+| æ         | `\ae`    | `&aelig;`         | `\u00e6`           |
+| Œ         | `\OE`    | `&OElig;`         | `\u0152`           |
+| œ         | `\oe`    | `&oelig;`         | `\u0153`           |
+| ß         | `\ss`    | `&szlig;`         | `\u00df`           |
+| Ð         | `\DH`    | `&ETH;`           | `\u00d0`           |
+| ð         | `\dh`    | `&eth;`           | `\u00f0`           |
+| Þ         | `\TH`    | `&THORN;`         | `\u00de`           |
+| þ         | `\th`    | `&thorn;`         | `\u00fe`           |
 
-  Character   Mnemonic   Named html entity   16-bit hex unicode
-  ----------- ---------- ------------------- --------------------
-  Æ           `\AE`      `&AElig;`           `\u00c6`
-  æ           `\ae`      `&aelig;`           `\u00e6`
-  Œ           `\OE`      `&OElig;`           `\u0152`
-  œ           `\oe`      `&oelig;`           `\u0153`
-  ß           `\ss`      `&szlig;`           `\u00df`
-  Ð           `\DH`      `&ETH;`             `\u00d0`
-  ð           `\dh`      `&eth;`             `\u00f0`
-  Þ           `\TH`      `&THORN;`           `\u00de`
-  þ           `\th`      `&thorn;`           `\u00fe`
+### 14.2 Errata
 
-</div>
+The following corrections have been made since the standard was published:
 
-</div>
+-   <a href="#terminology_definitions" class="wikilink1" title="abc:standard:v2.1 ↵">Section 1.1.1 Terminology / definitions</a>: The definition of *VOLATILE* has been clarified; it is used to indicate "sections which are under active discussion and/or are likely to change in some future version of the standard" rather than "sections which are under active discussion or likely to change at some point in the future" (8th Jan 2012).
 
-### 14.2 Errata {#errata .sectionedit94}
+-   <a href="#typesetting_line-breaks" class="wikilink1" title="abc:standard:v2.1 ↵">Section 6.1.1 Typesetting line-breaks</a>: Typo: `setbarno` corrected to `setbarnb` in two places (8th Jan 2012).
 
-<div class="level3">
+-   <a href="#text_strings" class="wikilink1" title="abc:standard:v2.1 ↵">Section 8.2 Text strings</a>: Typos for accent mnemonics (cedilla and ring): "`\,C \,c`" and "`\oA \oa`" corrected to "`\cC \cc`" and "`\AA \aa`", respectively, as per <a href="#supported_accents_ligatures" class="wikilink1" title="abc:standard:v2.1 ↵">Section 14.1 Supported accents &amp; ligatures</a> (8th Jan 2012).
+    *TODO:* `\,` and `\o` are non-standard accent mnemonics introduced in abc 2.0; however, it is probably sensible to support them in addition to the standard, but less memorable, `\c` and `\a`.
 
-The following corrections have been made since the standard was
-published:
+-   <a href="#information_directives" class="wikilink1" title="abc:standard:v2.1 ↵">Section 11.4.6 Information directives</a>: The statement "Note that the `%%writefields` directive does not apply to instruction-type fields, such as parts (P) and tempo (Q)" has now been removed, as it conflicted with other information in the same section (8th Jan 2012).
 
--   <div class="li">
+-   <a href="#chord_symbols" class="wikilink1" title="abc:standard:v2.1 ↵">Section 4.18 Chord symbols</a>: Typo: `sustained` corrected to `suspended` (26th May 2012).
 
-    [Section 1.1.1 Terminology /
-    definitions](#terminology_definitions "abc:standard:v2.1 ↵"){.wikilink1}:
-    The definition of *VOLATILE* has been clarified; it is used to
-    indicate "sections which are under active discussion and/or are
-    likely to change in some future version of the standard" rather than
-    "sections which are under active discussion or likely to change at
-    some point in the future" (8th Jan 2012).
-
-    </div>
-
--   <div class="li">
-
-    [Section 6.1.1 Typesetting
-    line-breaks](#typesetting_line-breaks "abc:standard:v2.1 ↵"){.wikilink1}:
-    Typo: `setbarno` corrected to `setbarnb` in two places (8th
-    Jan 2012).
-
-    </div>
-
--   <div class="li">
-
-    [Section 8.2 Text
-    strings](#text_strings "abc:standard:v2.1 ↵"){.wikilink1}: Typos for
-    accent mnemonics (cedilla and ring): "`\,C \,c`" and "`\oA \oa`"
-    corrected to "`\cC \cc`" and "`\AA \aa`", respectively, as per
-    [Section 14.1 Supported accents &
-    ligatures](#supported_accents_ligatures "abc:standard:v2.1 ↵"){.wikilink1}
-    (8th Jan 2012).\
-    *TODO:* `\,` and `\o` are non-standard accent mnemonics introduced
-    in abc 2.0; however, it is probably sensible to support them in
-    addition to the standard, but less memorable, `\c` and `\a`.
-
-    </div>
-
--   <div class="li">
-
-    [Section 11.4.6 Information
-    directives](#information_directives "abc:standard:v2.1 ↵"){.wikilink1}:
-    The statement "Note that the `%%writefields` directive does not
-    apply to instruction-type fields, such as parts (P) and tempo (Q)"
-    has now been removed, as it conflicted with other information in the
-    same section (8th Jan 2012).
-
-    </div>
-
--   <div class="li">
-
-    [Section 4.18 Chord
-    symbols](#chord_symbols "abc:standard:v2.1 ↵"){.wikilink1}: Typo:
-    `sustained` corrected to `suspended` (26th May 2012).
-
-    </div>
-
--   <div class="li">
-
-    [Section 4.6 Clefs and
-    transposition](#clefs_and_transposition "abc:standard:v2.1 ↵"){.wikilink1}:
-    following discussion, this section has been corrected to clarify
-    that the `middle` setting does not affect the playback (since there
-    is no consistent way that it can do so). The [Zocharti Loch
-    example](#multiple_voices "abc:standard:v2.1 ↵"){.wikilink1} has
-    been corrected and its accompanying midi file (which has persisted
-    unchanged from abc draft 2.0, and which seemed to indicate `middle`
-    might, in some circumstances, affect the playback) has been removed
-    (20th February 2013).
-
-    </div>
+-   <a href="#clefs_and_transposition" class="wikilink1" title="abc:standard:v2.1 ↵">Section 4.6 Clefs and transposition</a>: following discussion, this section has been corrected to clarify that the `middle` setting does not affect the playback (since there is no consistent way that it can do so). The <a href="#multiple_voices" class="wikilink1" title="abc:standard:v2.1 ↵">Zocharti Loch example</a> has been corrected and its accompanying midi file (which has persisted unchanged from abc draft 2.0, and which seemed to indicate `middle` might, in some circumstances, affect the playback) has been removed (20th February 2013).
 
 ------------------------------------------------------------------------
 
-[Back to top](#)
 
-</div>

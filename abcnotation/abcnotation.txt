@@ -274,8 +274,6 @@ Contents
 
 ------------------------------------------------------------------------
 
-Back to top
-
 
 1. Introduction
 
@@ -439,8 +437,6 @@ other developmental work, can always be found via:
 -   http://abcnotation.com/wiki/abc:standard
 
 ------------------------------------------------------------------------
-
-Back to top
 
 
 2. Abc files, tunes and fragments
@@ -783,8 +779,6 @@ _Recommendation:_ As a consequence, using other embedded elements in a
 document that contains an embedded abc file is not recommended.
 
 ------------------------------------------------------------------------
-
-Back to top
 
 
 3. Information fields
@@ -1580,8 +1574,6 @@ seeking a more elegant way to achieve the above.
 
 ------------------------------------------------------------------------
 
-Back to top
-
 
 4. The tune body
 
@@ -2351,8 +2343,6 @@ and open and close slur symbols, (), should do likewise, i.e.
 
 ------------------------------------------------------------------------
 
-Back to top
-
 
 5. Lyrics
 
@@ -2500,8 +2490,6 @@ aligned to Three.
        w: 1.~Three blind mice
 
 ------------------------------------------------------------------------
-
-Back to top
 
 
 6. Typesetting and playback
@@ -2753,8 +2741,6 @@ Most playback customisation is handled by instrumentation directives.
 
 ------------------------------------------------------------------------
 
-Back to top
-
 
 7. Multiple voices
 
@@ -2941,8 +2927,6 @@ deprecated (see disallowed).
 
 ------------------------------------------------------------------------
 
-Back to top
-
 
 8. Abc data format
 
@@ -3087,8 +3071,6 @@ font directives for more details.
 
 ------------------------------------------------------------------------
 
-Back to top
-
 
 9. Macros
 
@@ -3222,8 +3204,6 @@ or ~^G2 which will work correctly under all circumstances, so a static
 macro should be used for cases like these.
 
 ------------------------------------------------------------------------
-
-Back to top
 
 
 10. Outdated syntax
@@ -3505,8 +3485,6 @@ Instead lyrics are matched to notes without regard to the voice overlay
 - see voice overlay.
 
 ------------------------------------------------------------------------
-
-Back to top
 
 
 11. Stylesheet directives and pseudo-comments
@@ -3975,8 +3953,6 @@ that implement them, in particular:
 
 ------------------------------------------------------------------------
 
-Back to top
-
 
 12. Dialects, strict / loose interpretation and backwards compatibility
 
@@ -4140,8 +4116,6 @@ Any abc file with an abc version number greater than or equal to 2.1
 strictly, with errors indicated to the user as such.
 
 ------------------------------------------------------------------------
-
-Back to top
 
 
 13. Sample abc tunes
@@ -4332,8 +4306,6 @@ Back to top
 
 ------------------------------------------------------------------------
 
-Back to top
-
 
 14. Appendix
 
@@ -4487,7 +4459,5 @@ published:
     February 2013).
 
 ------------------------------------------------------------------------
-
-Back to top
 
 
