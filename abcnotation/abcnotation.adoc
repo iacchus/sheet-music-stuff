@@ -339,7 +339,7 @@ be "text/vnd.abc" (see IANA text/vnd.abc).
 2.2 Abc file structure
 ^^^^^^^^^^^^^^^^^^^^^^
 
-link:[]An *abc file* consists of one or more abc tune transcriptions,
+An *abc file* consists of one or more abc tune transcriptions,
 optionally interspersed with free text and typeset text annotations. It
 may optionally start with a file header to set up default values for
 processing the file.
@@ -347,30 +347,30 @@ processing the file.
 The file header, abc tunes and text annotations are separated from each
 other by empty lines (also known as blank lines).
 
-link:[]An abc file with more than one tune in it is called an **abc
+An abc file with more than one tune in it is called an **abc
 tunebook**.
 
 [[abc-tune]]
 2.2.1 Abc tune
 ++++++++++++++
 
-link:[]An *abc tune* itself consists of a tune header and a tune body,
+An *abc tune* itself consists of a tune header and a tune body,
 terminated by an empty line or the end of the file. It may also contain
 comment lines or stylesheet directives.
 
-link:[]The *tune header* is composed of several information field lines,
+The *tune header* is composed of several information field lines,
 which are further discussed in information fields. The tune header
 should start with an `X:`(reference number) field followed by a
 `T:`(title) field and finish with a `K:`(key) field.
 
-link:[]The **tune body**, which contains the music code, follows
+The **tune body**, which contains the music code, follows
 immediately after. Certain fields may also be used inside the tune body
 - see use of fields within the tune body.
 
 It is legal to write an abc tune without a tune body. This feature can
 be used to document tunes without transcribing them.
 
-link:[]Abc *music code* lines are those lines in the tune body which
+Abc *music code* lines are those lines in the tune body which
 give notes, bar lines and other musical symbols - see the tune body for
 details. In effect, music code is the contents of any line which is not
 an information field, stylesheet directive or comment line.
@@ -379,7 +379,7 @@ an information field, stylesheet directive or comment line.
 2.2.2 File header
 +++++++++++++++++
 
-link:[]The file may optionally start with a *file header* (immediately
+The file may optionally start with a *file header* (immediately
 after the version field), consisting of a block of consecutive
 information fields, stylesheet directives, or both, terminated with an
 empty line. The file header is used to set default values for the tunes
@@ -408,7 +408,7 @@ text is used for annotating abc tunebooks; free text is for annotating
 the abc file but is not included in the typeset score, whereas typeset
 text is intended for printing out.
 
-link:[]**Free text** is just that. It can be included anywhere in an abc
+**Free text** is just that. It can be included anywhere in an abc
 file, after the file header, but must be separated from abc tunes,
 typeset text and the file header by empty lines. Typically it is used
 for annotating the abc file but in principle can be any text not
@@ -425,7 +425,7 @@ command line switch or GUI checkbox). In this case, the software should
 treat the free text as a text string, but may format it in any way it
 chooses.
 
-link:[]**Typeset text** is any text specified using text directives. It
+**Typeset text** is any text specified using text directives. It
 may be inserted anywhere in an abc file after the file header, either
 separated from tunes by empty lines, or included in the tune header or
 tune body.
@@ -441,7 +441,7 @@ databasing software, that splits an abc file into separate abc tunes.
 2.2.4 Empty lines and line-breaking
 +++++++++++++++++++++++++++++++++++
 
-link:[]**Empty lines** (also known as blank lines) are used to separate
+**Empty lines** (also known as blank lines) are used to separate
 abc tunes, free text and the file header. They also aid the readability
 of abc files.
 
@@ -461,12 +461,12 @@ the printed music. For more details see typesetting line-breaks.
 2.2.5 Comments and remarks
 ++++++++++++++++++++++++++
 
-link:[]A percent symbol (`%`) will cause the remainder of any input line
+A percent symbol (`%`) will cause the remainder of any input line
 to be ignored. It can be used to add a *comment* to the end of an abc
 line or as a *comment line* in its own right. (To get a percent symbol,
 type `\%` - see text strings.)
 
-link:[]Alternatively, you can use the syntax `[r:remark]` to write a
+Alternatively, you can use the syntax `[r:remark]` to write a
 *remark* in the middle of a line of music.
 
 _Example:_
@@ -552,7 +552,7 @@ processed.
 2.3 Embedded abc and abc fragments
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-link:[]Traditionally abc has been used in dedicated abc files. More
+Traditionally abc has been used in dedicated abc files. More
 recently, however, the possibility has arisen to include abc tunes, and
 even fragments, within other document types. An abc element included
 within another document type is referred to as *embedded* in that
@@ -595,7 +595,7 @@ The following rules are applied to embedded elements:
 2.3.1 Embedded abc fragment
 +++++++++++++++++++++++++++
 
-An link:[]**abc fragment** is a partial abc tune. It may contain a
+An **abc fragment** is a partial abc tune. It may contain a
 partial tune header with no body or a tune body with optional tune
 header information fields.
 
@@ -684,7 +684,7 @@ document that contains an embedded abc file is not recommended.
 3. Information fields
 ~~~~~~~~~~~~~~~~~~~~~
 
-link:[]Any line beginning with a letter in the range `A-Z` or `a-z` and
+Any line beginning with a letter in the range `A-Z` or `a-z` and
 immediately followed by a colon (`:`) is an **information field**.
 Information fields are used to notate things such as composer, meter,
 etc. In fact anything that isn't music.
@@ -1411,7 +1411,7 @@ a creator field.
 3.2 Use of fields within the tune body
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-link:[]It is often desired to change the key (`K`), meter (`M`), or unit
+It is often desired to change the key (`K`), meter (`M`), or unit
 note length (`L`) mid-tune. These, and most other information fields
 which can be legally used within the tune body, can be specified as an
 *inline field* by placing them within square brackets in a line of music
@@ -2605,9 +2605,9 @@ new lines, line-feeds, carriage-returns, end-of-lines, etc.) determine
 how the document is set out on the page. Throughout this section, and
 elsewhere in the standard, a distinction should be noted between
 
-* link:[]a **code line-break**, meaning a line-break in the abc tune
+* a **code line-break**, meaning a line-break in the abc tune
 body, and, in particular, at the end of a line of music code;
-* link:[]a **score line-break**, meaning a line-break in the printed
+* a **score line-break**, meaning a line-break in the printed
 score.
 
 The fundamental mechanism for typesetting score line-breaks is by using
@@ -3137,7 +3137,7 @@ a !pp! bc2/3 [K:C#] def "@this $2was difficult to parse?" y |
 8.2 Text strings
 ^^^^^^^^^^^^^^^^
 
-link:[]Text written within an abc file, either as part of an information
+Text written within an abc file, either as part of an information
 field, an annotation or as free text / typeset text, is known as a
 **text string**, or more fully, an **abc text string**. (Note that the
 abc standard version 2.0 referred to a text string as an __abc
@@ -3761,7 +3761,7 @@ __VOLATILE__.
 11.0.2 Stylesheet directives
 ++++++++++++++++++++++++++++
 
-link:[]A *stylesheet directive* is a line that starts with `%%`,
+A *stylesheet directive* is a line that starts with `%%`,
 followed by a directive that gives instructions to typesetting or player
 programs.
 

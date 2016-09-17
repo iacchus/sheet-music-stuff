@@ -1,0 +1,9 @@
+---
+fontsize: 11pt
+documentclass: book
+title: A Dança dos Espíritos
+author: Kassius Iacchus Mercurius
+rights:  Creative Commons Non-Commercial Share Alike 3.0
+language: pt-BR
+classoption: oneside
+...
