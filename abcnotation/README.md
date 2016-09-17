@@ -16,7 +16,7 @@ Here, I used [pandoc](pandoc.org) to render the [abc music notation standard](ht
 
 ### GitHub Markdown
 
-`pandoc abcspec.html -t markdown\_github -o abcnotation.md`
+`pandoc abcspec.html -t markdown_github -o abcnotation.md`
 
 ### HTML5
 
