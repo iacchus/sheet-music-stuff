@@ -32,10 +32,5 @@ Here, I used [pandoc](pandoc.org) to render the [abc music notation standard](ht
 
 ### AsciiDoc
 
-`pandoc abcspec.html -t plain -o abcnotation.txt`
-
-
-
-
-
+`pandoc abcnotation.md -t asciidoc -o abcnotation.adoc`
 
