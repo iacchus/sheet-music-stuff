@@ -1,5 +1,5 @@
 ---
-papersize: letter
+papersize: article
 documentclass: book
 fontsize: 10pt
 geometry: margin=.25in

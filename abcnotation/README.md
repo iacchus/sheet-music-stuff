@@ -4,33 +4,12 @@ Here, I used [pandoc](pandoc.org) to render the [abc music notation standard](ht
 
 ## The Files
 
-| Format           | File link                            |
-| ---------------- | ------------------------------------ |
-| GitHub Markdown  | [abcnotation.md](abcnotation.md)     |
-| HTML             | [abcnotation.html](abcnotation.html) |
-| PDF              | [abcnotation.pdf](abcnotation.pdf)   |
-| Plain Text       | [abcnotation.txt](abcnotation.txt)   |
-| AsciiDoc         | [abcnotation.adoc](abcnotation.adoc) |
+| Format           | File link                            | Command to generate file |
+| ---------------- | ------------------------------------ | -------------------------|
+| GitHub Markdown  | [abcnotation.md](abcnotation.md)     | `pandoc abcspec.html -t markdown_github -o abcnotation.md` |
+| HTML             | [abcnotation.html](abcnotation.html) | `pandoc abcspec.html --standalone --self-contained -t html5 -o abcnotation.html` |
+| PDF              | [abcnotation.pdf](abcnotation.pdf)   | `pandoc abcnotation.md metadata.yaml -s --latex-engine xelatex -o abcspec.pdf` |
+| Plain Text       | [abcnotation.txt](abcnotation.txt)   | `pandoc abcspec.html -t plain -o abcnotation.txt` |
+| AsciiDoc         | [abcnotation.adoc](abcnotation.adoc) | `pandoc abcnotation.md -t asciidoc -o abcnotation.adoc` |
 
-## The commands used to create them
-
-### GitHub Markdown
-
-`pandoc abcspec.html -t markdown_github -o abcnotation.md`
-
-### HTML5
-
-`pandoc abcspec.html --standalone --self-contained -t html5 -o abcnotation.html`
-
-### PDF 
-
-`pandoc abcspec.html metadata.yaml -s --latex-engine xelatex -o abcspec.pdf`
-
-### Plain Text
-
-`pandoc abcspec.html -t plain -o abcnotation.txt`
-
-### AsciiDoc
-
-`pandoc abcnotation.md -t asciidoc -o abcnotation.adoc`
 
