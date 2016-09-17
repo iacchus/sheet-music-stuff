@@ -10,6 +10,6 @@ Here, I used [pandoc](pandoc.org) to render the [abc music notation standard](ht
 | HTML             | [abcnotation.html](abcnotation.html) | `pandoc abcspec.html --standalone --self-contained -t html5 -o abcnotation.html` |
 | PDF              | [abcnotation.pdf](abcnotation.pdf)   | `pandoc abcnotation.md metadata.yaml -s --latex-engine xelatex -o abcspec.pdf` |
 | Plain Text       | [abcnotation.txt](abcnotation.txt)   | `pandoc abcspec.html -t plain -o abcnotation.txt` |
-| AsciiDoc         | [abcnotation.adoc](abcnotation.adoc) | `pandoc abcnotation.md -t asciidoc -o abcnotation.adoc; mv abcnotation.adoc abcnotation.bugged.adoc; sed 's/link\:\[\]//g' abcnotation.bugged.adoc > abcnotation.adoc` |
+| AsciiDoc         | [abcnotation.adoc](abcnotation.adoc) | `pandoc abcspec.html -t asciidoc -o abcnotation.adoc -t asciidoc -o abcnotation.adoc; mv abcnotation.adoc abcnotation.bugged.adoc; sed 's/link\:\[\]//g' abcnotation.bugged.adoc > abcnotation.adoc` |
 
 
