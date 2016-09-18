@@ -16,6 +16,10 @@ Here, I used [pandoc](pandoc.org) to render the [abc music notation standard](ht
 
 The PDF version was first converted to LaTeX, then the [latex file](abcnotation.tex) was edited, and `xelatex` was used to generate the pdf.
 
+### Converting to standalone HTML (without embedded images)
+
+`pandoc abcspec.html --standalone -t html5 -o abcnotation_nodata.html`
+
 ### Converting to LaTeX (.tex)
 
 `pandoc abcnotation_nodata.html metadata.yaml --standalone -f html -t latex -o abcnotation.tex`
