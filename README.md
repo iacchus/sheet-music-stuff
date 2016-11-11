@@ -18,6 +18,8 @@ some from google fonts
 
 `ALBINONI, Tomaso` - [Adagio in G Minor](https://github.com/iacchus/sheet-music-stuff/tree/master/ALBINONI%2C%20Tomaso/adagio_in_g_minor) *(violin part)*
 
+`BACH, Johann Sebastian` - [BWV 1001-1006](https://github.com/iacchus/sheet-music-stuff/tree/master/BACH%2C%20Johann%20Sebastian) with its respectives [midis](https://github.com/iacchus/sheet-music-stuff/tree/master/BACH%2C%20Johann%20Sebastian/midi)
+
 `PURCELL, Henry` - [Let Us Wander](https://github.com/iacchus/sheet-music-stuff/tree/master/PURCELL%2C%20Henry/let_us_wander) *(two voices, for complete sheetmusic see the [original source](https://github.com/iacchus/sheet-music-stuff/blob/master/PURCELL%2C%20Henry/let_us_wander/originalsource_henry_purcell_6_vocal_duets.pdf))*
 
 ## Sheet Music around the Web (IMSLP)
