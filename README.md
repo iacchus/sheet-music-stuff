@@ -22,6 +22,14 @@ some from google fonts
 
 `PURCELL, Henry` - [Let Us Wander](https://github.com/iacchus/sheet-music-stuff/tree/master/PURCELL%2C%20Henry/let_us_wander) *(two voices, for complete sheetmusic see the [original source](https://github.com/iacchus/sheet-music-stuff/blob/master/PURCELL%2C%20Henry/let_us_wander/originalsource_henry_purcell_6_vocal_duets.pdf))*
 
+### Also
+
+### ABC notation standard specs in various file formats
+
+*including pdf and html*
+
+Check it [HERE](https://github.com/iacchus/sheet-music-stuff/tree/master/ABC_Music_Notation_Standard)
+
 ## Sheet Music around the Web (IMSLP)
 
 If you want a good website to search for scores, we highly recommend [International Music Score Library Project- IMSLP](http://imslp.org/).
