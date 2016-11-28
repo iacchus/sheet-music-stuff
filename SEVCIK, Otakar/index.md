@@ -22,10 +22,10 @@
 
 - I. Introduction to the 1st Position
 - IIa. 1st Position Supplementary:
-  The Rhythmic Major Scales from Parts IIa and IIb - Pieces (1st position, Grade I) with piano.
+    The Rhythmic Major Scales from Parts IIa and IIb - Pieces (1st position, Grade I) with piano.
 
 - IIb. 1st Position Supplementary:
-  The Rhythmic Major Scales from Parts IIa and IIb - Pieces (1st position, Grade I) with piano.
+    The Rhythmic Major Scales from Parts IIa and IIb - Pieces (1st position, Grade I) with piano.
 
 - III. 1st Position Supplementary:
   The Rhythmic Major Scales from Parts IIa and IIb - Pieces (1st position, Grade I) with piano.
