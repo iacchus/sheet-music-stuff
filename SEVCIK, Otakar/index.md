@@ -14,7 +14,7 @@
 
 - I. Introduction to the 1st Position
 - IIa. 1st Position Supplementary:
-  The Rhythmic Major Scales from Parts IIa and IIb - Pieces (1st position, Grade I) with piano.
+    The Rhythmic Major Scales from Parts IIa and IIb - Pieces (1st position, Grade I) with piano.
 - IIb. 1st Position Supplementary:
   The Rhythmic Major Scales from Parts IIa and IIb - Pieces (1st position, Grade I) with piano.
 - III. 1st Position Supplementary:
@@ -23,9 +23,9 @@
   The Rhythmic Major Scales from Parts IIa and IIb - Pieces (1st position, Grade I) with piano.
 - V, Introduction to the 2nd-7th Position. Supplementary
     Parts IIb, III, and IV, also the 2nd violin to the Duettinos from the Parts I, IIa and IIb.
-  - Via. 2nd-7th Position Supplementary
-  - Vib. 2nd-7th Position Supplementary: 40 Bohemian Melodies in the 2nd-7th position.
-  - Vic. 2nd-7th Position, 40 Bohemian Melodies, Supplementary, Parts VIa and VIb.
+- Via. 2nd-7th Position Supplementary
+- Vib. 2nd-7th Position Supplementary: 40 Bohemian Melodies in the 2nd-7th position.
+- Vic. 2nd-7th Position, 40 Bohemian Melodies, Supplementary, Parts VIa and VIb.
 - VII. 2nd-7th Position, Supplementary, Part XII (Introduction to Shifting).
 - VIII. 2nd-7th Position Supplementary
 - IX. 2nd-7th Position Supplementary:
