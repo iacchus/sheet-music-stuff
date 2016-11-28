@@ -1,16 +1,24 @@
 # Sevcik, Otakar
 
 ## School of Violin Technique
-### Op. 01
+*Op. 01*
+
+1. Exercises in the First Position
+2. Exercises in the Second to Seventh Positions
+3. Shifting (Changing positions)
+4. Exercises in Double-stops
+
+## Violin Studies
+*Op. 07*
 
 ## Changes of Position and Preparatory Scale Studies
-### Op. 08
+*Op. 08*
 
 ## Preparatory Exercises in Double-Stopping
-### Op. 09
+*Op. 09*
 
 ## School of Intonation on an Harmonic Basis for Violin
-### Op. 11
+*Op. 11*
 
 - I. Introduction to the 1st Position
 - IIa. 1st Position Supplementary:
